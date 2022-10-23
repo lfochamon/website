@@ -1,0 +1,5 @@
+www/output
+www/content/*.bib
+cv/*.bib
+cv/*.pdf
+**/__pycache__

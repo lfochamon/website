@@ -1,0 +1,5 @@
+pelican == 4.8.0
+pillow == 9.2.0
+pybtex == 0.24.0
+beautifulsoup4 == 4.11.1
+Markdown==3.4.1

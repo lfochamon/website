@@ -1,0 +1,148 @@
+name: Compile and deploy website
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+
+jobs:
+  fetch_bib:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout bibliography
+        uses: actions/checkout@v3
+        with:
+          repository: lfochamon/publications-list
+          path: publications-list
+
+      - name: Checkout dev branch
+        uses: actions/checkout@v3
+        with:
+          ref: dev
+          path: website
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Fix bibliography
+        run: |
+          python website/.github/workflows/bib_to_website.py
+
+      - name: Save bibliography
+        uses: actions/upload-artifact@v3
+        with:
+          name: bibliography
+          path: |
+            publications-list/publications.bib
+            publications-list/cv.bib
+          retention-days: 1
+
+
+  compile_cv:
+    needs: fetch_bib
+    runs-on: ubuntu-latest
+    env:
+      FILE_CV: lfochamon_cv
+      FILE_PUBS: lfochamon_pubs
+
+    steps:
+      - name: Checkout dev branch
+        uses: actions/checkout@v3
+        with:
+          ref: 'dev'
+
+      - name: Install TeXlive
+        run: sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-bibtex-extra
+
+      - name: Load bib files
+        uses: actions/download-artifact@v3
+        with:
+          name: bibliography
+          path: cv
+
+      - name: LaTeX compile
+        working-directory: cv
+        run: |
+          pdflatex ${{ env.FILE_CV }}.tex; bibtex ${{ env.FILE_CV }}.aux; pdflatex ${{ env.FILE_CV }}.tex; pdflatex ${{ env.FILE_CV }}.tex;
+          pdflatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; pdflatex ${{ env.FILE_PUBS }}.tex; pdflatex ${{ env.FILE_PUBS }}.tex;
+
+      - name: Save cv and publications list
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv
+          path: |
+            cv/${{ env.FILE_CV }}.pdf
+            cv/${{ env.FILE_PUBS }}.pdf
+          retention-days: 1
+
+
+  compile_website:
+    needs: compile_cv
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout dev branch
+        uses: actions/checkout@v3
+        with:
+          ref: 'dev'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      - run: pip install -r .github/workflows/requirements.txt
+
+      - name: Load bib files
+        uses: actions/download-artifact@v3
+        with:
+          name: bibliography
+          path: www/content
+
+      - name: Load CV and publications list
+        uses: actions/download-artifact@v3
+        with:
+          name: cv
+          path: www/content/pdf
+
+      - name: Build website
+        working-directory: www
+        run: pelican -s publishconf.py
+
+      - name: Save output
+        uses: actions/upload-artifact@v3
+        with:
+          name: website
+          path: www/output
+          retention-days: 1
+
+
+  publish_website:
+    needs: compile_website
+    runs-on: ubuntu-latest
+    env:
+      COMMIT_MESSAGE: Update website
+      COMMIT_AUTHOR: Luiz Chamon
+      COMMIT_EMAIL: luizchamon@gmail.com
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+
+      - name: Recover website
+        uses: actions/download-artifact@v3
+        with:
+          name: website
+
+      - name: Add, commit, and push website
+        run: |
+          git config --global user.name "${{ env.COMMIT_AUTHOR }}"
+          git config --global user.email "${{ env.COMMIT_EMAIL }}"
+          git add -A
+          git commit -s -m "${{ env.COMMIT_MESSAGE }}"
+          git push origin main

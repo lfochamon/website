@@ -1,0 +1,71 @@
+<div class="menu-toggle">
+  <a href="#mobile-navigation" id='mobile-menu-open'><span class="fa fa-bars"></span></a>
+</div>
+
+<div class="sidebar">
+  <div class="menu-toggle-sidebar">
+    <a href="#mobile-navigation" id='mobile-menu-open-alt'><span class="fa fa-bars"></span></a>
+  </div>
+	<nav class="sidebar-nav">
+		{% if DISPLAY_PAGES_ON_MENU %}
+			{% for p in pages %}
+				<a class="sidebar-nav-item{% if p == page %} active{% endif %}" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+			{% endfor %}
+		{% endif %}
+		{% for p in MENUITEMS %}
+			<a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ SITEURL }}/{{ p[1] }}">{{ p[0] }}</a>
+		{% endfor %}
+	</nav>
+
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+			<h1 style="margin-bottom: 0.5rem;">
+				<a href="{{ SITEURL }}">
+					<img class="profile-picture" src="{{ SITEURL }}/{{ PROFILE_IMAGE }}">
+					{{ SITENAME }}
+				</a>
+			</h1>
+		</div>
+
+		<nav class="sidebar-social">
+			<a class="sidebar-social-item" href="mailto:{{ SITEEMAIL }}">
+				<i class="fas fa-envelope"></i>
+			</a>
+      <a class="sidebar-social-item" href="{{ SITEURL }}/pdf/lfochamon_cv.pdf">
+				<i class="ai ai-cv" style="font-size:1rem;"></i>
+			</a>
+      <a class="sidebar-social-item" href="https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en" target=”_blank” rel=”noopener noreferrer”>
+        <i class="ai ai-google-scholar" style="font-size:1rem;"></i>
+      </a>
+      <a class="sidebar-social-item" href="https://github.com/lfochamon/" target=”_blank” rel=”noopener noreferrer”>
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="sidebar-social-item" href="https://www.youtube.com/channel/UCnMdLtva_qHonGB2QRcnDiA" target=”_blank” rel=”noopener noreferrer”>
+        <i class="fab fa-youtube"></i>
+      </a>
+			<!-- <a class="sidebar-nav-item" href="{{ FEED_ALL_RSS }}">
+				<i class="fa fa-feed"></i>
+			</a> -->
+		</nav>
+
+		<p class="copyright">&copy; 2020&ndash;{{ CURRENTYEAR }}. All rights reserved.</p>
+	</div>
+</div>
+
+<nav id="mobile-navigation" class="mobile-navigation">
+  <ul class="primary-menu">
+    {% if DISPLAY_PAGES_ON_MENU %}
+      {% for p in pages %}
+        <li><a class="sidebar-nav-item{% if p == page %} active{% endif %}" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% for p in MENUITEMS %}
+      <li><a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ SITEURL }}/{{ p[1] }}">{{ p[0] }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <a href="#mobile-navigation-toggle" class="menu-close" id="menu-close"><span class="fa fa-close"></span></a>
+</nav>
+
+<a href="#mobile-navigation-toggle" class="backdrop" id='backdrop' tabindex="-1"></a>

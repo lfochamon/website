@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITETITLE }} - {{ page.title|striptags }}{%endblock%}
+
+{% block head %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  {{ super() }}
+
+  <style>
+    img { min-width: 80%; }
+
+    .carousel-indicators {
+      top: 0;
+    }
+
+    .carousel-item {
+      height: 150px;
+    }
+
+    @media (min-width: 48em) {
+      .carousel-item {
+        height: 120px;
+      }
+    }
+
+    .carousel-item p:first-of-type {
+      margin-top: 1rem;
+    }
+
+    .carousel-indicators li {
+      background-color: #ddd;
+      height: 5px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #0a5daa;
+    }
+
+    .smalldesc p:last-of-type {
+      margin-bottom:0;
+    }
+
+    #expand-A {
+      display:none;
+    }
+    #expand-A + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-A:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-A ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-A ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-A:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-A:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-B {
+      display:none;
+    }
+    #expand-B + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-B:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-B ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-B ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-B:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-B:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-C {
+      display:none;
+    }
+    #expand-C + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-C:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-C ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-C ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-C:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-C:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-D {
+      display:none;
+    }
+    #expand-D + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-D:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-D ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-D ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-D:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-D:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    label {
+      color:#0a5daa;
+      text-decoration: none;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+    }
+    label:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+
+{% endblock %}
+
+{% block body %}
+<body class="layout-reverse">
+  <div class="sidebar">
+  	<nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="#research">Research</a>
+      <a class="sidebar-nav-item" href="#teaching">Teaching</a>
+      <a class="sidebar-nav-item" href="#diversity">Diversity</a>
+      <a class="sidebar-nav-item" href="../pdf/lfochamon_cv.pdf">CV</a>
+  	</nav>
+
+  	<div class="container sidebar-sticky">
+  		<div class="sidebar-about">
+  			<h1>
+  				<a href="{{ SITEURL }}">
+  					<img class="profile-picture" src="{{ SITEURL }}/{{ PROFILE_IMAGE }}">
+  					Luiz Chamon
+  				</a>
+  			</h1>
+  		</div>
+
+      <p style="font-size:0.75rem;">&copy; 2020. All rights reserved.</p>
+  	</div>
+  </div>
+
+  <div class="content container">
+        {{ page.content }}
+  </div>
+</body>
+{% endblock %}
