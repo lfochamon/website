@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GZ3LNX2W9L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GZ3LNX2W9L');
+</script>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet"/>
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<!-- Enable responsiveness on mobile devices-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+<title>Luiz Chamon - Application package</title>
+<!-- CSS -->
+<link href="https://www.luizchamon.com/theme/css/poole.css" rel="stylesheet">
+<link href="https://www.luizchamon.com/theme/css/hyde.css" rel="stylesheet">
+<link href="https://www.luizchamon.com/theme/css/syntax/friendly.css" rel="stylesheet"/>
+<!-- FONTS -->
+<link href="//fonts.googleapis.com/" rel="dns-prefetch"/>
+<link href="//fonts.googleapis.com/css?family=Abril+Fatface:700|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext&amp;display=swap" rel="stylesheet"/>
+<link href="https://www.luizchamon.com/theme/css/academicons.min.css" rel="stylesheet">
+<!-- RSS -->
+<!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"> -->
+<style>
+    img { min-width: 80%; }
+
+    .carousel-indicators {
+      top: 0;
+    }
+
+    .carousel-item {
+      height: 150px;
+    }
+
+    @media (min-width: 48em) {
+      .carousel-item {
+        height: 120px;
+      }
+    }
+
+    .carousel-item p:first-of-type {
+      margin-top: 1rem;
+    }
+
+    .carousel-indicators li {
+      background-color: #ddd;
+      height: 5px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #0a5daa;
+    }
+
+    .smalldesc p:last-of-type {
+      margin-bottom:0;
+    }
+
+    #expand-A {
+      display:none;
+    }
+    #expand-A + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-A:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-A ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-A ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-A:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-A:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-B {
+      display:none;
+    }
+    #expand-B + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-B:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-B ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-B ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-B:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-B:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-C {
+      display:none;
+    }
+    #expand-C + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-C:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-C ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-C ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-C:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-C:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    #expand-D {
+      display:none;
+    }
+    #expand-D + .smalldesc {
+      max-height:0px;
+      overflow:hidden;
+    }
+    #expand-D:checked + .smalldesc {
+      max-height:100%;
+    }
+    #expand-D ~ .expand-label .closed {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+    #expand-D ~ .expand-label .open {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-D:checked ~ .expand-label .closed {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      float:left;
+    }
+    #expand-D:checked ~.expand-label .open {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      float:left;
+    }
+
+    label {
+      color:#0a5daa;
+      text-decoration: none;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+    }
+    label:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</link></link></link></head>
+<body class="layout-reverse">
+<div class="sidebar">
+<nav class="sidebar-nav">
+<a class="sidebar-nav-item" href="#research">Research</a>
+<a class="sidebar-nav-item" href="#teaching">Teaching</a>
+<a class="sidebar-nav-item" href="#diversity">Diversity</a>
+<a class="sidebar-nav-item" href="../pdf/lfochamon_cv.pdf">CV</a>
+</nav>
+<div class="container sidebar-sticky">
+<div class="sidebar-about">
+<h1>
+<a href="https://www.luizchamon.com">
+<img class="profile-picture" src="https://www.luizchamon.com/images/lfochamon_thumb.jpg"/>
+  					Luiz Chamon
+  				</a>
+</h1>
+</div>
+<p style="font-size:0.75rem;">© 2020. All rights reserved.</p>
+</div>
+</div>
+<div class="content container">
+<h1 id="recent-talks">Recent talks</h1>
+<div style="float:left; margin-right:1rem;">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/0cl35wNAfiA" width="280"></iframe>
+<p><br/>
+<center>IEEE ICASSP 2020<br/>
+<strong>(best student paper award)</strong></center>
+<br/></p>
+</div>
+<div style="float:left; margin-right:1rem;">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/9e-n8lPu5S8" width="280"></iframe>
+<p><br/>
+<center>IEEE CDC 2020</center>
+<br/></p>
+</div>
+<div style="clear:both;"></div>
+<div style="float:left; margin-right:1rem;">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/YOo19MLVimA" width="280"></iframe>
+<p><br/>
+<center>Deep Learning Theory Symposium<br/>
+  (Simons Institute, Dec. 2021)</center>
+<br/></p>
+</div>
+<div style="clear:both;"></div>
+<p> </p>
+<p> </p>
+<h1 id="research">Research<br/><div style="font-size:1.5rem;">Learning under requirements</div></h1>
+<p><a href="https://www.luizchamon.com/pdf/lfochamon_research.pdf"><strong>Research statement</strong></a></p>
+<h2 id="an-animated-overview">An animated overview</h2>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/thIbfzqMX1w"></iframe></div>
+<h2 id="why-requirements">Why requirements?</h2>
+<p><img alt="The power of learning under requirements" src="https://www.luizchamon.com/images/engineering_learning_requirements.svg"/></p>
+<p>Learning has the power to automate the design of complex systems and allow us to go from data to operation
+with little to no human intervention. But despite their central role in engineering, learning today does not
+incorporate requirements organically. This has led to data-driven solutions that are biased, prejudiced,
+and prone to tampering and unsafe behaviors. Ultimately, this is due to our inability to specify
+fairness, robustness, and safety requirements.</p>
+<p>I contend that we can no longer expect learning to bring about trustworthy systems by improving existing methods.
+We must advance beyond the current paradigm of minimizing costs and develop learning methods capable of satisfying requirements.</p>
+<p><strong>My goal is to realize this <em>autonomous system engineering</em> vision by developing the theory and practice of <em>learning under requirements</em>.</strong></p>
+<h2 id="requirements-as-ends-and-means">Requirements as ends and means</h2>
+<p>On the one hand, <strong>my research treats requirements as goals.</strong> It uses tools
+from optimization and learning theory to determine <em>when</em> and <em>how</em> systems
+can learn to satisfy requirements. In other words, it develops tools to</p>
+<ul>
+<li>impose <em>demographic parity</em> and obtain fair models</li>
+<li>require <em>invariance</em> or <em>insensitivity</em> to disturbances and obtain robust systems</li>
+<li>avoid <em>dangerous behaviors</em> to obtain safe control policies</li>
+</ul>
+<p>On the other hand, <strong>my research treats requirements as means</strong> and uses them to
+formulate solutions to practical problems, such as</p>
+<ul>
+<li>selecting the protected groups in fairness</li>
+<li>trading off nominal and adversarial performance or fit and complexity</li>
+<li>surviving and recovering from catastrophic failures</li>
+</ul>
+<p>Ultimately, I seek to shift from the current, objective-centric learning
+paradigm to a <strong>constraint-driven learning</strong> one that enables systems to
+learn both <em>under</em> requirements and <em>from</em> their requirements. This
+synergistic exploitation of constraints showcases the potential of
+constrained learning to be the driving force behind <strong>autonomy</strong>.</p>
+<h2 id="can-we-not-already-do-this">Can we not already do this?</h2>
+<p>Unfortunately, no. As in classical learning, learning under requirements can be
+formulated as an optimization program, albeit one with constraints. But while this
+distinction may appear innocuous, we know from optimization theory
+that constraints are a major source of complexity. Even linear
+regression, the most benign of problems, can be made NP-hard with a
+single sparsity constraint. These issues are only amplified by the
+lack of convexity of modern learning problems.</p>
+<p>The path between learning and critical, trustworthy systems is therefore obstructed
+by questions that our current learning theory cannot address. These questions are
+the basis for the concrete directions of my research:</p>
+<ul style="list-style-type: none;">
+<li>
+<strong>Direction A.</strong> <em>When</em> is it possible to learn <em>under</em> requirements?
+    <input class="check-with-label" id="expand-A" type="checkbox"/>
+<div class="smalldesc" markdown="block">
+<p><strong>Constrained (reinforcement) learning.</strong> The goal of this direction
+    is to study <em>when learning under requirements is possible</em>. More
+    specifically, I am interested in characterizing the effect of sample
+    size on feasibility. This requires pushing constrained learning
+    [<a href="https://www.luizchamon.com/pages/publications.html#Chamon20ta">CPCR ICASSP'20</a> <em>(best student paper award)</em>;
+    <a href="https://www.luizchamon.com/pages/publications.html#Chamon20p">CR NeurIPS'20</a>]
+    theory to new learning models—e.g., structured
+    complexity and PAC-Bayes—and tasks—e.g., reinforcement learning
+    [<a href="https://www.luizchamon.com/pages/publications.html#Paternain19c">PCCR NeurIPS'19</a>;
+    <a href="https://www.luizchamon.com/pages/publications.html#Paternain19s">PCCR ArXiv'19</a>]
+    and non-convex losses. The latter is especially
+    important to tackle rate-constrained problems that arise, e.g., in
+    fairness.</p>
+<p>These advances provide a unique perspective for studying <em>when</em>
+    requirements such as fairness or invariance are achievable without
+    unnecessary performance harm by leveraging the duality between
+    constrained optimization and Pareto optimality. I will exploit these
+    results to develop a statistical analysis of the Pareto frontier to
+    study how compromises between, e.g., performance, fairness, and
+    robustness, arise when models are trained from data. This duality also
+    relates constrained and minimax problems, allowing the theory developed
+    in this direction to shed light on <em>when</em> minimax learning is viable.
+    This has implications on the learning complexity of robustness, model
+    auditing, and adversarial training—e.g., generative adversarial
+    networks (GANs). Nevertheless, there are fundamental roadblocks to using
+    duality in non-convex settings that I will address using non-convex
+    variational results [<a href="https://www.luizchamon.com/pages/publications.html#Chamon20f">CER IEEE TSP'20</a>]
+    rather than resorting to randomized
+    solutions (mixed Nash equilibria). Additionally, it is not immediate
+    that feasible, <em>deterministic</em> models/policies (primal solutions) can be
+    recovered from minimax (dual) solutions even in the convex case.
+    Preliminary results suggest that feasible policies can be obtained in
+    sequential decision settings—e.g., reinforcement learning—by leveraging
+    the implicit memory of primal-dual methods to build systems capable of
+    compensating for their mistakes.</p>
+</div>
+<label class="expand-label" for="expand-A">
+<span class="closed">More details</span>
+<span class="open">Collapse</span>
+</label>
+</li>
+<li>
+    **Direction B.** *When* is it possible to learn *from* requirements?
+    <input class="check-with-label" id="expand-B" type="checkbox"/>
+<div class="smalldesc" markdown="block">
+<p>**Learning from constraints.** Direction A investigates how learning
+    complexity affects feasibility. In contrast, this direction explores
+    *how constraints in return affect learning complexity*. Indeed, whereas
+    constraints should improve sample complexity by reducing the feasible
+    hypotheses class, current results show that constrained and
+    unconstrained learning have essentially the *same* sample
+    complexity [[CPCR ICASSP'20]({filename}/pages/publications.md#Chamon20ta) *(best student paper award)*;
+    [CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p)].
+    Any gains from restricting the
+    hypotheses set thus appears to be offset by the fact we use data to
+    determine whether a hypothesis is feasible. Understanding this trade-off
+    will allow us to separate the underlying learning complexity of the task
+    from that of its requirements and provide conditions under which
+    learning can occur through the constraints, i.e., by using constraints
+    to describe not only requirements, but also the learning problem itself.
+    I am particularly interested in the impact of generalization constraints
+    and the use of cross-validated versions of stochastic gradient
+    descent (SGD) to impose them, given their promising results for Bayesian
+    prior learning [[CPR ASILOMAR'19]({filename}/pages/publications.md#Chamon19l)].</p>
+<p>Ultimately, the goal of this research direction is to enable
+    *constraint-driven learning*, a paradigm in which learning occurs not
+    *under* constraints, but *from* constraints. In other words, where
+    learning tasks are feasibility problems as opposed to cost minimization
+    ones. This formulation is attractive since practical problems are often
+    expressed as requirements rather than costs—e.g., “accuracy above 80%
+    and fairness parity within 5%” rather than “minimize a combination of
+    performance and fairness losses.” Additionally, it decouples conflicting
+    requirements such as fit and model complexity, facilitating their
+    specification, both manually or systematically using resilient
+    techniques (Direction C). This approach has been beneficial in optimal
+    control problems [[CPR L4DC'20]({filename}/pages/publications.md#Chamon20c);
+    [CAPR CDC'20]({filename}/pages/publications.md#Chamon20r)], but remains unexplored in
+    the context of learning. Naturally, it poses new algorithmic challenges
+    as it leads to optimization problems with a large—on the order of the
+    number of samples—or even an infinite number of constraints. I will
+    address this issue by studying large-scale programs as samples from
+    infinite ones (see Direction D for details).</p>
+</div>
+<label class="expand-label" for="expand-B">
+<span class="closed">More details</span>
+<span class="open">Collapse</span>
+</label>
+</li>
+<li>
+    **Direction C.** *Which* requirements should be used to learn and how to specify them?
+    <input class="check-with-label" id="expand-C" type="checkbox"/>
+<div class="smalldesc" markdown="block">
+<p>**Resilient learning.** Directions A and B deal with the issue of
+    learning under requirements once they are specified. Here, I am
+    concerned with *which requirements to specify* in the first place. This
+    is particularly important in the presence of conflicting objectives,
+    such as fit vs. model complexity and nominal vs. adversarial
+    performance, or ill-posed requirements, such as the protected groups in
+    fairness—women; women and person of color; or women, person of color,
+    and women x person of color. The goal is to enable
+    tasks to *adapt* to their learning conditions (sample size,
+    distributions, requirement difficulty) by automatically trading off
+    their requirements. In ecology, this property is known as *resilience*.
+    I propose to advance a mathematical formulation of resilient learning
+    based on *counterfactuals* of the form “what would have been the
+    performance if the requirement were relaxed/tightened?” Evaluating these
+    counterfactuals, however, can be challenging, particularly in the
+    non-convex setting of machine learning. Leveraging duality results from
+    previous directions, I will establish conditions under which this is
+    possible, determining when learning requirements can be balanced and how
+    it can be done efficiently. I will then leverage other forms of duality
+    to study compromise in different domains, such as discrete and
+    semi-infinite optimization, and develop new statistical notions of
+    duality to study the effect of uncertainty on compromises (statistical
+    Pareto, Direction A).</p>
+<p>This approach to resilience has been fruitful in control
+    [[CPR L4DC'20]({filename}/pages/publications.md#Chamon20c);
+    [CAPR CDC'20]({filename}/pages/publications.md#Chamon20r)]
+    and preliminary results show that it can be used to address
+    learning issues such as outlier detection, classification confidence,
+    and adversarial training. Indeed, modern parametrizations can—and
+    possibly even should—interpolate training samples, making fit a poor
+    measure of sample anomaly and leading to overconfident classifiers.
+    Nevertheless, the credibility of a sample or prediction can still be
+    assessed by balancing fit and model complexity or
+    classification and perturbation magnitude
+    [[CPR ArXiv'20]({filename}/pages/publications.md#Chamon20t)]. In the case of adversarial
+    training, the compromise between nominal and adversarial performance can
+    be used to determine the strength, type, and number of adversaries. In
+    this context, resilience enables what are essentially self-learning
+    adversaries. For GANs, these multiple, diverse discriminators may be
+    used to address issues such as mode collapse.</p>
+</div>
+<label class="expand-label" for="expand-C">
+<span class="closed">More details</span>
+<span class="open">Collapse</span>
+</label>
+</li>
+<li>
+    **Direction D.** *How* can we learn under requirements in practice?
+    <input class="check-with-label" id="expand-D" type="checkbox"/>
+<div class="smalldesc" markdown="block">
+<p>**Overparametrized learning.** Directions A–C primarily investigate
+    *when* it is possible to learn under requirements and *which*
+    requirements. This direction focuses on *how*. More specifically, how
+    overparametrization affects the behavior of the primal-dual algorithms
+    used to solve the dual learning problems from Directions A–C. This is
+    motivated by the growing empirical and theoretical evidence that SGD
+    finds good local minima for high-dimensional unconstrained learning
+    problems despite their non-convexity. While there is strong empirical
+    evidence that the same happens with stochastic gradient descent-ascent
+    dynamics, the theory in this case remains scarce. What is more, it is
+    not immediate that these methods can yield feasible models, especially
+    due to fundamental roadblocks from duality to retrieving deterministic
+    primal solutions.</p>
+<p>To achieve these results, I will combine classical tools, such as
+    concentration of measure, with new techniques based on approaching
+    *high-dimensionality from above*. Inspired by the fact that certain
+    non-convex functional problems are tractable
+    [[CER IEEE TSP'20]({filename}/pages/publications.md#Chamon20f)], this perspective
+    proposes to tackle high dimensional phenomena not asymptotically from
+    low dimensional structures, but as approximations or samples of infinite
+    dimensional ones. This technique was used to quantify the
+    parametrization gap in dual learning
+    [[PCCR NeurIPS'19]({filename}/pages/publications.md#Paternain19c);
+    [PCCR ArXiv'19]({filename}/pages/publications.md#Paternain19s);
+    [CPCR ICASSP'20]({filename}/pages/publications.md#Chamon20ta) *(best student paper award)*;
+    [CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p)]
+    and study
+    transferability in graph neural networks (GNNs) by introducing their
+    continuous counterparts, graphon NNs
+    [[RCR NeurIPS'20]({filename}/pages/publications.md#Ruiz20ga)].
+    I will use this approach
+    to study both overparametrized problems—i.e., high dimensional primal
+    problems—and the large-scale constrained optimization problems—i.e.,
+    high dimensional dual problems—from Directions B and C. I foresee this
+    method will also provide a new functional outlook on the generalization
+    properties of interpolating NNs beyond neural tangent kernels (NTK).</p>
+</div>
+<label class="expand-label" for="expand-D">
+<span class="closed">More details</span>
+<span class="open">Collapse</span>
+</label>
+</li>
+</ul>
+<p><img alt="Bridging the gap between learning and critical systems" src="https://www.luizchamon.com/images/bridge.svg"/></p>
+<p> </p>
+<p> </p>
+<h1 id="teaching">Teaching</h1>
+<p><a href="https://www.luizchamon.com/pdf/lfochamon_teaching.pdf"><strong>Teaching statement</strong></a></p>
+<h2 id="unprompted-feedback">Unprompted feedback</h2>
+<p> </p>
+<div class="carousel slide" data-interval="8000" data-ride="carousel" id="teachingQuotes">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<p>"Thanks for everything you did for us this summer! Your guidance and humor definitely made the experience even better."</p>
+<p style="line-height:100%;">Carly Staebell<br/>
+<span style="font-size:75%;">Summer Undergraduate Fellowship in Sensor Technologies (SUNFEST), 2018</span></p>
+</div>
+<div class="carousel-item">
+<p>"I thought that Luiz gave an awesome lecture today.  We were pleasantly surprised, usually TAs are not that good / skilled."</p>
+<p style="line-height:100%;">Robert Mack Pierson<br/>
+<span style="font-size:75%;">Stochastic Systems Analysis and Simulation (ESE 303), 2017</span></p>
+</div>
+<div class="carousel-item">
+<p>"I’m in ESE 224 and really enjoyed your lecture this morning."</p>
+<p style="line-height:100%;">Jacob Bendell<br/>
+<span style="font-size:75%;">Signal and Information Processing (ESE 224), 2020</span></p>
+</div>
+<ol class="carousel-indicators">
+<li class="active" data-slide-to="0" data-target="#teachingQuotes"></li>
+<li data-slide-to="1" data-target="#teachingQuotes"></li>
+<li data-slide-to="2" data-target="#teachingQuotes"></li>
+</ol>
+</div>
+</div>
+<h2 id="experience">Experience</h2>
+<ul>
+<li>
+<p><strong>2009</strong>: Instructor for non-destructive testing certification course at INSACAST, France<br/>
+<em>Developed a new tutorial on ultrasound-based non-destructive testing of concrete</em></p>
+</li>
+<li>
+<p><strong>2013–2014</strong>: TA for undergraduate probability at the University of São Paulo, Brazil<br/>
+<em>Produced instructional videos that have received over 130.000 views on <a href="https://www.youtube.com/user/luizchamon/videos">YouTube</a></em></p>
+</li>
+<li>
+<p><strong>2016–2019</strong>: TA for undergraduate probability at the University of Pennsylvania, USA</p>
+</li>
+<li>
+<p><strong>2017–2020</strong>: TA for undergraduate signal processing (<em>in person and virtual</em>) at the University of Pennsylvania, USA</p>
+</li>
+<li>
+<p><strong>2018–2019</strong>: Research mentor of <a href="https://sunfest.seas.upenn.edu/">SUNFEST</a> (NSF-sponsored REU program at Penn)</p>
+</li>
+<li>
+<p>&gt; 7 years mentoring undergraduate and graduate research</p>
+</li>
+</ul>
+<h2 id="recording">Recording</h2>
+<p>Highlights featured in the teaching statement to showcase my teaching philosophy:</p>
+<ul>
+<li>Day-to-day illustration of the material  </li>
+</ul>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/BjS3FeXrOWE?start=1982" width="280"></iframe>
+<ul>
+<li>
+<p>Fostering participation by</p>
+<ul>
+<li>
+<p>always waiting for an answer<br/>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/BjS3FeXrOWE?start=1560" width="280"></iframe></p>
+</li>
+<li>
+<p>asking for "guesses" (hypotheses)<br/>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/BjS3FeXrOWE?start=600" width="280"></iframe></p>
+</li>
+<li>
+<p>questioning "guesses"<br/>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="160" src="https://www.youtube.com/embed/BjS3FeXrOWE?start=515" width="280"></iframe></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You can watch the whole thing on <a href="https://www.youtube.com/embed/BjS3FeXrOWE">YouTube</a>.</p>
+<p> </p>
+<p> </p>
+<h1 id="diversity">Diversity</h1>
+<p><a href="https://www.luizchamon.com/pdf/lfochamon_diversity.pdf"><strong>Diversity statement</strong></a></p>
+<p>My personal experience teaching and conducting research in different countries and
+under a variety of conditions have made me realize that the challenge of building
+a diverse education system goes beyond <strong>bringing</strong> people with different views and
+backgrounds (<em>diversity</em> and <em>inclusion</em>), but must also include <strong>supporting</strong> them once
+they come (<em>inclusion</em> and <em>equity</em>).</p>
+<p>I plan to address these aspects through <a href="#student-recruitment"><strong>recruiting</strong></a>,
+<a href="#teaching-and-mentoring"><strong>mentoring</strong></a>, and <a href="#community"><strong>community</strong></a>.</p>
+<h2 id="student-recruitment">Student recruitment</h2>
+<p>First-generation students, international students, and those from groups underrepresented
+in the sciences are often lead to believe that they are not fit to pursue a higher education
+degree. In my case, an important factor in deciding to apply for a Ph.D. was having professors
+that had studied abroad and seeing leading Brazilian scientists working in American
+institutions. I aspire to also be such a role model and plan to actively reach out to a
+diverse group of students with an emphasis on promoting the role of
+Latin American/Latino women in engineering.</p>
+<p>I have been involved in such recruiting efforts throughout my Ph.D.,
+leveraging my close ties with universities in Brazil to help bring Luana Ruiz,
+a Brazilian-American student, to Penn and participating in multiple meetings with
+<a href="https://meyerhoff.umbc.edu/">Meyerhoff Scholars</a>, a program from the
+University of Maryland, Baltimore County (UMBC) to increase diversity in STEM fields.</p>
+<h2 id="teaching-and-mentoring">Teaching and mentoring</h2>
+<p>Not all students are equally prepared for the challenges of higher education and research.
+This issue is amplified by the non-technical obstacles faced by international students
+and members of marginalized groups in STEM fields, such as navigating cultural and
+institutional differences or dealing with a lack of relatable references.</p>
+<p>In <em>mentoring</em>, I overcome these issues by taking the time to teach ancillary
+research skills such as methodology, science communication, and peer-reviewing.
+I also use personal experiences to help students navigate and cope with failure and
+lack of structure. In <em>teaching</em>, I address these issues by allowing students
+to resubmit homework so as to provide them with additional time and feedback
+without them having to ask for it.</p>
+<h2 id="community">Community</h2>
+<p>Support, however, must come from the whole community surrounding students.
+Campus climate reports repeatedly show that the primary coping mechanism of
+distressed students is to seek out their peers. It is therefore fundamental
+to actively foster a welcoming and inclusive community, especially in graduate
+school where the elective nature of classes can make it difficult for students
+to come together.</p>
+<p>At Penn, I ran the department Ph.D. colloquium, a seminar series where Ph.D.
+students would present their recent work, practice their communication skills,
+and learn about their colleagues’ research. I also lead activities such as
+welcoming BBQs and the Women in ESE BBQ with the goal of fostering stronger
+bonds in the department. For these initiatives, I received the 2018 ESE Good Citizen award.</p>
+<p>Beyond the department, I also co-founded the <a href="https://www.philadelphiaopensoccer.org/">Philadelphia Open Soccer</a>,
+a student organization that runs weekly after-school activities for public
+school and refugee children.</p>
+</div>
+</body>
+<script type="text/javascript">
+  const menuBtn = document.getElementById('mobile-menu-open');
+  const menuBtnAlt = document.getElementById('mobile-menu-open-alt');
+  
+  menuBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('mobile-navigation').classList.add('open');
+
+    document.getElementById('backdrop').addEventListener('click', closeMenu);
+    document.getElementById('menu-close').addEventListener('click', closeMenu);
+  });
+
+  menuBtnAlt.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('mobile-navigation').classList.add('open');
+
+    document.getElementById('backdrop').addEventListener('click', closeMenu);
+    document.getElementById('menu-close').addEventListener('click', closeMenu);
+  });
+
+  function closeMenu(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if ( document.getElementById('mobile-navigation').classList.contains('open') ) {
+        document.getElementById('mobile-navigation').classList.remove('open');
+        document.getElementById('backdrop').removeEventListener('click', closeMenu);
+        document.getElementById('menu-close').removeEventListener('click', closeMenu);
+    }
+  }
+</script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/19c5dfafcc.js"></script>
+</html>

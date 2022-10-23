@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GZ3LNX2W9L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GZ3LNX2W9L');
+</script>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<!-- Enable responsiveness on mobile devices-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+<title>Latex rules - Luiz Chamon/Blog</title>
+<!-- CSS -->
+<link href="https://www.luizchamon.com/theme/css/poole.css" rel="stylesheet">
+<link href="https://www.luizchamon.com/theme/css/hyde.css" rel="stylesheet"/>
+<link href="https://www.luizchamon.com/theme/css/syntax/friendly.css" rel="stylesheet"/>
+<!-- FONTS -->
+<link href="//fonts.googleapis.com/" rel="dns-prefetch"/>
+<link href="//fonts.googleapis.com/css?family=Abril+Fatface:700|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext&amp;display=swap" rel="stylesheet"/>
+<link href="https://www.luizchamon.com/theme/css/academicons.min.css" rel="stylesheet">
+<!-- RSS -->
+<!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"> -->
+</link></link></head>
+<body id="">
+<div class="menu-toggle">
+<a href="#mobile-navigation" id="mobile-menu-open"><span class="fa fa-bars"></span></a>
+</div>
+<div class="sidebar">
+<div class="menu-toggle-sidebar">
+<a href="#mobile-navigation" id="mobile-menu-open-alt"><span class="fa fa-bars"></span></a>
+</div>
+<nav class="sidebar-nav">
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/index.html">Home</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/about.html">About</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/research.html">Research</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/publications.html">Publications</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/teaching.html">Teaching</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/contact.html">Contact</a>
+<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/personal.html">Personal</a>
+</nav>
+<div class="container sidebar-sticky">
+<div class="sidebar-about">
+<h1 style="margin-bottom: 0.5rem;">
+<a href="https://www.luizchamon.com">
+<img class="profile-picture" src="https://www.luizchamon.com/images/lfochamon_thumb.jpg"/>
+					Luiz Chamon
+				</a>
+</h1>
+</div>
+<nav class="sidebar-social">
+<a class="sidebar-social-item" href="mailto:l%75%69%7A.c%68a%6Don@si%6D%74ech.u%6E%69-stuttgart.d%65">
+<i class="fas fa-envelope"></i>
+</a>
+<a class="sidebar-social-item" href="https://www.luizchamon.com/pdf/lfochamon_cv.pdf">
+<i class="ai ai-cv" style="font-size:1rem;"></i>
+</a>
+<a class="sidebar-social-item" href="https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&amp;hl=en" noreferrer”="" rel="”noopener" target="”_blank”">
+<i class="ai ai-google-scholar" style="font-size:1rem;"></i>
+</a>
+<a class="sidebar-social-item" href="https://github.com/lfochamon/" noreferrer”="" rel="”noopener" target="”_blank”">
+<i class="fab fa-github"></i>
+</a>
+<a class="sidebar-social-item" href="https://www.youtube.com/channel/UCnMdLtva_qHonGB2QRcnDiA" noreferrer”="" rel="”noopener" target="”_blank”">
+<i class="fab fa-youtube"></i>
+</a>
+<!-- <a class="sidebar-nav-item" href="">
+				<i class="fa fa-feed"></i>
+			</a> -->
+</nav>
+<p class="copyright">© 2020–2022. All rights reserved.</p>
+</div>
+</div>
+<nav class="mobile-navigation" id="mobile-navigation">
+<ul class="primary-menu">
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/index.html">Home</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/about.html">About</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/research.html">Research</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/publications.html">Publications</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/teaching.html">Teaching</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/contact.html">Contact</a></li>
+<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/personal.html">Personal</a></li>
+</ul>
+<a class="menu-close" href="#mobile-navigation-toggle" id="menu-close"><span class="fa fa-close"></span></a>
+</nav>
+<a class="backdrop" href="#mobile-navigation-toggle" id="backdrop" tabindex="-1"></a> <div class="content container">
+<div class="post">
+<h1 class="post-title">Latex rules</h1>
+<span class="post-date">Feb 14, 2022</span>
+<div class="post-content">
+<p>Latex is how the vast majority of scientific texts get written. It handles math well,
+does a good job at bibliography management (using <em>bibtex</em>), and compiles straight to
+the cross-platform <code>pdf</code> format. On top of all that, most scientific publications
+provide you with Latex templates. That means you don't need to worry with margins,
+spacing, font sizes, paragraph indentations... Essentially, Latex separates content
+from form: you write your content in a way that can then be compiled to fit virtually
+any journal or conference (with minor modifications, of course). It's the same idea
+behind modern web design: HTML for content, CSS for style.</p>
+<p>Because of that, it is useful to think of Latex in two ways. On the one hand,
+writing in Latex is like <em>coding</em> a text. The source file contains the content that will
+be given form during compilation. As such, all good coding rules apply: indent,
+space out, use different file for different modules (text parts)... When at all
+possible, you should strive to make your Latex sources as readable to a human as the
+compiled <code>pdf</code> version. Imagine coming back to edit this</p>
+<div class="highlight" style="background:#FFCECC;"><pre><span></span><code>When <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb">&lt;c_t</span><span class="nv">\tau</span><span class="s">$</span>, we obtain that<span class="sb">\[</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nv">\leq\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb">,</span><span class="s">\]</span> which
+concludes the proof.
+</code></pre></div>
+<p>compared to</p>
+<div class="highlight" style="background:#B8E6C8;"><pre><span></span><code>When~<span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> &lt; c_t </span><span class="nv">\tau</span><span class="s">$</span>, we obtain that
+<span class="c">%</span>
+<span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<span class="c">%</span>
+which concludes the proof.
+</code></pre></div>
+<p>And that's not even the worst I've seen.</p>
+<p>On the other hand, it's important to remember the goal is to write, not code.
+Too much focus on source formatting can easily get in the way of putting words
+on a page, which is what gets papers written.</p>
+<p>Still, there are a few rules and habits that can make your easier both in
+making your Latex source more readable, but also avoiding formatting pitfalls
+and bad design practices. Here is a compilation of my rules. If you have any
+other interesting tip or habit, send me an <a href="mailto:">email</a>. I'm always
+looking to add new tricks to my workflow. And in the spirit of good scholarship,
+you'll get a citation for that rule.</p>
+<ol>
+<li>Use <code>~</code> (unbreakable space) between words and inline equations, reference
+    numbers, citations, and essentially any Latex command (as in the example above).
+    You never want a dangling reference or math symbol starting a line.</li>
+</ol>
+<div class="highlight" style="background:#FFCECC;"><pre><span></span><code>For all <span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the <span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially <span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
+</code></pre></div>
+<div class="highlight" style="background:#B8E6C8;"><pre><span></span><code>For all~<span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the~<span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially~<span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
+</code></pre></div>
+<ol start="2">
+<li>
+<p>Separate your displayed math environments from text using <code>%</code> (as in the
+    example above). Latex takes blank lines to mean it should start a new paragraph.
+    Often, that is <em>not</em> what you want. Still, you always want to separate the
+    Latex environments from the text to improve your source readability.</p>
+</li>
+<li>
+<p>Use <code>-</code>, <code>--</code>, and <code>---</code> appropriately. A <em>dash</em> (<code>-</code>) is to be used when forming composed
+    nouns or adjectives (as in <code>state-of-the-art performance</code> or <code>a complicated trade-off</code>).
+    An <em>endash</em> (<code>--</code>) is to be used to indicate ranges (as in <code>pages 2--3</code> or <code>Figures 1--4</code>).
+    Note that there is no space around the endash. An <em>emdash</em> (<code>---</code>) is to be
+    used similarly to parentheses<code>---as is the case with this example</code>.
+    Do not leave space<code>---and I mean, no space whatsoever---</code>before of after emdashes.</p>
+</li>
+<li>
+<p>Always use an endash (<code>--</code>) when indicating page ranges in bibtex files.</p>
+</li>
+<li>
+<p>Never write "according to equation (X)." Simply use "according to (X)."
+  An exception is typically made in the beginning of sentences. Equation (X),
+  in this case, is usually acceptable. Still don't do it. Just reword your
+  sentence as "In this case, (X) is acceptable."</p>
+</li>
+</ol>
+<p><strong>Note</strong>: in certain fields, you are required to write "equation (X)," but I
+  do not typically work in those field.</p>
+<ol start="6">
+<li>
+<p>Never start sentences or lines with math symbols, equation numbers, or references.
+    If you follow Rule<code>~</code>1, then this will never happen without your consent.</p>
+</li>
+<li>
+<p>If you use a point to indicate an abbreviation and it is not the end of a sentence,
+    then follow it by a <code>\</code> (as in <code>Dept.\ of Electrical Engineering</code>). Latex adds
+    a bit more space after points because it assumes it is a always period. Doing this
+    will avoid some awkward extra space in the middle of your sentence.</p>
+</li>
+<li>
+<p>Use the <code>\cite[]{}</code> to refer to specific sections/theorems, especially when referring
+    to specific results from a paper or when citing from books. It is a favor for the reader
+    that wants to check the result and good scholarship: unless the statement you just
+    made relies on all the results in a paper/book, you should refer only to what is
+    directly relevant.</p>
+</li>
+</ol>
+<ul>
+<li>Indent!</li>
+<li>Use <code>E:</code>, <code>T:</code>, <code>F:</code>, <code>S:</code>, <code>X:</code>, <code>P:</code>, <code>L:</code></li>
+<li>If you are working with me, use my macros!</li>
+<li>Place environments <code>begin</code> and <code>end</code> on lines by themselves</li>
+<li>Leave space before and after binary operations</li>
+<li>Indent the contents of environments</li>
+<li>Keep a formula on a single line. If it's too long, break in logical parts and indent</li>
+<li>Use <code>\text</code> in math environments</li>
+<li>Take advantage of the various math environments: <code>equation</code>, <code>align</code>, <code>aligned</code>, <code>gather</code>, <code>gathered</code>, <code>multline</code>, and starred version</li>
+<li>Use <code>\dot</code>, <code>\dots</code>, <code>\cdot</code>, <code>\cdots</code> accordingly</li>
+<li>I like <code>\big</code>, <code>\Big</code>, <code>\bigg</code> better than iterated <code>\left</code>, <code>\right</code>: gives you more control</li>
+<li>Also, <code>\bigm</code> is useful (delimiter with binary spacing)</li>
+<li>Use <code>\DeclareMathOperator</code> rather than <code>\newcommand</code> for math</li>
+<li>Leverage <code>\quad</code> and <code>\qquad</code></li>
+<li>Use the <code>bm</code> packed for bold symbols: it looks better</li>
+<li>Choose a notation and stick with it! (but make sure to review it: sometimes, our convention choices turn out to be less than ideal)</li>
+<li>For me: fraktur for distributions and measures, caligraphic for sets and spaces, bold lowercase for vectors, bold uppercase for matrices</li>
+<li>Do <code>{}+{}</code> or <code>{}={}</code> for binaries on multiline environments</li>
+</ul>
+</div>
+</div>
+</div>
+<p class="copyright">© 2020–2022. All rights reserved.</p>
+</body>
+<script type="text/javascript">
+  const menuBtn = document.getElementById('mobile-menu-open');
+  const menuBtnAlt = document.getElementById('mobile-menu-open-alt');
+  
+  menuBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('mobile-navigation').classList.add('open');
+
+    document.getElementById('backdrop').addEventListener('click', closeMenu);
+    document.getElementById('menu-close').addEventListener('click', closeMenu);
+  });
+
+  menuBtnAlt.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('mobile-navigation').classList.add('open');
+
+    document.getElementById('backdrop').addEventListener('click', closeMenu);
+    document.getElementById('menu-close').addEventListener('click', closeMenu);
+  });
+
+  function closeMenu(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if ( document.getElementById('mobile-navigation').classList.contains('open') ) {
+        document.getElementById('mobile-navigation').classList.remove('open');
+        document.getElementById('backdrop').removeEventListener('click', closeMenu);
+        document.getElementById('menu-close').removeEventListener('click', closeMenu);
+    }
+  }
+</script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/19c5dfafcc.js"></script>
+</html>
