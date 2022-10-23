@@ -7,6 +7,8 @@ on:
 
 jobs:
   fetch_bib:
+    if: github.repository_owner == 'lfochamon'
+
     runs-on: ubuntu-latest
 
     steps:
@@ -42,6 +44,8 @@ jobs:
 
 
   compile_cv:
+    if: github.repository_owner == 'lfochamon'
+
     needs: fetch_bib
     runs-on: ubuntu-latest
     env:
@@ -80,6 +84,8 @@ jobs:
 
 
   compile_website:
+    if: github.repository_owner == 'lfochamon'
+
     needs: compile_cv
     runs-on: ubuntu-latest
 
@@ -121,6 +127,8 @@ jobs:
 
 
   publish_website:
+    if: github.repository_owner == 'lfochamon'
+    
     needs: compile_website
     runs-on: ubuntu-latest
     env:

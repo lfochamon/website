@@ -1,5 +1,6 @@
 www/output
 www/content/*.bib
+**/lfochamon_cv.pdf
 cv/*.bib
 cv/*.pdf
 **/__pycache__
