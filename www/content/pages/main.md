@@ -5,9 +5,9 @@ save_as: index.html
 
 # Hello there!
 
-<p style="font-size: 20px;">My name is Luiz Chamon. I am a
-<a href="https://simtech.uni-stuttgart.de/">SimTech</a>&ndash;<a href="https://ellis.eu/">ELLIS</a>
-research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
+<p style="font-size: 20px;">My name is Luiz Chamon. I am an
+<a href="https://ellis.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
+independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
 I study the theoretical underpinnings of
 <b>constrained learning</b> and its applications in <b>signal processing</b>,
 <b>control</b>, and <b>machine learning</b>.
@@ -36,7 +36,7 @@ I study the theoretical underpinnings of
 - **May 15th, 2022** &ndash; *"Probabilistically Robust Learning: Balancing Average- and Worst-case Performance"*
   was accepted at ICML 2022 ([arXiv](https://arxiv.org/abs/2202.01136)).
 
-- **April 27th, 2022** &ndash; I gave a talk on **Learning under requirements** at the ELLIS-SimTech unit
+- **April 27th, 2022** &ndash; I gave a talk on **Learning under requirements** at the ELLIS unit
   of the University of Stuttgart [[youtube](https://www.youtube.com/watch?v=Bo_vDKu9QRc)].
 
 - **Feb 4th, 2022** &ndash; I was invited to participate of Caltech's 2022
