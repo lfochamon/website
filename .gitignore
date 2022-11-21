@@ -4,3 +4,10 @@ www/content/*.bib
 cv/*.bib
 cv/*.pdf
 **/__pycache__
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.xml
+*.gz
