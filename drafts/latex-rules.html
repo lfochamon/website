@@ -42,7 +42,6 @@
 <a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/publications.html">Publications</a>
 <a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/teaching.html">Teaching</a>
 <a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/contact.html">Contact</a>
-<a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/personal.html">Personal</a>
 </nav>
 <div class="container sidebar-sticky">
 <div class="sidebar-about">
@@ -60,13 +59,13 @@
 <a class="sidebar-social-item" href="https://www.luizchamon.com/pdf/lfochamon_cv.pdf">
 <i class="ai ai-cv" style="font-size:1rem;"></i>
 </a>
-<a class="sidebar-social-item" href="https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&amp;hl=en" noreferrer”="" rel="”noopener" target="”_blank”">
+<a class="sidebar-social-item" href="https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&amp;hl=en" noreferrer”="" rel="”noopener">
 <i class="ai ai-google-scholar" style="font-size:1rem;"></i>
 </a>
-<a class="sidebar-social-item" href="https://github.com/lfochamon/" noreferrer”="" rel="”noopener" target="”_blank”">
+<a class="sidebar-social-item" href="https://github.com/lfochamon/" noreferrer”="" rel="”noopener">
 <i class="fab fa-github"></i>
 </a>
-<a class="sidebar-social-item" href="https://www.youtube.com/channel/UCnMdLtva_qHonGB2QRcnDiA" noreferrer”="" rel="”noopener" target="”_blank”">
+<a class="sidebar-social-item" href="https://www.youtube.com/channel/UCnMdLtva_qHonGB2QRcnDiA" noreferrer”="" rel="”noopener">
 <i class="fab fa-youtube"></i>
 </a>
 <!-- <a class="sidebar-nav-item" href="">
@@ -84,7 +83,6 @@
 <li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/publications.html">Publications</a></li>
 <li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/teaching.html">Teaching</a></li>
 <li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/contact.html">Contact</a></li>
-<li><a class="sidebar-nav-item" href="https://www.luizchamon.com/pages/personal.html">Personal</a></li>
 </ul>
 <a class="menu-close" href="#mobile-navigation-toggle" id="menu-close"><span class="fa fa-close"></span></a>
 </nav>
@@ -107,11 +105,11 @@ be given form during compilation. As such, all good coding rules apply: indent,
 space out, use different file for different modules (text parts)... When at all
 possible, you should strive to make your Latex sources as readable to a human as the
 compiled <code>pdf</code> version. Imagine coming back to edit this</p>
-<div class="highlight" style="background:#FFCECC;"><pre><span></span><code>When <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb">&lt;c_t</span><span class="nv">\tau</span><span class="s">$</span>, we obtain that<span class="sb">\[</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nv">\leq\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb">,</span><span class="s">\]</span> which
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code>When <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb">&lt;c_t</span><span class="nv">\tau</span><span class="s">$</span>, we obtain that<span class="sb">\[</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nv">\leq\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb">,</span><span class="s">\]</span> which
 concludes the proof.
 </code></pre></div>
 <p>compared to</p>
-<div class="highlight" style="background:#B8E6C8;"><pre><span></span><code>When~<span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> &lt; c_t </span><span class="nv">\tau</span><span class="s">$</span>, we obtain that
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>When~<span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> &lt; c_t </span><span class="nv">\tau</span><span class="s">$</span>, we obtain that
 <span class="c">%</span>
 <span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
   z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
@@ -135,9 +133,9 @@ you'll get a citation for that rule.</p>
     numbers, citations, and essentially any Latex command (as in the example above).
     You never want a dangling reference or math symbol starting a line.</li>
 </ol>
-<div class="highlight" style="background:#FFCECC;"><pre><span></span><code>For all <span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the <span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially <span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code>For all <span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the <span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially <span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
 </code></pre></div>
-<div class="highlight" style="background:#B8E6C8;"><pre><span></span><code>For all~<span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the~<span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially~<span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>For all~<span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the~<span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially~<span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
 </code></pre></div>
 <ol start="2">
 <li>

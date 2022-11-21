@@ -1,3 +1,16 @@
+:root {
+  --lighter-blue: #0a5daaaa;
+  --light-blue: #0a5daa;
+  --dark-blue:#0a3050;
+
+  --white: #fff;
+  --lightest-gray: #f0f0f0;
+  --lighter-gray: #e5e5e5;
+  --light-gray: #7a7a7a;
+  --gray: #515151;
+  --dark-gray: #323232; 
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -17,15 +30,15 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: var(--gray);
+  background-color: var(--white);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #0a5daa;
+  color: var(--light-blue);
   text-decoration: none;
 }
 a strong {
@@ -42,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .25rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: var(--dark-gray);
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -69,7 +82,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: var(--dark-gray);
 }
 
 
@@ -91,8 +104,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid var(--lighter-gray);
+  border-bottom: 1px solid var(--white);
 }
 
 abbr {
@@ -103,7 +116,7 @@ abbr {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #e5e5e5;
+  border-bottom: 1px dotted var(--lighter-gray);
 }
 
 /* Code */
@@ -114,13 +127,12 @@ pre {
 code {
   padding: .25em .25em;
   font-size: 85%;
-  background-color: #f0f0f0;
+  background: var(--lightest-gray);
 }
 pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
@@ -138,6 +150,8 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
+  padding: 1rem;
+  background: var(--lightest-gray);
 }
 .highlight pre {
   margin-bottom: 0;
@@ -147,34 +161,12 @@ pre code {
   width: 100%;
 }
 
-/* Gist via GitHub Pages */
-.gist .gist-file {
-  font-family: Menlo, Monaco, "Courier New", monospace !important;
-}
-.gist .markdown-body {
-  padding: 15px;
-}
-.gist pre {
-  padding: 0;
-  background-color: transparent;
-}
-.gist .gist-file .gist-data {
-  font-size: .8rem !important;
-  line-height: 1.4;
-}
-.gist code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 0;
-}
-
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  color: var(--light-gray);
+  border-left: .25rem solid var(--lighter-gray);
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -196,15 +188,15 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--lighter-gray);
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--lighter-gray);
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: var(--lightest-gray);
 }
