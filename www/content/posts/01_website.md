@@ -83,7 +83,7 @@ have an FAQ online with step-by-step instructions.
 Sometimes, however, you find yourself in a tougher situation. At UC Berkeley,
 for instance, websites and domain names are managed by the departments. But even though
 I am a UC Berkeley postdoc, I am attached to the Simons Institute that, for
-complicated ($$$) administrative ($$$) reasons ($$$), is not a department.
+complicated (`$$$`) administrative (`$$$`) reasons (`$$$`), is not a department.
 The solution: asking nicely to someone from IT. They'll tell you about a
 student-run organization on campus (the [Open Computing Facility](https://www.ocf.berkeley.edu/))
 that provides free domain and web hosting space to anyone on campus
