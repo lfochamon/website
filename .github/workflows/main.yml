@@ -70,8 +70,8 @@ jobs:
       - name: LaTeX compile
         working-directory: cv
         run: |
-          pdflatex ${{ env.FILE_CV }}.tex; bibtex ${{ env.FILE_CV }}.aux; pdflatex ${{ env.FILE_CV }}.tex; pdflatex ${{ env.FILE_CV }}.tex;
-          pdflatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; pdflatex ${{ env.FILE_PUBS }}.tex; pdflatex ${{ env.FILE_PUBS }}.tex;
+          lualatex ${{ env.FILE_CV }}.tex; bibtex ${{ env.FILE_CV }}.aux; lualatex ${{ env.FILE_CV }}.tex; lualatex ${{ env.FILE_CV }}.tex;
+          lualatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex;
 
       - name: Save cv and publications list
         uses: actions/upload-artifact@v3
@@ -147,7 +147,12 @@ jobs:
         with:
           name: website
 
+      - name: Check if there is anything to commit and push
+        id: haschanged
+        run: git diff --exit-code
+
       - name: Add, commit, and push website
+        if: steps.haschanged.outcome != 'success'
         run: |
           git config --global user.name "${{ env.COMMIT_AUTHOR }}"
           git config --global user.email "${{ env.COMMIT_EMAIL }}"
