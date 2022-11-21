@@ -69,7 +69,7 @@ MARKDOWN = {
         'markdown.extensions.footnotes': {},
         'markdown.extensions.attr_list': {},
         'markdown.extensions.sane_lists': {},
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.codehilite': {'css_class': 'code-highlight'},
         'markdown.extensions.fenced_code': {},
     },
     'output_format': 'html5',

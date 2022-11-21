@@ -29,3 +29,101 @@
   </div>
 </div>
 {%- endmacro %}
+
+
+{#
+  ##############################################################
+  # CITATION ###################################################
+  ##############################################################
+ 
+  Creates a superscripted citation with tooltip.
+ 
+  # Args
+ 
+  references: list of strings containing the bibtex citation keys
+ #}
+
+{% set refs = namespace(reflist={}) %}
+{% macro cite() -%}
+<sup style="font-size: 80%; white-space: nowrap;">[
+{%- for tag in varargs %}
+  {% if tag not in refs.reflist.keys() %}
+    {% set _ = refs.reflist.update({tag: refs.reflist|length + 1}) %}
+  {% endif -%}
+
+  <span class="tooltip">
+    <a href="{{SITEURL}}/pages/publications.html#{{ tag }}">{{ refs.reflist[tag] }}</a>
+    {% for publication in publications | selectattr('key', 'eq', tag) %}
+      <span class="tooltiptext" style="white-space: normal;font-size: 12.9px; color: #515151;">{{ publication.text | replace('*','\*') }}</span>
+    {% endfor %}
+  </span>
+
+  {%- if loop.revindex != 1%},{% endif %}
+{% endfor -%}
+]</sup>
+{%- endmacro %}
+
+
+
+
+{#
+  ##############################################################
+  # COLLAPSIBLE PUBLICATION LIST ###############################
+  ##############################################################
+ 
+  Creates a superscripted citation with tooltip.
+ 
+  # Args
+ 
+  key_list: list of strings containing the bibtex citation keys
+ #}
+
+{% macro collapsible_pubs(key_list) -%}
+<div class="collapsible">
+<button type="button">Selected publications</button>
+<div class="collapsible-content">
+
+<ul class="pubs_list">
+    {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', key_list) %}
+      <li>
+        {{ publication.text }}
+        {% if publication.award %}
+          <strong>({{ publication.award }})</strong>
+        {% endif %}
+      <br />
+      {% for label, target in [('PDF', publication.pdf), ('arXiv', publication.arxiv), ('YouTube', publication.video), ('Slides', publication.slides), ('Poster', publication.poster), ('Link', publication.url)] %}
+        {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+      {% endfor %}
+      </li>
+    {% endfor %}
+</ul>
+
+</div>
+</div>
+{%- endmacro %}
+
+
+{#
+  ##############################################################
+  # YOUTUBE VIDEO ##############################################
+  ##############################################################
+ 
+  Embed youtube video
+ 
+  # Args
+ 
+  tag: youtube video tag (string)
+  aspect: aspect ratio (string): 21by9, 16by9 (default), 4by3, 1by1
+ #}
+ 
+ {% macro youtube(tag, aspect='16by9') -%}
+ <div class='embed-responsive embed-responsive-{{aspect}}'>
+ <iframe class='embed-responsive-item' src="https://www.youtube-nocookie.com/embed/{{tag}}"
+         title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen>
+ </iframe>
+ </div>
+ {%- endmacro %}
+ 
+ 
