@@ -59,7 +59,7 @@ jobs:
           ref: 'dev'
 
       - name: Install TeXlive
-        run: sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-bibtex-extra
+        run: sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-bibtex-extra texlive-fonts-extra
 
       - name: Load bib files
         uses: actions/download-artifact@v3
