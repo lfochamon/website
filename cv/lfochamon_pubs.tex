@@ -1,11 +1,26 @@
 \documentclass[a4paper,11pt]{article}
-
+\usepackage{fontawesome5}
 
 \usepackage[backend=bibtex,maxnames=10,sorting=ydnt,defernumbers=true,style=ieee,dashed=false]{biblatex}
 \addbibresource{cv.bib}
 
+\DeclareBibliographyCategory{starred}
+\addtocategory{starred}{Chamon22c, Robey21a, Chamon20f, Eisen19l, Paternain19c}
+
+\defbibenvironment{bibliography}{%
+\list
+{\ifcategory{starred}{\makebox[0pt][r]{\raisebox{1.2pt}{\tiny\faStar}~~}}{}%
+\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{\bibparsep}
+\setlength{\labelsep}{\biblabelsep}
+}
+}{\endlist}
+{\item}
+
+
 %-----------------------------------------------------------
-\usepackage[utf8]{inputenc}
 \usepackage[paper=letterpaper, margin=1in]{geometry}
 \usepackage{fancyhdr}
 
@@ -110,10 +125,7 @@
 {https://www.luizchamon.com}{https://www.luizchamon.com}
 
 
-
-
 \nocite{*}
-\setlength\bibitemsep{3pt}
 
 
 \CVheading{Publication list~(\href{http://scholar.google.ca/citations?user=FIm-l-sAAAAJ}{Google scholar})}

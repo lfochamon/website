@@ -1,11 +1,26 @@
 \documentclass[a4paper,11pt]{article}
-
+\usepackage{fontawesome5}
 
 \usepackage[backend=bibtex,maxnames=10,sorting=ydnt,defernumbers=true,style=ieee,dashed=false]{biblatex}
 \addbibresource{cv.bib}
 
+\DeclareBibliographyCategory{starred}
+\addtocategory{starred}{Chamon22c, Robey21a, Chamon20f, Eisen19l, Paternain19c}
+
+\defbibenvironment{bibliography}{%
+\list
+{\ifcategory{starred}{\makebox[0pt][r]{\raisebox{1.2pt}{\tiny\faStar}~~}}{}%
+\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{\bibparsep}
+\setlength{\labelsep}{\biblabelsep}
+}
+}{\endlist}
+{\item}
+
+
 %-----------------------------------------------------------
-\usepackage[utf8]{inputenc}
 \usepackage[paper=letterpaper, margin=1in]{geometry}
 \usepackage{fancyhdr}
 
@@ -121,7 +136,7 @@
 
 
 \CVsubheading{University of California, Berkeley---USA}{2021--2022}
-\textit{Postdoctoral researcher at the Simons Institute for the Theory of Computing}
+\textit{Postdoctoral fellow at the Simons Institute for the Theory of Computing}
 \vspace{3pt}
 
 \CVsubheading{University of Pennsylvania---USA}{2020--2021}
@@ -257,9 +272,9 @@ Polytechnic School of the University of São Paulo---Brazil%
 
 	\CVlist
 
-	\item \textbf{2020}: Best student paper award at IEEE ICASSP 2020.
+	\item \textbf{2020}: Best student paper award at IEEE ICASSP 2020 for ``The empirical duality gap of constrained statistical learning.''
 
-	\item \textbf{2020}: Best paper award at IEEE ICASSP 2020.
+	\item \textbf{2020}: Best paper award at IEEE ICASSP 2020 for ``Better safe than sorry: Risk-aware nonlinear Bayesian estimation.''
 
 	\item \textbf{2018}: Best Ph.D.\ colloquium award\\(Dept. of Electrical and Systems Engineering, University of Pennsylvania).
 
@@ -386,7 +401,6 @@ Polytechnic School of the University of São Paulo---Brazil%
 %%%%%%%%%%%%%%%%%%%%%%
 % PUBLICATIONS AND OTHER TECHNICAL PRODUCTIONS
 \nocite{*}
-\setlength\bibitemsep{3pt}
 
 
 \CVheading{Publications~(\href{http://scholar.google.ca/citations?user=FIm-l-sAAAAJ}{Google scholar})}
