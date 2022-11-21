@@ -1,71 +1,16 @@
 Title: About
 Date: 1001-01-01
 
-<style>
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 500px;
-  background-color: #fff;
-  border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 90%;
-  border: solid 1px #ccc;
-  /* box-shadow: 1px 1px 2px #0a5daaaa; */
-  box-shadow: 0 30px 90px -20px #0a5daa4b;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 100;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -50px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-</style>
-
-{% set ns = namespace(refs={}) %}
-
-{% macro cite() -%}
-<sup style="font-size: 80%;">[
-{%- for tag in varargs %}
-  {% if tag not in ns.refs.keys() %}
-    {% set _ = ns.refs.update({tag: ns.refs|length + 1}) %}
-  {% endif -%}
-
-  <span class="tooltip">
-    <a href="{{SITEURL}}/pages/publications.html#{{ tag }}">{{ ns.refs[tag] }}</a>
-    {% for publication in publications | selectattr('key', 'eq', tag) %}
-      <span class="tooltiptext">{{ publication.text | replace('*','\*') }}</span>
-    {% endfor %}
-  </span>
-
-  {%- if loop.revindex != 1%},{% endif %}
-{% endfor -%}
-]</sup>
-{%- endmacro %}
-
-
-{# Click here to skip the boring academic stuff to my boring personal interests #}
+{% from 'fragments/functions.html' import cite with context %}
+{% from 'fragments/functions.html' import youtube %}
 
 # About ([formal bio]({filename}/pages/bio.md))
 
 I am a joint [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/)
 independent research group leader at the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany,
 broadly interested in optimization, machine learning, signal processing, and control,
-and in particular, in the intersections of these fields.
-
-Currently, the main drive of my research is developing the theory, algorithms, and applications of
+and in particular, in the intersections of these fields. Currently, the main drive of my research is
+developing the theory, algorithms, and applications of
 [**constrained learning**]({filename}/pages/research.md#constrained-learning),
 a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c') }},
@@ -73,25 +18,11 @@ fairness {{- cite('Chamon20p', 'Chamon22c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
 smoothness {{- cite('Cervino22l') }},
 and invariance {{- cite('Hounie22a') }}.
-On the one hand, I investigate fundamental questions such as
 
-- when is it possible to learning under requirements? 
-  <span style="color:#999;">(whenever&nbsp;you&nbsp;can&nbsp;learn&nbsp;at&nbsp;all)</span> {{- cite('Chamon20p', 'Chamon22c') }}
-- how much harder is it than vanilla learning? 
-  <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon22c') }}
-- are there problems that only constrained learning can tackle? 
-  <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana21s') }}
-
-On the other hand, I am interested in the impact constrained learning can have on traditional
-learning tasks, such as
-image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c', 'Hounie22a') }},
-semi-supervised learning {{- cite('Cervino22l') }},
-and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }}.
-
-Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
-shifting away from the current objective-centric paradigm towards a constraint-driven one. Part of this work received the
-[*best student paper award*](https://2020.ieeeicassp.org/general/icassp-best-paper-awards/)
-at ICASSP 2020 ([paper](https://arxiv.org/abs/2002.05183), [video](https://youtu.be/0cl35wNAfiA)).
+For more information, you can check out my [**CV**]({static}/pdf/lfochamon_cv.pdf),
+read a more [**formal bio**]({filename}/pages/bio.md),
+explore my [**research projects**]({filename}/pages/research.md),
+or learn more about some of my [**personal interests**]({filename}/pages/about.md#personal-interests).
 
 
 ### My background
@@ -130,10 +61,45 @@ and consulting on nondestructive testing at INSACAST Formation Continue in Lyon,
 and worked as a signal processing researcher and statistics consultant on a
 [project with EMBRAER]({filename}/pages/research.md#aircraft-cabin-simulator).
 
-For more information, you can check out my [**CV**]({static}/pdf/lfochamon_cv.pdf),
-read a more [**formal bio**]({filename}/pages/bio.md),
-explore my [**research projects**]({filename}/pages/research.md),
-or learn more about some of my [**personal interests**]({filename}/pages/personal.md).
 
 
+### Personal interests
 
+In my spare time, I like to write and play music. Lately, mostly the acoustic guitar and the piano, but I can also pretend
+to play the violin, the flute, and typical Brazilian percussion instruments, such as the zabumba and the triangle.
+I used to play the accordion in a *forró* band named [Quaraçá](https://soundcloud.com/luiz-chamon/sets/quaraca), meaning
+sun ray or sun light in a Brazilian indigenous language. *Forró* is a folk music genre from the Northeast of Brazil that is
+surprisingly widespread worldwide: I've managed to find some underground Forró dance party in almost every city I've lived in.
+
+Back in Brazil, I worked in many recording studios (most small, some even smaller) and was involved in the production of
+international theater and art exhibitions, most notably Bob Wilson's Quartett (with Théâtre de l’Odéon, France) and
+Wajdi Mouawad's (with Théâtre du Trident, Canada). This is actually how I got into electrical engineering and
+later, signal processing. In 2020, I went back to recording some music in my bedroom/office/gym/homestudio
+and released my first EP, *Philathina*, in July 2022. You can check it out on my [music website](https://www.lfochamon.com) or
+any major music streaming service ([Spotify](https://open.spotify.com/album/4dLuLYglloY8fPcuK9uNrU),
+[Apple music](https://music.apple.com/gr/album/philatinha-ep/1637179028?uo=4), [Amazon music](https://music.amazon.com/albums/B0B82T289X),
+[YouTube](https://www.youtube.com/watch?v=Dr22lwhElvc&list=OLAK5uy_m2dR9NIMG6BTEK_zE9UG3NSIcsLIYOPoc&index=1), [Tidal](http://www.tidal.com/album/240501656)...).
+
+While I don't play live anymore, I've made a few guest appearances on Tau-zeta's YouTube channel, the first of which singing (if you can call that "singing")
+one of my favorite Greek songs.
+
+&nbsp;
+
+{{ youtube('3S2Jc6-n4wk') }}
+
+&nbsp;
+
+Besides music, I like learning languages and discovering cultures. I speak a few languages to varying degrees of success,
+the latest addition being German with degree unsuccesful. I've also been pretending to speak Greek for a couple of years now.
+I don't always pretend very well.
+
+
+During my Ph.D., I was part of a group of soccer lovers that founded the [Philadelphia Open Soccer](https://www.philadelphiaopensoccer.org/)
+(or on [Facebook](https://www.facebook.com/phillyopensoccer/)), a program that taught soccer to kids in underpriviledged
+public schools of West Philadelphia and in a
+[Northeast Philadelphia](https://www.facebook.com/pg/phillyopensoccer/photos/?tab=album&album_id=1299783973460905) community
+composed largely of immigrants and refugees.
+
+Although I don't take soccer as seriously as you'd expect from a Brazilian, I do like watching the *Seleção* (Brazilian national team).
+And I understand if right now the thought of mentioning the 2014 7-1 fiasco against Germany crossed your mind.
+I'll get back to you on that as soon as your national team also manages to win five World Cups...

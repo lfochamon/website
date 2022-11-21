@@ -2,30 +2,8 @@ Title: Research
 Date: 1001-01-02
 
 
-{% macro collapsible_pubs(key_list) -%}
-<div class="collapsible">
-<button type="button">Selected publications</button>
-<div class="collapsible-content">
-
-<ul class="pubs_list">
-    {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', key_list) %}
-      <li>
-        {{ publication.text }}
-        {% if publication.award %}
-          <strong>({{ publication.award }})</strong>
-        {% endif %}
-      <br />
-      {% for label, target in [('PDF', publication.pdf), ('arXiv', publication.arxiv), ('YouTube', publication.video), ('Slides', publication.slides), ('Poster', publication.poster), ('Link', publication.url)] %}
-        {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
-      {% endfor %}
-      </li>
-    {% endfor %}
-</ul>
-
-</div>
-</div>
-{%- endmacro %}
-
+{% from 'fragments/functions.html' import cite with context %}
+{% from 'fragments/functions.html' import collapsible_pubs with context %}
 
 
 <style>
@@ -94,6 +72,58 @@ Date: 1001-01-02
 
 
 # Research
+
+My group develops tools that enable inteligent systems to
+
+  * <b>extract</b>,
+    <span style="color:#999;font-size:90%;">e.g.,
+      sampling {{- cite('Chamon18g')}},
+      sensor selection {{- cite('Chamon21a')}},
+      experimental design {{- cite('Chamon17a')}}
+    </span>
+  * <b>process</b>,
+    <span style="color:#999;font-size:90%;">e.g.,
+      constrained learning {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon22c')}},
+      network data processing {{- cite('Ruiz20g', 'Ruiz21g')}},
+      estimation/inference {{- cite('Chamon20f', 'Peifer20s', 'Kalogerias20b', 'Arzani180')}}
+    </span>
+  * <b>act</b>,
+    <span style="color:#999;font-size:90%;">e.g.,
+      resource allocation {{- cite('Eisen19l')}},
+      scheduling {{- cite('Chamon22a')}},
+      resilient control {{- cite('Chamon20r', 'Chamon20c')}},
+      (safe) reinforcement learning {{- cite('Paternain19c', 'Paternain23s')}}</span>
+
+on information.
+
+Currently, the main drive of my research is developing the theory, algorithms, and applications of
+[**constrained learning**](#constrained-learning),
+a tool that enables the data-driven design of systems that satisfy requirements
+such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c') }},
+fairness {{- cite('Chamon20p', 'Chamon22c') }},
+safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
+smoothness {{- cite('Cervino22l') }},
+and invariance {{- cite('Hounie22a') }}.
+On the one hand, I investigate fundamental questions such as
+
+- when is it possible to learning under requirements? 
+  <span style="color:#999;">(whenever&nbsp;you&nbsp;can&nbsp;learn&nbsp;at&nbsp;all)</span> {{- cite('Chamon20p', 'Chamon22c') }}
+- how much harder is it than vanilla learning? 
+  <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon22c') }}
+- are there problems that only constrained learning can tackle? 
+  <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana21s') }}
+
+On the other hand, I am interested in the impact constrained learning can have on traditional
+learning tasks, such as
+image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c', 'Hounie22a') }},
+semi-supervised learning {{- cite('Cervino22l') }},
+and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }}.
+Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
+shifting away from the current objective-centric paradigm towards a constraint-driven one.
+
+You can read more about this as well as other current and past projects below. If anything piques your interest,
+shoot me an [email]({filename}/pages/contact.md) or check out the [prospective members](#) page.
+
 
 ### Current projects
 
