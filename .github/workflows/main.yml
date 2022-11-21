@@ -148,6 +148,7 @@ jobs:
           name: website
 
       - name: Check if there is anything to commit and push
+        continue-on-error: true
         id: haschanged
         run: git diff --exit-code
 
