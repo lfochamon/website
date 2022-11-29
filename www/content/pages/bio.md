@@ -1,9 +1,10 @@
 Title: Formal Bio
 Status: hidden
 
-<center>
-[![LFO Chamon]({static}/images/lfochamon.jpg)]({static}/images/lfochamon_hi_res.jpg)
-<a style="font-size:80%;" href="{{ SITEURL }}/images/lfochamon_hi_res.jpg">[Click for high resolution version]</a>
+<center style="display: flex; flex-flow: row wrap;">
+[![LFO Chamon]({static}/images/lfochamon_hi_res.jpg){: .image-process-small}]({static}/images/lfochamon_hi_res.jpg){: style="flex-basis: 45%; margin-right: 5%;"}
+[![LFO Chamon]({static}/images/lfochamon_square.jpg){: .image-process-small}]({static}/images/lfochamon_square.jpg){: style="flex-basis: 45%; margin-left: 5%;"}
+<span style="font-size: 80%; flex-basis: 100%;">Click for high resolution version</span>
 </center>
 
 &nbsp;
