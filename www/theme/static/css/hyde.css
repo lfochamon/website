@@ -67,6 +67,7 @@ html {
   margin-bottom: 0.8rem;
   font-family: "Abril Fatface", serif;
   font-size: 3rem;
+  line-height: 1;
 }
 .sidebar-about a:hover {
   text-decoration: none;
@@ -75,7 +76,7 @@ html {
   font-size: 1rem;
 }
 .sidebar-about .profile-picture {
-  margin: 0 auto 0;
+  margin: 0 auto 0.5rem;
   border-radius: 50%;
   max-width: 10rem;
 }
@@ -97,9 +98,6 @@ html {
 @media screen and (min-width: 991px) and (min-height: 890px) {
   .sidebar-nav-item {
     line-height: 2.5;
-  }
-  .sidebar-about .profile-picture {
-    margin-bottom: 1rem;
   }
 }
 a.sidebar-nav-item:hover,
@@ -321,6 +319,7 @@ a.sidebar-social-item:hover {
   display: inline-block;
 }
 .tooltip .tooltiptext {
+  display: none;
   visibility: hidden;
   width: 500px;
   background-color: var(--white);
@@ -339,6 +338,7 @@ a.sidebar-social-item:hover {
 }
 @media (min-width: 991px) {
   .tooltip:hover .tooltiptext {
+    display: unset;
     visibility: visible;
   }
 }
