@@ -3,30 +3,39 @@ Date: 1000-01-01
 URL: index.html
 save_as: index.html
 
+<style>
+@media (max-width: 1450px) {
+  br.responsive {
+    display: none;
+  }
+}
+</style>
+
 # Hello there!
 
 <p style="font-size: 20px;">My name is Luiz Chamon. I am an
 <a href="https://ellis.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
 independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
-I study the theoretical underpinnings of
-<b>constrained learning</b> and its applications in <b>signal processing</b>,
-<b>control</b>, and <b>machine learning</b>.
+I head the <b>Information Systems Engineering group</b>.<br class="responsive">
+We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
+<!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in <b>signal processing</b>,
+<b>control</b>, and <b>machine learning</b>. -->
 </p>
 
 &nbsp;
 
-**I'm currently hiring PhD students interested in working at the intersection of optimization, learning, and statistics.**
-**If you're interested in joining my group, [let me know]({filename}/pages/contact.md)!**
+**I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
+**More details in the [call]({filename}/pages/prospective.md#phd-student)!**<br><br>
+**You can also find out more about the different opportunities to join the group [here]({filename}/pages/prospective.md)!**
+{: .highlight}
 
-**And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**
-
-
-
-
+{#**And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**#}
 
 &nbsp;
 
 ## News
+
+- **Oct 25th, 2022** &ndash; I have become a member of [ELLIS](https://ellis.eu) and its [Stuttgart unit](https://ellis-stuttgart.eu/).
 
 - **Oct 5th, 2022** &ndash; *"Constrained learning with non-convex losses"* was accepted for
   publication on the IEEE TIT ([paper]({filename}/pages/publications.md#Chamon22c)).
