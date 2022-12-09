@@ -1,0 +1,287 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsfonts, amssymb, amsmath, amsthm, bm, accents, dsfont}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage[colorlinks=true,
+			linkcolor=stutt.blue,
+			urlcolor=stutt.blue]{hyperref}
+
+\usepackage{blindtext}
+\graphicspath{{Images/}}
+
+
+% Colors
+\usepackage{xcolor}
+\definecolor{stutt.blue}{RGB}{0,81,158}
+\definecolor{stutt.gray}{RGB}{62, 68, 76}
+
+
+% Page style
+\usepackage[headheight=11.5mm, includehead, top=12.5mm, bottom=12.5mm, left=25mm, right=20mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[r]{\footnotesize \thepage}
+\fancyhead[l]{\footnotesize DFG form 53.200 -- 11/22}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+%\linespread{0.97}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0em}
+
+
+% Font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[right]{eurosym}
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing*{\section}{0pt}{*5}{0pt}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\titleformat*{\paragraph}{\normalsize\bfseries}
+
+
+% Tables
+\usepackage{enumitem}
+\setlist{nosep, itemsep=3pt}
+
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\def\arraystretch{1.7}
+
+
+% Bibliography
+\usepackage[backend=bibtex, maxnames=10, sorting=ydnt, style=trad-abbrv,
+			defernumbers=true]{biblatex}
+\addbibresource{cv.bib}
+
+\DeclareBibliographyCategory{publications}
+\DeclareBibliographyCategory{others}
+
+\defbibenvironment{bibliography}
+{\list
+{\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{\bibitemsep}
+\setlength{\parsep}{\bibparsep}}
+\footnotesize
+}
+{\endlist}
+{\item}
+
+
+\newcommand{\citecv}[2]{%
+	\nocite{#2}\addtocategory{#1}{#2}
+}
+
+
+% -- Language packs --
+\usepackage[english]{babel}
+
+
+
+
+\begin{document}
+
+\section*{Personal data}
+
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
+\hline
+Title
+	& Dr. \\
+\hline
+First name
+	& Luiz Fernando \\
+\hline
+Name
+	& de Oliveira Chamon \\
+\hline
+Current position
+	& ELLIS--SimTech Independent research group leader (10/2022--09/2026) \\
+\hline
+Current institution, country
+	& University of Stuttgart, Germany \\
+\hline
+Identifiers/ORCID
+	& \href{https://orcid.org/0000-0001-7731-6650}{\textbf{0000-0001-7731-6650}} \\
+\hline
+\end{tabularx}
+
+
+
+
+
+\section*{Qualifications and Career}
+
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.4cm}|L|}
+\hline
+\textbf{Stages} & \textbf{Periods and Details}
+%
+\\\hline
+
+
+Degree program &
+\emph{Polytechnic School of the University of São Paulo, Brazil}
+	\hfill 02/2012--02/2015
+\newline
+M.Sc.\ in Electrical Engineering
+\newline
+Dissertation: Combinations of Adaptive Filters
+\newline
+Advisor: C\'{a}ssio Guimar\~{a}es Lopes
+\medskip
+
+\emph{École Centrale de Lyon \emph{and} INSA-Lyon, France}
+	\hfill 01/2009--06/2009
+\newline
+Undergraduate exchange student of the\newline
+M.Sc.\ in Acoustics program
+\medskip
+
+\emph{Polytechnic School of the University of São Paulo, Brazil}
+	\hfill 02/2006--05/2011
+\newline
+B.Sc.\ in Electrical Engineering (Electronic Systems)
+%
+\\\hline
+
+
+Doctorate &
+\emph{University of Pennsylvania, USA} \hfill 09/2015--12/2020
+\newline
+Ph.D.\ in Electrical Engineering
+\newline
+Thesis: Constrained learning and inference
+\newline
+Advisor: Alejandro Ribeiro
+%
+\\\hline
+
+
+Stages of academic and professional career &
+\emph{University of Stuttgart, Germany}
+	\hfill 10/2022--present
+\newline
+ELLIS--SimTech Independent research group leader
+\medskip
+
+\emph{University of California, Berkeley, USA}
+	\hfill 07/2021--09/2022
+\newline
+Postdoctoral fellow at the Simons Institute for the\newline Theory of Computing
+\medskip
+
+\emph{University of Pennsylvania, USA}
+	\hfill 10/2020--06/2021
+\newline
+Postdoctoral researcher
+%
+\\\hline
+\end{tabularx}
+
+
+
+%\section*{Supplementary Career Information}
+
+
+\section*{Engagement in the Research System}
+
+% committee involvement, activities in the field of academic self-governance, organisation of academic events, activities in teaching and mentoring
+
+\emph{Women in STEM}
+	\hfill 04/2022
+\\
+Judge of the \href{http://envisionrc.com/}{\textbf{\emph{ENVISION research competition}}}
+\medskip
+
+\emph{University of Pennsylvania}
+	\hfill 05/2020--12/2020
+\\
+COVID-19 Research and Academic Safety Reporting Committee
+
+\emph{University of Pennsylvania}
+	\hfill 06/2018--07/2018 and 06/2019--07/2019
+\\
+Mentor for the research experience for undergraduate program \href{https://sunfest.seas.upenn.edu}{\textbf{\emph{SUNFEST}}}
+\medskip
+
+\emph{Reviewer/referee}
+\\
+IEEE Trans.\ on Signal Processing; IEEE Signal Processing Letters; IEEE Signal Processing Magazine; IEEE Journal of Selected Topics in Signal Processing; IEEE Trans.\ on Signal and Information Processing over Networks; IEEE Trans.\ on Automatic Control; IEEE Trans.\ on Control of Network Systems; and conferences, such as NeurIPS, ICML, IEEE~ICASSP, IEEE~CDC\dots
+
+
+
+%\section*{Supervision of Researchers in Early Career Phases}
+
+
+\section*{Scientific Results}
+
+
+\section*{Category A}
+% articles in peer-reviewed journals, peer-reviewed contributions to conferences or anthology volumes, and book publications. A maximum of ten items may be listed.
+
+\citecv{publications}{Chamon22c, Chamon20f, Eisen19l, Robey21a, Paternain23s, Chamon21a, Chamon20p, Chamon17a, Kalogerias20b, Chamon20t}
+\printbibliography[heading=none, category=publications, resetnumbers=true]
+
+\section*{Category B}
+
+% non-peer-reviewed articles on preprint servers and contributions to conferences or anthology volumes, data sets, protocols of clinical trials, software packages, patents applied for and granted, blog contributions, infrastructures or transfer, contributions to the (technical) infrastructure of an academic community, and contributions to science communication. Also restricted to a maximum of ten items.
+
+\citecv{others}{Cervino22l, Hounie22a, Ruiz21t, Calvo-Fullana21s, Angelico21s}
+\printbibliography[heading=none, category=others, resetnumbers=true]
+
+
+\clearpage
+
+
+\section*{Academic Distinctions}
+
+\begin{itemize}
+	\item \textbf{2020}: Best student paper award at IEEE ICASSP 2020 for ``The empirical duality gap of constrained statistical learning.''
+
+	\item \textbf{2020}: Best paper award at IEEE ICASSP 2020 for ``Better safe than sorry: Risk-aware nonlinear Bayesian estimation.''
+
+	\item \textbf{2018}: Outstanding editorial board service
+	(IEEE Transactions on Signal Processing).
+
+	\item \textbf{2018}: Best Ph.D.\ colloquium award\\
+	(Dept.\ of Electrical and Systems Engineering, University of Pennsylvania).
+
+	\item \textbf{2018}: Good citizen award for services to the department\\
+	(Dept.\ of Electrical and Systems Engineering, University of Pennsylvania).
+
+	\item \textbf{2013}: IEEE Standard Education Committee grant.
+
+	\item Travel grants to major conferences: IEEE~ICASSP, IEEE~CDC, NeurIPS, and USENIX NSDI.
+\end{itemize}
+
+
+%\section*{Other Information}
+% Here you can refer to further points that characterise you as an academic or mention other aspects such as dual-career issues (potentially requiring a particular choice of location, for example) which you feel are relevant to the review or evaluation of the proposal.
+
+
+\section*{Data protection and consent to the processing of optional data}
+
+If you provide voluntary information (marked as optional) in this CV, your consent is required. Please confirm your consent by checking the box below.
+
+[X] I expressly consent to the processing of the voluntary (optional) information, including ``special categories of personal data''%
+%
+\footnote{\scriptsize Special categories of personal data are those ``revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and (\dots) genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person’s sex life or sexual orientation''~(Article~9(1)~GDPR).}
+%
+in connection with the DFG’s review and decision-making process regarding my proposal. This also includes forwarding my data to the external reviewers, committee members and, where applicable, foreign partner organisations who are involved in the decision-making process. To the extent that these recipients are located in a third country (outside the European Economic Area), I additionally consent to them being granted access to my data for the above-mentioned purposes, even though a level of data protection comparable to EU law may not be guaranteed. For this reason, compliance with the data protection principles of EU law is not guaranteed in such cases. In this respect, there may be a violation of my fundamental rights and freedoms and resulting damages. This may make it more difficult for me to assert my rights under the General Data Protection Regulation (e.g. information, rectification, erasure, compensation) and, if necessary, to enforce these rights with the help of authorities or in court.
+
+I may revoke my consent in whole or in part at any time---with effect for the future, freely and without giving reasons---vis-à-vis the DFG~(\href{mailto:postmaster@dfg.de}{postmaster@dfg.de}). The lawfulness of the processing carried out up to that point remains unaffected. Insofar as I transmit “special categories of personal data” relating to third parties, I confirm that the necessary legitimation under data protection law exists (e.g. based on consent).
+
+I have taken note of the DFG’s Data Protection Notice relating to research funding, which I can access at \href{www.dfg.de/privacy_policy}{www.dfg.de/privacy\_policy} and I will forward it to such persons whose data the DFG processes as a result of being mentioned in this CV.
+
+
+
+
+
+
+\end{document}
