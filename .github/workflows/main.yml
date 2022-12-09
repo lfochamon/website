@@ -51,6 +51,7 @@ jobs:
     env:
       FILE_CV: lfochamon_cv
       FILE_PUBS: lfochamon_pubs
+      FILE_DFG: CV_PubList_Chamon
 
     steps:
       - name: Checkout dev branch
@@ -70,8 +71,9 @@ jobs:
       - name: LaTeX compile
         working-directory: cv
         run: |
-          lualatex ${{ env.FILE_CV }}.tex; bibtex ${{ env.FILE_CV }}.aux; lualatex ${{ env.FILE_CV }}.tex; lualatex ${{ env.FILE_CV }}.tex;
-          lualatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex;
+          lualatex ${{ env.FILE_CV }}.tex; lualatex ${{ env.FILE_CV }}.tex; bibtex ${{ env.FILE_CV }}.aux; lualatex ${{ env.FILE_CV }}.tex; lualatex ${{ env.FILE_CV }}.tex; lualatex ${{ env.FILE_CV }}.tex;
+          lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex;
+          lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; bibtex ${{ env.FILE_DFG }}.aux; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex;
 
       - name: Save cv and publications list
         uses: actions/upload-artifact@v3
@@ -80,6 +82,7 @@ jobs:
           path: |
             cv/${{ env.FILE_CV }}.pdf
             cv/${{ env.FILE_PUBS }}.pdf
+            cv/${{ env.FILE_DFG }}.pdf
           retention-days: 1
 
 
