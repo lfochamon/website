@@ -85,8 +85,6 @@ yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 **Duration:** 3.5 years (initial contract)  
 **Salary:** 100% TV-L E13 ([What the hell does that mean?!](#so-whats-the-salary-exactly))  
 
-The position also includes an opportunity for a fully funded research stay abroad.
-
 If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 {: style='margin-bottom:0px;'}
 </div>
@@ -102,7 +100,7 @@ Consider applying if you
 <span class="prospect-comment">\*If you have a 5-year bachelor degree (as is the case, e.g., in South America) and an <em>amazing</em> CV, you should still apply! We'll find a way to make it work.</span>
 {: .prospect-item}
 
-- have *demonstrated* reading, writing, and oral proficiency in technical English  
+- have reading, writing, and oral proficiency in technical English  
 <span class="prospect-comment">([Do you need to speak German?](#do-i-need-to-speak-german) **No**, the official and working language of the group is English)</span>
 {: .prospect-item}
 
@@ -141,7 +139,7 @@ Interested candidate should submit their applications via [email](mailto&#58;{{S
 - Motivation letter describing background and research interests (1-2 pages)  
 <span class="prospect-comment">Your letter must outline your prior work and the kind of research you are excited to conduct in the future.
 Make sure to relate your interests and goals to the publications and research topics of the group. Also, point to papers, reports,
-personal projects, anything that showcases your writing, mathematical, and/or coding [proficiencies](#requirements).</span>
+personal projects, anything that showcases your English writing, mathematical, and/or coding [proficiencies](#requirements).</span>
 {: .prospect-item}
 
 - CV (including a list of publications and research/coding projects, if you have any)
@@ -180,8 +178,7 @@ Additionally, you enjoy several benefits, such as
 - competitive [salary-to-cost-of-living ratio](#so-whats-the-salary-exactly);
 - full-time employment by the university that entitles you to social benefits,
   including healthcare, family assistance, and 30 days of paid time-off (holidays);
-- fully-funded opportunities to attend conferences;
-- opportunity for a fully-funded international research stay&nbsp;(as an ELLIS-SimTech PhD).
+- fully-funded opportunities to attend conferences.
 
 If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
