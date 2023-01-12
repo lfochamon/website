@@ -48,6 +48,8 @@ status: draft
     - [Rota 1](https://www.ams.org/notices/199701/comm-rota.pdf)
     - [Rota 2](https://people.math.osu.edu/nevai.1/MYMATH/PUBLICATIONS/rota_letter_ams_notices_03_97.html)
     - Publication strategy
+    - [ACS tips](https://acsoncampus.acs.org/wp-content/uploads/2021/09/ACSonC_10tips_Science-Writing_Poster_2020-v1.pdf)
+    - [English writing tips](https://nanohub.org/resources/7880/download/2009.10.29-Keating-NT501.pdf)
 
   22. Do you have a publication strategy?
     - How are your papers connected?
@@ -192,6 +194,7 @@ status: draft
       - **Check proofs**
       - Check experiments
       - Check references
+      - [ACS reviewing tips](https://acsoncampus.acs.org/wp-content/uploads/2021/04/ACSonC_10tips_peer-review_Poster.pdf)
     - Make the editor's life easy
 
   4. The review process (the author's sides)

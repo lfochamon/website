@@ -83,7 +83,7 @@ yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 **Deadline**: applications are accepted on a rolling basis (positions will be filled as soon as a suitable candidate is found).  
 **Target starting date:** Spring 2023 (flexible)  
 **Duration:** 3.5 years (initial contract)  
-**Salary:** 100% TV-L E13 ([What the hell does that mean?!](#so-whats-the-salary-exactly))  
+**Salary:** 100% TV-L E13 ([What?!](#so-how-much-is-e13-exactly))  
 
 If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 {: style='margin-bottom:0px;'}
@@ -139,7 +139,7 @@ Interested candidate should submit their applications via [email](mailto&#58;{{S
 - Motivation letter describing background and research interests (1-2 pages)  
 <span class="prospect-comment">Your letter must outline your prior work and the kind of research you are excited to conduct in the future.
 Make sure to relate your interests and goals to the publications and research topics of the group. Also, point to papers, reports,
-personal projects, anything that showcases your English writing, mathematical, and/or coding [proficiencies](#requirements).</span>
+personal projects, anything that showcases your English writing, mathematical, and/or coding [proficiency](#requirements).</span>
 {: .prospect-item}
 
 - CV (including a list of publications and research/coding projects, if you have any)
@@ -175,39 +175,39 @@ the requirements for PhD positions here are actually quite straightforward. In p
 
 Additionally, you enjoy several benefits, such as
 
-- competitive [salary-to-cost-of-living ratio](#so-whats-the-salary-exactly);
+- competitive [compensation](#so-how-much-is-e13-exactly);
 - full-time employment by the university that entitles you to social benefits,
   including healthcare, family assistance, and 30 days of paid time-off (holidays);
 - fully-funded opportunities to attend conferences.
 
-If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
+If you have any questions about the positions, the PhD in general, and/or life in Germany, do not hesitate to
+[reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
 
-#### So what's the salary exactly?
+#### So how much is E13 exactly?
 
-It turns out that exact *net* salaries are not straightforward to evaluate in Germany. PhD student salaries are negotiated nationally by the
-worker's association and while the government lists all values [here](https://oeffentlicher-dienst.info/tv-l/allg/),
-how much you actually get paid depends on things like qualifications, years of academic experience, tax bracket...
-But after a short poll of *net* salaries among PhD students, I got to the number **2300&nbsp;€** (which is consistent with
+PhD student salaries are negotiated nationally by the worker's association. You can easily find *gross* values on
+[this](https://oeffentlicher-dienst.info/tv-l/allg/) government website. *Net* salaries are harder to determine as they
+depend on things like years within the PhD, marital status, whether you have kids, what kind of health insurance you choose...
+In an informal poll of *net* salaries among PhD students, I got to an average of **2300&nbsp;€** (which is consistent with
 [this tier](https://oeffentlicher-dienst.info/c/t/rechner/tv-l/allg?id=tv-l&g=E_13&s=1&zv=VBL&z=100&zulage=&stkl=1&r=&zkf=&kk=15.5%25)).
-How far does that get you? The same short poll revealed that it is more than enough and a quick Google search estimated the cost of living 
-in Stuttgart at **900-1800&nbsp;€** (e.g., [link](https://housinganywhere.com/Stuttgart--Germany/cost-of-living-stuttgart),
-[link](https://livingcost.org/cost/germany/bw/stuttgart), [link](https://www.expatistan.com/cost-of-living/stuttgart),
-or [link](https://www.numbeo.com/cost-of-living/in/Stuttgart)). Yes, it's a large bracket, but it depends on too many factors to narrow down,
-such as your living standards, whether you rent a room or an apartment, where...
+You can compare that with whatever you find when typing `cost of living stuttgart` on Google (with the typical caveat on internet sources).
 
 It is worth noting that PhD students in Germany are full-time employees of the university entitled to social benefits
 (healthcare, pension plans, family assistance, etc.), sick days, and 30 days of paid time-off&nbsp;(holidays) per year.
+
+Again, if you have any questions about the positions, the PhD in general, and/or life in Germany, do not hesitate to
+[reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
 
 #### Do I need to speak German?
 
 The answer is a resounding **NO**. The official and working language of the group is English (the same holds for ELLIS and SimTech).
-Additionally, the vast majority of graduate course are offered in English and most of the university staff speaks English.
+Additionally, the majority of graduate course are offered in English and most of the university staff speaks English.
 I myself do not currently speak German and I'm surviving.
 
 Now, *should* you speak German? Probably eventually. Even if Stuttgart is a highly international city (more than 25% of its
-population has a foreign passport), speaking German will make your life easier and more fun outside of the university.
+population has a foreign passport), speaking German will definitely make your life easier and more fun outside of the university.
 And if you are going to spend multiple years in a country, you might as well learn the local language. If you do decide to
 give German a try, the university and the city offer a variety of German language courses and resources, many of them free of charge.
 

@@ -35,6 +35,8 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 ## News
 
+- **Jan 11th, 2022** &ndash; I have joined the faculty of the International Max Planck Research School for Intelligent Systems ([IMPRS-IS](https://imprs.is.mpg.de/)).
+
 - **Oct 25th, 2022** &ndash; I have become a member of [ELLIS](https://ellis.eu) and its [Stuttgart unit](https://ellis-stuttgart.eu/).
 
 - **Oct 5th, 2022** &ndash; *"Constrained learning with non-convex losses"* was accepted for
