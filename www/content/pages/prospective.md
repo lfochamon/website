@@ -81,8 +81,7 @@ more empirically-inclined. While all of my students are expected to know and do 
 yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 
 **Deadline**: applications are accepted on a rolling basis (positions will be filled as soon as a suitable candidate is found).  
-**Target starting date:** Spring 2023 (flexible)  
-**Duration:** 3.5 years (initial contract)  
+**Target starting date:** Fall 2023 (flexible)  
 **Salary:** 100% TV-L E13 ([What?!](#so-how-much-is-e13-exactly))  
 
 If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).

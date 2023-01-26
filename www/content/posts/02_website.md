@@ -91,7 +91,8 @@ and [informal bio]({filename}/pages/about.md) ([Figure 1](#)). But they are vacu
 if you don't have [the basics](#) covered.
 
 ![User data for my website during February 2022]({static}/images/blog/google_analytics.png)
-User data for my website during February 2022{: .caption}
+User data for my website during February 2022
+{: .caption}
 
 
 Here are some ideas on how to extend your website:

@@ -35,7 +35,9 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 ## News
 
-- **Jan 11th, 2022** &ndash; I have joined the faculty of the International Max Planck Research School for Intelligent Systems ([IMPRS-IS](https://imprs.is.mpg.de/)).
+- **Feb 2nd, 2023** &ndash; I am giving a (hybrid) talk at EPFL (see [here](https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/luiz-chamon/) for more details and registration).
+
+- **Jan 11th, 2023** &ndash; I have joined the faculty of the International Max Planck Research School for Intelligent Systems ([IMPRS-IS](https://imprs.is.mpg.de/)).
 
 - **Oct 25th, 2022** &ndash; I have become a member of [ELLIS](https://ellis.eu) and its [Stuttgart unit](https://ellis-stuttgart.eu/).
 
