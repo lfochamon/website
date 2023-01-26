@@ -127,86 +127,256 @@ which concludes the proof.
 <p>On the other hand, it's important to remember the goal is to write, not code.
 Too much focus on source formatting can easily get in the way of putting words
 on a page, which is what gets papers written.</p>
-<p>Still, there are a few rules and habits that can make your easier both in
-making your Latex source more readable, but also avoiding formatting pitfalls
-and bad design practices. Here is a compilation of my rules. If you have any
+<p>Still, there are a few rules and habits that can make your life easier by both
+making your Latex source more readable and avoiding formatting pitfalls
+and bad design practices. Below is a compilation of mine. If you have any
 other interesting tip or habit, send me an <a href="mailto:">email</a>. I'm always
 looking to add new tricks to my workflow. And in the spirit of good scholarship,
 you'll get a citation for that rule.</p>
-<ol>
-<li>Use <code>~</code> (unbreakable space) between words and inline equations, reference
-    numbers, citations, and essentially any Latex command (as in the example above).
-    You never want a dangling reference or math symbol starting a line.</li>
-</ol>
+<h2 id="the-rules">The rules</h2>
+<p><em>Caveat: some examples below only make sense on screens that display this sentence on a single line.
+That is particularly the case for those examples that have to do with spacing rules (e.g., Rule 8).</em></p>
+<h4 id="1-use">1. Use <code>~</code></h4>
+<p>Use <code>~</code> (unbreakable space) between words and inline equations, reference numbers,
+citations, and essentially any Latex command. You never want a dangling reference
+or math symbol starting a line.</p>
 <div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code>For all <span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the <span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially <span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
 </code></pre></div>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>For all~<span class="s">$</span><span class="nb">x &lt; </span><span class="nv">\tau</span><span class="s">$</span>, the~<span class="k">\eqref</span><span class="nb">{</span>E:upper<span class="nb">_</span>bound<span class="nb">}</span> holds trivially~<span class="k">\cite</span><span class="nb">{</span>LastNameYYp<span class="nb">}</span>.
 </code></pre></div>
-<ol start="2">
-<li>
+<h4 id="2-space-out-environments">2. Space out environments</h4>
 <p>Separate your displayed math environments from text using <code>%</code> (as in the
-    example above). Latex takes blank lines to mean it should start a new paragraph.
-    Often, that is <em>not</em> what you want. Still, you always want to separate the
-    Latex environments from the text to improve your source readability.</p>
-</li>
-<li>
-<p>Use <code>-</code>, <code>--</code>, and <code>---</code> appropriately. A <em>dash</em> (<code>-</code>) is to be used when forming composed
-    nouns or adjectives (as in <code>state-of-the-art performance</code> or <code>a complicated trade-off</code>).
-    An <em>endash</em> (<code>--</code>) is to be used to indicate ranges (as in <code>pages 2--3</code> or <code>Figures 1--4</code>).
-    Note that there is no space around the endash. An <em>emdash</em> (<code>---</code>) is to be
-    used similarly to parentheses<code>---as is the case with this example</code>.
-    Do not leave space<code>---and I mean, no space whatsoever---</code>before of after emdashes.</p>
-</li>
-<li>
+example above). Latex takes blank lines to mean it should start a new paragraph.
+Often, that is <em>not</em> what you want. Still, you always want to separate the
+Latex environments from the text to improve your source readability.</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code>It therefore holds that<span class="sb">\[</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nv">\leq\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb">,</span><span class="s">\]</span> which concludes the proof.
+</code></pre></div>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>It therefore holds that
+<span class="c">%</span>
+<span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z - z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<span class="c">%</span>
+which concludes the proof.
+</code></pre></div>
+<h4 id="3-use-and-appropriately">3. Use <code>-</code>, <code>--</code>, and <code>---</code> appropriately</h4>
+<p>A <em>dash</em> (<code>-</code>) is to be used when forming composed
+nouns or adjectives (as in <code>state-of-the-art performance</code> or <code>a complicated trade-off</code>).
+An <em>endash</em> (<code>--</code>) is to be used to indicate ranges (as in <code>pages 2--3</code> or <code>Figures 1--4</code>).
+Note that there is no space around the endash. An <em>emdash</em> (<code>---</code>) is to be
+used similarly to parentheses<code>---as is the case with this example</code>.
+Do not leave space<code>---and I mean, no space whatsoever---</code>before or after emdashes.</p>
 <p>Always use an endash (<code>--</code>) when indicating page ranges in bibtex files.</p>
-</li>
-<li>
-<p>Never write "according to equation (X)." Simply use "according to (X)."
-  An exception is typically made in the beginning of sentences. Equation (X),
-  in this case, is usually acceptable. Still don't do it. Just reword your
-  sentence as "In this case, (X) is acceptable."</p>
-</li>
-</ol>
-<p><strong>Note</strong>: in certain fields, you are required to write "equation (X)," but I
-  do not typically work in those field.</p>
-<ol start="6">
-<li>
+<h4 id="4-never-write-equation-x">4. Never write "equation X"</h4>
+<p>Never write "according to equation X" or "according to equation (X)."
+Write "according to (X)" as in
+<code style="background:#B8E6C8;">according to~\eqref{E:equationName}</code>
+and not <code style="background:#FFCECC;">according to (\ref{E:equationName})</code>
+or <code style="background:#FFCECC;">according to (X)</code>.
+An exception is typically made in the beginning of sentences. Equation (X),
+in this case, is acceptable. Still, don't do it. Just reword the sentence
+as "In this case, (X) is acceptable."</p>
+<p><strong>Note</strong>: in certain fields, writing "equation (X)" is the norm, but I do not typically
+work in those field.</p>
+<h4 id="5-only-words-begin">5. Only words begin</h4>
 <p>Never start sentences or lines with math symbols, equation numbers, or references.
-    If you follow Rule<code>~</code>1, then this will never happen without your consent.</p>
-</li>
-<li>
-<p>If you use a point to indicate an abbreviation and it is not the end of a sentence,
-    then follow it by a <code>\</code> (as in <code>Dept.\ of Electrical Engineering</code>). Latex adds
-    a bit more space after points because it assumes it is a always period. Doing this
-    will avoid some awkward extra space in the middle of your sentence.</p>
-</li>
-<li>
-<p>Use the <code>\cite[]{}</code> to refer to specific sections/theorems, especially when referring
-    to specific results from a paper or when citing from books. It is a favor for the reader
-    that wants to check the result and good scholarship: unless the statement you just
-    made relies on all the results in a paper/book, you should refer only to what is
-    directly relevant.</p>
-</li>
-</ol>
+If you follow Rule<code>~</code>1, then this will never happen without your consent.</p>
+<h4 id="6-use-_-when-a-point-is-not-a-period">6. Use <code>.\_</code> when a point is not a period</h4>
+<p>If you use a point to indicate an abbreviation <em>and</em> it is not the end of a sentence,
+then follow it by a <code>\_</code> (as in <code style="background:#B8E6C8;">Dept.\ of Electrical Engineering</code>
+or <code style="background:#B8E6C8;">L.\ F.\ O.\ Chamon</code>). Latex adds extra space after every point
+because it always assumes it is a period. Doing this will avoid some awkward extra spacing in the
+middle of your sentence.</p>
+<h4 id="7-consider-cite">7. Consider <code>\cite[]{}</code></h4>
+<p>Use the <code>\cite[]{}</code> to refer to specific sections/theorems, especially when you refer to
+a specific result in a paper (e.g., <code style="background:#B8E6C8;">\cite[Thm.~3]{LastNameYYp}</code>).
+When citing from books this is mandatory (e.g., <code style="background:#B8E6C8;">\cite[Section~3.2]{LastNameYYp}</code>).
+It is a favor for the reader that wants to check the result and good scholarship: unless the
+statement you just made relies on all the results in a paper/book, you should refer only to what is
+directly relevant.</p>
+<h4 id="8-keep-math-in-line-or-break-it-on-purpose">8. Keep math in line (or break it on purpose)</h4>
+<p>Keep all math expressions on a single source code line.</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code>So if you find that your inline math expression won't fit in the same line~<span class="s">$</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="s">$</span>.
+</code></pre></div>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>So if you find that your inline math expression won't fit in the same
+line~<span class="s">$</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="s">$</span>, just put it in the next one.
+</code></pre></div>
+<p>If the expression is too long, break it down in logical parts and use indentation as if you were coding Python!</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span> <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\Big</span>( <span class="k">\E</span><span class="nb">_{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD</span><span class="nb">_</span>i<span class="nb">}</span>
+<span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span> <span class="k">\Big</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
+<span class="k">\hat</span><span class="nb">{</span>L<span class="nb">}</span>(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>= <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span>
+<span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell</span><span class="nb">_</span>0<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)<span class="k">\\</span>
+<span class="nb">{}&amp;</span>+ <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\left</span>[ <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
+<span class="k">\ell</span><span class="nb">_</span>i<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>) <span class="k">\right</span>] <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+</code></pre></div>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>  <span class="c">% Separate and indent punctuation and text</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+  <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\Big</span>(    <span class="c">% Break when opening brackets...</span>
+    <span class="k">\E</span><span class="nb">_{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD</span><span class="nb">_</span>i<span class="nb">}</span> <span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span>
+  <span class="k">\Big</span>)   <span class="c">% ...then close it on a separate line</span>
+    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
+  L(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>=   <span class="c">% Break at binary operators</span>
+    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell</span><span class="nb">_</span>0<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)
+  <span class="k">\\</span>  <span class="c">% Clearly separate equations groups</span>
+  <span class="nb">{}&amp;</span>+ <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\left</span>[
+    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
+      <span class="k">\ell</span><span class="nb">_</span>i<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>)   <span class="c">% Indent to show continuation</span>
+  <span class="k">\right</span>]
+    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+</code></pre></div>
+<h4 id="9-indent">9. Indent!</h4>
+<p>Aside from math expressions, also indent text environments such as lists and tables for clarity.</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> the function~<span class="s">$</span><span class="nv">\ell</span><span class="nb">_i</span><span class="s">$</span> is convex
+<span class="k">\item</span> <span class="s">$</span><span class="nv">\calY</span><span class="s">$</span> is finite, the conditional random variables~<span class="s">$</span><span class="nv">\bx</span><span class="nb"> </span><span class="nv">\vert</span><span class="nb"> y</span><span class="s">$</span> is non-atomic,
+and~<span class="s">$</span><span class="nv">\calH</span><span class="s">$</span> is decomposable
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+  <span class="k">\item</span> the function~<span class="s">$</span><span class="nv">\ell</span><span class="nb">_i</span><span class="s">$</span> is convex
+  <span class="k">\item</span> <span class="s">$</span><span class="nv">\calY</span><span class="s">$</span> is finite, the conditional random variables~<span class="s">$</span><span class="nv">\bx</span><span class="nb"> </span><span class="nv">\vert</span><span class="nb"> y</span><span class="s">$</span> is non-atomic,
+        and~<span class="s">$</span><span class="nv">\calH</span><span class="s">$</span> is decomposable
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+<h4 id="10-begin-and-end-on-separate-lines">10. <code>begin</code> and <code>end</code> on separate lines</h4>
+<p>Latex environments must always <code>begin</code> and <code>end</code> on separate lines.</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span> z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span> <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+</code></pre></div>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+</code></pre></div>
+<h4 id="11-give-binary-operators-their-space">11. Give binary operators their space</h4>
+<p>Always place spaces before and after binary operators. You should be writing</p>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="s">$</span><span class="nb">x </span><span class="o">=</span><span class="nb"> y</span><span class="s">$</span>, <span class="s">$</span><span class="nb">x </span><span class="nv">\leq</span><span class="nb"> y</span><span class="s">$</span>, <span class="s">$</span><span class="nb">x </span><span class="o">-</span><span class="nb"> y</span><span class="s">$</span>, and <span class="s">$</span><span class="nb">x </span><span class="nv">\cdot</span><span class="nb"> y</span><span class="s">$</span>
+</code></pre></div>
+<p>and not</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="s">$</span><span class="nb">x</span><span class="o">=</span><span class="nb">y</span><span class="s">$</span>, <span class="s">$</span><span class="nb">x</span><span class="nv">\leq</span><span class="nb"> y</span><span class="s">$</span>, <span class="s">$</span><span class="nb">x</span><span class="o">-</span><span class="nb">y</span><span class="s">$</span>, and <span class="s">$</span><span class="nb">x</span><span class="nv">\cdot</span><span class="nb"> y</span><span class="s">$</span>
+</code></pre></div>
+<h4 id="12-break-up-frac">12. Break-up <code>frac</code></h4>
+<p>Unless both numerator and denominator are short, e.g., <code style="background:#B8E6C8;">\frac{x^2}{2y}</code>,
+always place them in separate (indented) lines as in</p>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\frac</span><span class="nb">{</span>
+  <span class="k">\abs</span><span class="nb">{</span><span class="k">\calK</span><span class="nb">}^</span>2
+<span class="nb">}{</span>
+  <span class="k">\trace</span> <span class="k">\left</span><span class="na">[ \bLambda^{-1} \right]</span> +
+  <span class="k">\trace</span> <span class="k">\left</span><span class="na">[ \left( \sum_{i \in \calS} \lambda_{w,i}^{-1} \bv_i \bv_i^{H} \right) \right]</span>
+<span class="nb">}</span>
+</code></pre></div>
+<p>instead of</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\frac</span><span class="nb">{</span><span class="k">\abs</span><span class="nb">{</span><span class="k">\calK</span><span class="nb">}^</span>2<span class="nb">}{</span><span class="k">\trace</span> <span class="k">\left</span><span class="na">[ (\bW \bLambda)^{-1} \right]</span>+<span class="k">\trace</span> <span class="k">\left</span><span class="na">[ \bW^{-1} \left( \sum_{i \in \calS} \lambda_{w,i}^{-1} \bv_i \bv_i^{H} \right) \right]</span><span class="nb">}</span>
+</code></pre></div>
+<h4 id="13-use-text-in-math-environments">13. Use <code>\text</code> in math environments</h4>
+<p>Whenever you have text in a math environment, place it in a <code>\text</code> tag. That includes names, i.e.,
+<code style="background:#B8E6C8;">$\text{OPT} \leq 0.1$</code> and not <code style="background:#FFCECC;">$OPT \leq 0.1$</code>;
+sub/superscripts that are not variables, i.e.,
+<code style="background:#B8E6C8;">$J_\text{max}$</code> and not <code style="background:#FFCECC;">$J_{max}$</code>
+(or worse, <code style="background:#FFCECC;">$J_{\max}$</code>!);
+and punctuation, i.e.,</p>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+    <span class="k">\text</span><span class="nb">{</span>.<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+</code></pre></div>
+<p>and not</p>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>.
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+</code></pre></div>
+<p>If you are writing in the context of a definition or theorem environment, which are sometimes typeset in italic, you should use the <code>\textup</code> tag.</p>
+<h4 id="14-know-your-math-environments">14. Know your math environments</h4>
+<p>Choose the right math environments for the job. If you do this right, you should have little to no need to manually mess with spacing or labels.
+Here are the main suspects you should know how to use, in order of importance:</p>
 <ul>
-<li>Indent!</li>
+<li><code>equation</code>/<code>equation*</code>: typical, single-line equation. The starred version omits the equation label.</li>
+<li><code>align</code>/<code>align*</code>: math environment spanning multiple lines aligned at a specific symbol or operator. Every line receives a different label,
+    so this environment is better-suited to present a set of multiple equations in parallel. The starred version omits all labels, which also
+    makes it suited for a single equation that spans multiple lines (although you are better off using <code>aligned</code> for this).</li>
+<li><code>aligned</code>: use this environment inside an <code>equation</code> environment to get a set of multiple aligned equations with a single centered label.
+    You should never use <code>align</code> together with <code>\notag</code> to achieve this result.</li>
+<li><code>multline</code>/<code>multline*</code>: a single equation spanning multiple lines without alignment. The first line is flushed left while the last line is
+    flushed right, giving a sense of flow to the equation. I prefer multiline equations to be aligned, but <code>multiline</code> occasionally looks better.</li>
+<li><code>gather</code>/<code>gather*</code>: math environment spanning multiple lines in which the equations are centered. Every line receives a different label,
+    so this environment should be used similarly to <code>align</code>. The starred version omits all labels.</li>
+<li><code>gathered</code>: similarly to <code>aligned</code>, you can use this inside an <code>equation</code> environment to get a set of multiple, centered equations with a
+    single label. You should never use <code>gather</code> together with <code>\notag</code> to achieve this result.</li>
+<li><code>alignat</code>: a more flexible version of <code>align</code>. This is very niche and you should not have to use it.</li>
+</ul>
+<p>Two other "math environments" worth knowing (and using) involve matrices (<code>pmatrix</code> for parenthesis and <code>bmatrix</code> for brackets) and equation with
+cases as in</p>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
+  <span class="k">\phi</span><span class="nb">_{</span><span class="k">\epsilon</span><span class="nb">}</span>(<span class="k">\bx</span>) =
+    <span class="k">\begin</span><span class="nb">{</span>cases<span class="nb">}</span>
+      <span class="k">\phi</span>(<span class="k">\bx</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+        <span class="nb">&amp;</span><span class="k">\text</span><span class="nb">{</span>for <span class="nb">}</span> <span class="k">\bx</span> <span class="k">\in</span> <span class="k">\calT</span>
+      <span class="k">\\</span>
+      <span class="k">\phi</span><span class="nb">^</span><span class="k">\prime</span>(<span class="k">\bx</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+        <span class="nb">&amp;</span><span class="k">\text</span><span class="nb">{</span>for <span class="nb">}</span> <span class="k">\bx</span> <span class="k">\in</span> <span class="k">\calT</span><span class="nb">^</span>c
+    <span class="k">\end</span><span class="nb">{</span>cases<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+</code></pre></div>
+<p>Never use some weird combination of <code>\left{</code> and <code>\right.</code> to do this.</p>
+<ul>
+<li>Where to break long equations<ul>
+<li>at a relation operators (equality, inequality): keep on the previous line</li>
+<li>at a binary operator (preferably, an addition... if you must break at a multiplication using <code>\times</code> to make it extra explicit): place on the next line (except for multiplication)</li>
+</ul>
+</li>
+<li>Do <code>{}+{}</code> or <code>{}={}</code> for binaries on multiline environments</li>
+<li>Only label equations you will reference later</li>
 <li>Use <code>E:</code>, <code>T:</code>, <code>F:</code>, <code>S:</code>, <code>X:</code>, <code>P:</code>, <code>L:</code></li>
-<li>If you are working with me, use my macros!</li>
-<li>Place environments <code>begin</code> and <code>end</code> on lines by themselves</li>
-<li>Leave space before and after binary operations</li>
-<li>Indent the contents of environments</li>
-<li>Keep a formula on a single line. If it's too long, break in logical parts and indent</li>
-<li>Use <code>\text</code> in math environments</li>
-<li>Take advantage of the various math environments: <code>equation</code>, <code>align</code>, <code>aligned</code>, <code>gather</code>, <code>gathered</code>, <code>multline</code>, and starred version</li>
 <li>Use <code>\dot</code>, <code>\dots</code>, <code>\cdot</code>, <code>\cdots</code> accordingly</li>
-<li>I like <code>\big</code>, <code>\Big</code>, <code>\bigg</code> better than iterated <code>\left</code>, <code>\right</code>: gives you more control</li>
+<li>I like <code>\big</code>, <code>\Big</code>, <code>\bigg</code> better than iterated <code>\left</code>, <code>\right</code>: gives you more control<ul>
 <li>Also, <code>\bigm</code> is useful (delimiter with binary spacing)</li>
+</ul>
+</li>
 <li>Use <code>\DeclareMathOperator</code> rather than <code>\newcommand</code> for math</li>
 <li>Leverage <code>\quad</code> and <code>\qquad</code></li>
-<li>Use the <code>bm</code> packed for bold symbols: it looks better</li>
-<li>Choose a notation and stick with it! (but make sure to review it: sometimes, our convention choices turn out to be less than ideal)</li>
-<li>For me: fraktur for distributions and measures, caligraphic for sets and spaces, bold lowercase for vectors, bold uppercase for matrices</li>
-<li>Do <code>{}+{}</code> or <code>{}={}</code> for binaries on multiline environments</li>
+<li>
+<p>Use the <code>bm</code> packed for bold symbols: it looks better</p>
+</li>
+<li>
+<p>Choose a notation and stick with it! (but make sure to review it: sometimes, our convention choices turn out to be less than ideal)</p>
+</li>
+<li>If you are working with me, use my macros!</li>
+<li>For me:<ul>
+<li>vectors are columns and boldface lowercase</li>
+<li>matrices are boldface uppercase</li>
+<li>sets are caligraphic (except for number sets, e.g., real, rational, integer, natural, which are blackboard)</li>
+<li>measures are Fraktur</li>
+<li>use eta for step sizes</li>
+<li>use lambda for eigenvalues</li>
+<li>use sigma for variance</li>
+<li>use lambda (inequalities) and mu (equalities) for dual variable (if eigenvalues are not very important, you may replace lambda with sigma... otherwise, use nu)</li>
+<li>Lagrangian are capital L and the dual function is d (even if g is arguably more common)</li>
+<li>use gamma for regularizing parameters</li>
+<li>use theta for "solution parametrization" (unless you have a linear model, in which case use w)</li>
+<li>use phi for generic functions and f_\theta for their parametrization</li>
+<li>use x for the input, y for the desired output, (x,y) for samples, \hat{y} for the predicted output</li>
+<li>use \hat for predictions</li>
+<li>constraints are always lower than for minimization and larger than for maximization</li>
+<li>optimization problems are tagged (PXX), where XX is a roman number. Named optimization problems (good practice, but easily abused!) are tagged (P-NAME).
+  Their dual problems are tagged (DXX) and (D-NAME), respectively.</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
