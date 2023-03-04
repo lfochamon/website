@@ -16,7 +16,7 @@ save_as: index.html
 <p style="font-size: 20px;">My name is Luiz Chamon. I am an
 <a href="https://ellis.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
 independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
-I head the <b>Information Systems Engineering group</b>.<br class="responsive">
+I head the <b>Information Systems Group</b>.
 We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in <b>signal processing</b>,
 <b>control</b>, and <b>machine learning</b>. -->
@@ -42,7 +42,7 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 - **Oct 25th, 2022** &ndash; I have become a member of [ELLIS](https://ellis.eu) and its [Stuttgart unit](https://ellis-stuttgart.eu/).
 
 - **Oct 5th, 2022** &ndash; *"Constrained learning with non-convex losses"* was accepted for
-  publication on the IEEE TIT ([paper]({filename}/pages/publications.md#Chamon22c)).
+  publication on the IEEE TIT ([paper]({filename}/pages/publications.md#Chamon23c)).
 
 - **May 30th, 2022** &ndash; I will be moving to the University of Stuttgart in October 2022.
 

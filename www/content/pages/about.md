@@ -13,8 +13,8 @@ and in particular, in the intersections of these fields. Currently, the main dri
 developing the theory, algorithms, and applications of
 [**constrained learning**]({filename}/pages/research.md#constrained-learning),
 a tool that enables the data-driven design of systems that satisfy requirements
-such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c') }},
-fairness {{- cite('Chamon20p', 'Chamon22c') }},
+such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
+fairness {{- cite('Chamon20p', 'Chamon23c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
 smoothness {{- cite('Cervino22l') }},
 and invariance {{- cite('Hounie22a') }}.

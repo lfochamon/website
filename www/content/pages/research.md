@@ -79,7 +79,7 @@ My group develops tools that enable intelligent systems to
     </span>
   * <b>process</b>,
     <span style="color:#999;font-size:90%;">e.g.,
-      constrained learning {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon22c')}},
+      constrained learning {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon23c')}},
       network data processing {{- cite('Ruiz20g', 'Ruiz21g')}},
       estimation/inference {{- cite('Chamon20f', 'Peifer20s', 'Kalogerias20b', 'Arzani180')}}
     </span>
@@ -95,23 +95,23 @@ on information.
 Currently, the main drive of my research is developing the theory, algorithms, and applications of
 [**constrained learning**](#constrained-learning),
 a tool that enables the data-driven design of systems that satisfy requirements
-such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c') }},
-fairness {{- cite('Chamon20p', 'Chamon22c') }},
+such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
+fairness {{- cite('Chamon20p', 'Chamon23c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
 smoothness {{- cite('Cervino22l') }},
 and invariance {{- cite('Hounie22a') }}.
 On the one hand, I investigate fundamental questions such as
 
 - when is it possible to learning under requirements? 
-  <span style="color:#999;">(whenever&nbsp;you&nbsp;can&nbsp;learn&nbsp;at&nbsp;all)</span> {{- cite('Chamon20p', 'Chamon22c') }}
+  <span style="color:#999;">(whenever&nbsp;you&nbsp;can&nbsp;learn&nbsp;at&nbsp;all)</span> {{- cite('Chamon20p', 'Chamon23c') }}
 - how much harder is it than vanilla learning? 
-  <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon22c') }}
+  <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon23c') }}
 - are there problems that only constrained learning can tackle? 
   <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana21s') }}
 
 On the other hand, I am interested in the impact constrained learning can have on traditional
 learning tasks, such as
-image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon22c', 'Hounie22a') }},
+image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie22a') }},
 semi-supervised learning {{- cite('Cervino22l') }},
 and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }}.
 Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
@@ -166,7 +166,7 @@ the limits of this new learning task.
 <!-- So far, we know that, in typical cases, constrained learning is possible whenever unconstrained
 learning is possible&nbsp;(*uniform convergence implies both PAC learnability and PAC constrained learnability*)
 and that they have essentially the same sample complexity&nbsp;(*up to a log factor*)
-{{- cite('Chamon20p', 'Chamon22c') }}. In fact, constrained learning tasks can be tackled by
+{{- cite('Chamon20p', 'Chamon23c') }}. In fact, constrained learning tasks can be tackled by
 solving only unconstrained learning problems&nbsp;(*using classical dual ascent techniques*).
 What is more, we know that constrained learning is strictly more expressive than its unconstrained
 counterpart, since there exists reinforcement learning tasks that can only be solved using constrained
@@ -186,7 +186,7 @@ and robust learning
 [RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
 
 
-{{ collapsible_pubs(('Chamon22c', 'Robey21a', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s', 'Robey22p')) }}
+{{ collapsible_pubs(('Chamon23c', 'Robey21a', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s', 'Robey22p')) }}
 
 &nbsp;
 
