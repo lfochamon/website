@@ -24,12 +24,14 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 &nbsp;
 
+{#
 **I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
 **More details in the [call]({filename}/pages/prospective.md#phd-student)!**<br><br>
 **You can also find out more about the different opportunities to join the group [here]({filename}/pages/prospective.md)!**
 {: .highlight}
 
-{#**And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**#}
+**And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**
+#}
 
 &nbsp;
 

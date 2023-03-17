@@ -59,12 +59,12 @@ to discuss potential opportunities if you are interested in working with me. Inc
 
 ## PhD student
 
-{#
 I do not have any PhD position calls open at the moment.
 But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss if you are interested in working with me.
 I am always willing to consider outstanding students to join my group.
-#}
 
+
+{#
 <div class='highlight' markdown=1>
 I am currently looking for people interested in joining my group as a PhD student to work on topics at the intersection of optimization, learning, and statistics.
 Example projects include, but are certainly not limited to,
@@ -72,7 +72,7 @@ Example projects include, but are certainly not limited to,
 - Science-constrained learning
 - Resilience in learning and control
 - Ascent-descent dynamics in optimization and sampling
-{# - Rethinking generalization as a learning requirements #}
+- Rethinking generalization as a learning requirements
 
 Also feel free to [apply](#how-to-apply) if you are interested in any other direction of my research.
 
@@ -87,7 +87,7 @@ yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 {: style='margin-bottom:0px;'}
 </div>
-
+#}
 
 ### Requirements
 
