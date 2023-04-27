@@ -37,6 +37,14 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 ## News
 
+- **Apr 24th, 2023** &ndash; Two papers accepted at ICML 2023:
+    - *"Automatic data augmentation via invariance-constrained learning"*
+    [[paper]({filename}/pages/publications.md#Hounie23a)]
+    - *"Learning globally smooth functions on manifolds"*
+    [[paper]({filename}/pages/publications.md#Cervino23l)]
+
+- **Apr 22nd, 2023** &ndash; I am participating of the [Science Cypher](https://www.kunstmuseum-stuttgart.de/veranstaltungen/science-cypher) which happens in the context of the "SHIFT: KI und eine zukünftige Gemeinschaft" exhibition of the Stuttgart Museum of Art ([Kunstmuseum Stuttgart](https://www.kunstmuseum-stuttgart.de/)).
+
 - **Feb 2nd, 2023** &ndash; I am giving a (hybrid) talk at EPFL (see [here](https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/luiz-chamon/) for more details and registration).
 
 - **Jan 11th, 2023** &ndash; I have joined the faculty of the International Max Planck Research School for Intelligent Systems ([IMPRS-IS](https://imprs.is.mpg.de/)).

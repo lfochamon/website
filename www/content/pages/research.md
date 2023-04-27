@@ -186,7 +186,7 @@ and robust learning
 [RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
 
 
-{{ collapsible_pubs(('Chamon23c', 'Robey21a', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s', 'Robey22p')) }}
+{{ collapsible_pubs(('Hounie23a', 'Cervino23l', 'Chamon23c', 'Robey21a', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s', 'Robey22p')) }}
 
 &nbsp;
 
@@ -228,7 +228,7 @@ and robust learning
 [RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
 
 
-{{ collapsible_pubs(('Robey21a', 'Robey22p', 'Chamon20ta')) }}
+{{ collapsible_pubs(('Hounie23a', 'Cervino23l', 'Robey21a', 'Robey22p', 'Chamon20p', 'Chamon20ta')) }}
 
 &nbsp;
 
