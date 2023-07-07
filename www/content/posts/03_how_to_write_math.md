@@ -16,6 +16,8 @@ status: draft
 - Always be specific about what you're referencing (no "the previous equation," "the inequality above")
 - [Halmos](https://sites.math.washington.edu/~lind/Resources/Halmos.pdf)
 - [Rota 1](https://www.ams.org/notices/199701/comm-rota.pdf)
+- [Mathematical speaking](https://math.mit.edu/~poonen/papers/speaking.pdf)
+- [Mathematical writing](https://math.mit.edu/~poonen/papers/writing.pdf)
 
 > Sloppy presentation is simply NOT ACCEPTABLE. If your presentation is not professionally executed,
   it is almost impossible to tell if your arguments are correct. Bizarrely enough, it's just like Mother said:

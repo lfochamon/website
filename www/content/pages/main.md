@@ -25,6 +25,10 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 &nbsp;
 
 {#
+- Check that PR paper was spotlighted at ICML
+#}
+
+{#
 **I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
 **More details in the [call]({filename}/pages/prospective.md#phd-student)!**<br><br>
 **You can also find out more about the different opportunities to join the group [here]({filename}/pages/prospective.md)!**
@@ -36,6 +40,14 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 &nbsp;
 
 ## News
+
+- **Jul 11th, 2023** &ndash; I am giving an invited talk at the [Data Science and Dependence 2023 Conference](https://stat.math.uni-heidelberg.de/datascience2023/index.html) in Heidelberg.
+
+- **Jun 21st, 2023** &ndash; I am giving a seminar at the [SimTech](https://www.simtech.uni-stuttgart.de/) ML sessions, University of Stuttgart.
+
+- **Jun 20th, 2023** &ndash; I am giving a talk at the [Kolloquium Technische Kybernetik](https://www.ist.uni-stuttgart.de/de/veranstaltungen/Vortrag-von-Dr.-Luiz-Chamon/), University of Stuttgart.
+
+- **May 16th, 2023** &ndash; *"Distributed Universal Adaptive Networks"* was accepted for publication on the IEEE TSP ([paper]({filename}/pages/publications.md#Lopes23d)).
 
 - **Apr 24th, 2023** &ndash; Two papers accepted at ICML 2023:
     - *"Automatic data augmentation via invariance-constrained learning"*

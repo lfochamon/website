@@ -98,8 +98,8 @@ a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
 fairness {{- cite('Chamon20p', 'Chamon23c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
-smoothness {{- cite('Cervino22l') }},
-and invariance {{- cite('Hounie22a') }}.
+smoothness {{- cite('Cervino23l') }},
+and invariance {{- cite('Hounie23a') }}.
 On the one hand, I investigate fundamental questions such as
 
 - when is it possible to learning under requirements? 
@@ -111,8 +111,8 @@ On the one hand, I investigate fundamental questions such as
 
 On the other hand, I am interested in the impact constrained learning can have on traditional
 learning tasks, such as
-image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie22a') }},
-semi-supervised learning {{- cite('Cervino22l') }},
+image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie23a') }},
+semi-supervised learning {{- cite('Cervino23l') }},
 and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }}.
 Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
 shifting away from the current objective-centric paradigm towards a constraint-driven one.
@@ -186,7 +186,7 @@ and robust learning
 [RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
 
 
-{{ collapsible_pubs(('Hounie23a', 'Cervino23l', 'Chamon23c', 'Robey21a', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s', 'Robey22p')) }}
+{{ collapsible_pubs('Chamon23c', 'Robey22p', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s') }}
 
 &nbsp;
 
@@ -215,20 +215,8 @@ interior of the expectation&ndash;almost&nbsp;sure spectrum.
 
 </div>
 
-<!-- model-free wireless resource allocation
-[[EZCLR IEEE TSP'19]({filename}/pages/publications.md#Eisen19l)],
-safe reinforcement learning
-[[PCCR NeurIPS'19]({filename}/pages/publications.md#Paternain19c);
-[PCCR IEEE TAC'23]({filename}/pages/publications.md#Paternain23s)],
-fair classification
-[[CPCR ICASSP'20]({filename}/pages/publications.md#Chamon20ta);
-[CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p)],
-and robust learning
-[[CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p);
-[RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
 
-
-{{ collapsible_pubs(('Hounie23a', 'Cervino23l', 'Robey21a', 'Robey22p', 'Chamon20p', 'Chamon20ta')) }}
+{{ collapsible_pubs('Hounie23a', 'Cervino23l', 'Robey21a', 'Chamon20p', 'Chamon20ta') }}
 
 &nbsp;
 
@@ -274,7 +262,7 @@ I continue to explore the impact of these contributions on how we process and in
 with the continuous nature real world signals beyond classical sampling as well as
 their impact in other areas, e.g., [learning](#constrained-learning). -->
 
-{{ collapsible_pubs(('Chamon20f', 'Peifer20s', 'Chamon19l')) }}
+{{ collapsible_pubs('Chamon20f', 'Peifer20s', 'Chamon19l') }}
 
 
 &nbsp;
@@ -320,7 +308,7 @@ more amenable compact operator theory rather than matrix theory.
 [RCR arXiv'21]({filename}/pages/publications.md#Ruiz21t)] -->
 
 
-{{ collapsible_pubs(('Ruiz20g', 'Ruiz21g', 'Ruiz20t', 'Ruiz20ga', 'Ruiz21t')) }}
+{{ collapsible_pubs('Ruiz20g', 'Ruiz21g', 'Ruiz20t', 'Ruiz20ga', 'Ruiz21t') }}
 
 
 
@@ -369,7 +357,7 @@ and control scheduling (subject to matroid constraints)
 [[CAR IEEE TAC'22]({filename}/pages/publications.md#Chamon22a)]. -->
 
 
-{{ collapsible_pubs(('Chamon22a', 'Chamon21a', 'Chamon19m', 'Chamon18g', 'Chamon17a', 'Chamon16n')) }}
+{{ collapsible_pubs('Chamon22a', 'Chamon21a', 'Chamon19m', 'Chamon18g', 'Chamon17a', 'Chamon16n') }}
 
 
 &nbsp;
@@ -416,7 +404,7 @@ and their composition
 </div>
 
 
-{{ collapsible_pubs(('Chamon16c', 'Chamon14t', 'Chamon13t', 'Chamon12a', 'Chamon12c')) }}
+{{ collapsible_pubs('Chamon16c', 'Chamon14t', 'Chamon13t', 'Chamon12a', 'Chamon12c', 'Lopes23d') }}
 
 
 &nbsp;
@@ -449,7 +437,7 @@ between variables and passenger comfort. This simulator is still being used in c
 between the University of São&nbsp;Paulo and aeronautic industries.
 
 
-{{ collapsible_pubs(('Bittencourt12p', 'Chamon11a', 'Chamon10t')) }}
+{{ collapsible_pubs('Bittencourt12p', 'Chamon11a', 'Chamon10t') }}
 
 
 &nbsp;

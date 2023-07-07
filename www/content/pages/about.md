@@ -16,8 +16,8 @@ a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
 fairness {{- cite('Chamon20p', 'Chamon23c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
-smoothness {{- cite('Cervino22l') }},
-and invariance {{- cite('Hounie22a') }}.
+smoothness {{- cite('Cervino23l') }},
+and invariance {{- cite('Hounie23a') }}.
 
 For more information, you can check out my&nbsp;[**CV**]({static}/pdf/lfochamon_cv.pdf),
 read a more [**formal&nbsp;bio**]({filename}/pages/bio.md),

@@ -55,6 +55,8 @@
     <a href="{{SITEURL}}/pages/publications.html#{{ tag }}">{{ refs.reflist[tag] }}</a>
     {% for publication in publications | selectattr('key', 'eq', tag) %}
       <span class="tooltiptext" style="white-space: normal;font-size: 12.9px; color: #515151;">{{ publication.text | replace('*','\*') }}</span>
+    {% else %}
+      {{ (tag + ' not found') | error }}
     {% endfor %}
   </span>
 
@@ -75,16 +77,23 @@
  
   # Args
  
-  key_list: list of strings containing the bibtex citation keys
+  varargs: list of strings containing the bibtex citation keys
  #}
 
-{% macro collapsible_pubs(key_list) -%}
+{% macro collapsible_pubs() -%}
 <div class="collapsible">
 <button type="button">Selected publications</button>
 <div class="collapsible-content">
 
+{%- for tag in varargs %}
+  {% for publication in publications | selectattr('key', 'eq', tag) %}
+  {% else %}
+    {{ (tag + ' not found') | error }}
+  {% endfor %}
+{% endfor %}
+
 <ul class="pubs_list">
-    {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', key_list) %}
+    {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', varargs) %}
       <li>
         {{ publication.text }}
         {% if publication.award %}

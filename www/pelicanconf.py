@@ -171,3 +171,9 @@ IMAGE_PROCESS = {
     "normal-square": ["scale_out 400 400 False", crop_from_center(400,400)],
     "small-square": ["scale_out 300 300 False", crop_from_center(200,200)],
 }
+
+
+def throw_error(msg):
+    raise Exception(f'[ERROR]: {msg}')
+
+JINJA_FILTERS = {'error': throw_error}
