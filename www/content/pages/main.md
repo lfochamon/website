@@ -14,7 +14,7 @@ save_as: index.html
 # Hello there!
 
 <p style="font-size: 20px;">My name is Luiz Chamon. I am an
-<a href="https://ellis.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
+<a href="https://ellis-stuttgart.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
 independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
 I head the <b>Information Systems Group</b>.
 We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
@@ -24,9 +24,6 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 &nbsp;
 
-{#
-- Check that PR paper was spotlighted at ICML
-#}
 
 {#
 **I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
