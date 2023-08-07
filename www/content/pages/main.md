@@ -38,6 +38,8 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 ## News
 
+- **Aug 7th, 2023** &ndash; *"Transferability Properties of Graph Neural Networks"* was accepted for publication on the IEEE TSP ([paper]({filename}/pages/publications.md#Ruiz23t)).
+
 - **Jul 11th, 2023** &ndash; I am giving an invited talk at the [Data Science and Dependence 2023 Conference](https://stat.math.uni-heidelberg.de/datascience2023/index.html) in Heidelberg.
 
 - **Jun 21st, 2023** &ndash; I am giving a seminar at the [SimTech](https://www.simtech.uni-stuttgart.de/) ML sessions, University of Stuttgart.
