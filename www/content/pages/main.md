@@ -18,8 +18,8 @@ save_as: index.html
 independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
 I head the <b>Information Systems Group</b>.
 We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
-<!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in <b>signal processing</b>,
-<b>control</b>, and <b>machine learning</b>. -->
+<!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
+<b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
 </p>
 
 &nbsp;
@@ -37,6 +37,12 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 &nbsp;
 
 ## News
+
+- **Oct 5th, 2023** &ndash; I am giving an invited talk on *"Learning under requirements"* at [SimTech 2023](https://www.simtech2023.uni-stuttgart.de/) in Stuttgart.
+
+- **Sep 25th, 2023** &ndash; I am giving a talk on *"Learning under robustness constraints"* at [EUCCO 2023](https://scoop.iwr.uni-heidelberg.de/events/2023_eucco/) in Heidelberg.
+
+- **Sep 15th, 2023** &ndash; I a tutorial on *"Robust learning"* at the [IMPRS-IS BootCamp](https://imprs.is.mpg.de/events/imprs-is-2023-boot-camp).
 
 - **Aug 7th, 2023** &ndash; *"Transferability Properties of Graph Neural Networks"* was accepted for publication on the IEEE TSP ([paper]({filename}/pages/publications.md#Ruiz23t)).
 
