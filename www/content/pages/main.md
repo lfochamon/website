@@ -42,7 +42,7 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 
 - **Sep 25th, 2023** &ndash; I am giving a talk on *"Learning under robustness constraints"* at [EUCCO 2023](https://scoop.iwr.uni-heidelberg.de/events/2023_eucco/) in Heidelberg.
 
-- **Sep 15th, 2023** &ndash; I a tutorial on *"Robust learning"* at the [IMPRS-IS BootCamp](https://imprs.is.mpg.de/events/imprs-is-2023-boot-camp).
+- **Sep 15th, 2023** &ndash; I am giving a tutorial on *"Robust learning"* at the [IMPRS-IS BootCamp](https://imprs.is.mpg.de/events/imprs-is-2023-boot-camp).
 
 - **Aug 7th, 2023** &ndash; *"Transferability Properties of Graph Neural Networks"* was accepted for publication on the IEEE TSP ([paper]({filename}/pages/publications.md#Ruiz23t)).
 
