@@ -115,6 +115,19 @@ status: draft
     - The hour structure (45 min)
     - The 15 min structure
     - The 3 min structure
+    - Tips
+      * Never finish your talks asking if anyone has questions
+      * Don't go back and forth on slides like a crazy person (repeat the slide)
+      * Never show complicated algorithms and equations, especially if they're too small to read!
+      * Saying more or more complicated words doesn't make you look smarter 
+      * You're not allowed to cop out of answers by saying things like "I'm a mathematician, I don't know about the apps"
+        or "I'm an app guy, the math is not my thing"
+      * No one cares about whether that's your thesis or PhD
+      * No video is fun enough for you to show without commenting it
+    - On being at a conference:
+      * Don't assume you know what people are talking about: most likely you don't
+      * Walking into an ongoing conference talk
+
 
   16. Getting into a PhD program (in the US)
     - Emailing professors

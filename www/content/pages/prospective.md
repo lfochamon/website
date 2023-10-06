@@ -61,7 +61,7 @@ to discuss potential opportunities if you are interested in working with me. Inc
 
 I do not have any PhD position calls open at the moment.
 But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss if you are interested in working with me.
-I am always willing to consider outstanding students to join my group.
+{# I am always willing to consider outstanding students to join my group. #}
 
 
 {#
