@@ -20,9 +20,15 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \hindex{19}
 \publications{\directlua{
 	local f = io.open("lfochamon_pubs.bbl", "r")
-	local lines = f:read("*all")
-	local _, count = string.gsub(lines, "\noexpand\\entry", "")
-	tex.print(count)
+	if f == nil then
+		tex.print("??")
+	else
+		local lines = f:read("*all")
+		local _, total = string.gsub(lines, "\noexpand\\entry", "")
+		local _, preprints = string.gsub(lines, "\noexpand\\keyw\noexpand{preprint\noexpand}", "")
+		local _, others = string.gsub(lines, "\noexpand\\keyw\noexpand{other\noexpand}", "")
+		tex.print(total-preprints-others)
+	end
 }}
 
 \begin{document}

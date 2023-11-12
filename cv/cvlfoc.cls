@@ -13,6 +13,10 @@
 \setboolean{publist}{false}
 \DeclareOption{publist}{\setboolean{publist}{true}}
 
+\newboolean{grants}
+\setboolean{grants}{false}
+\DeclareOption{grants}{\setboolean{grants}{true}}
+
 \DeclareOption{11pt}{\PassOptionsToClass{11pt}{article}}
 \DeclareOption{12pt}{\PassOptionsToClass{12pt}{article}}
 \ExecuteOptions{11pt}
@@ -30,12 +34,23 @@
 %----------------------------------------------------------------------------------------
 \RequirePackage{calc}
 \RequirePackage{graphicx}
+\RequirePackage[right]{eurosym}
 
 \RequirePackage{iftex}
 \ifpdftex
 	\RequirePackage[utf8]{inputenc}
 	\RequirePackage[T1]{fontenc}
 \fi
+
+% Redefine title macro
+\renewcommand*{\title}[2][]{
+\def\temp{#1}\ifx\temp\empty
+	\gdef\@shorttitle{#2}
+\else
+	\gdef\@shorttitle{#1}
+\fi
+\gdef\@title{#2}
+}
 
 % Redefine author macro
 \renewcommand*{\author}[2][]{
@@ -101,7 +116,7 @@
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[l]{\normalfont\small\color{another.blue}\MakeUppercase{\@shortauthor}}
+\fancyhead[l]{\normalfont\small\color{another.blue}\MakeUppercase{\@shortauthor\ --- \@shorttitle}}
 \fancyhead[c]{}
 \fancyhead[r]{\normalfont\small\color{another.blue}\thepage}
 \fancyfoot{}
@@ -110,6 +125,9 @@
 \RequirePackage{titlesec}
 \titleformat*{\section}{\color{stutt.blue}\Large\bfseries\MakeUppercase}
 \titlespacing*{\section}{0pt}{*2.3}{*0}
+
+\titleformat*{\subsection}{\color{black}\large\itshape}
+\titlespacing*{\subsection}{0pt}{*1}{*0}
 
 
 %----------------------------------------------------------------------------------------
@@ -275,12 +293,12 @@
 	\vspace{0.5\baselineskip}
 	\textcolor{stutt.blue}{\small\faGraduationCap}%
 	\hspace{0.65ex}%
-	{\small\raisebox{0.15pt}{\href{\@gscholar}{\textbf{Google Scholar}}}}
+	{\small\raisebox{0.1pt}{\href{\@gscholar}{\textbf{Google Scholar}}}}
 	\hfill
 	\hspace{1pt}%
 	\textcolor{stutt.blue}{\small\faOrcid}%
 	\hspace{0.92ex}%
-	{\footnotesize\raisebox{1.25pt}{\href{https://orcid.org/\@orcid}{\textbf{\@orcid}}}}
+	{\footnotesize\raisebox{0.3pt}{\href{https://orcid.org/\@orcid}{\textbf{\@orcid}}}}
 
 	\vspace{-\baselineskip}{\color{stutt.gray!30}\rule{\textwidth}{1pt}}
 

@@ -17,7 +17,8 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \def\convertto#1#2{\strip@pt\dimexpr #2*65536/\number\dimexpr 1#1}
 \makeatother
 
-\author[Luiz F.\ O.\ Chamon --- CV]{Luiz F.\ O.\ Chamon}
+\author[Luiz F.\ O.\ Chamon]{Luiz F.\ O.\ Chamon}
+\title{CV}
 \email{luiz.chamon@simtech.uni-stuttgart.de}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
@@ -25,10 +26,16 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \citations{1389}
 \hindex{19}
 \publications{\directlua{
-	local f = io.open("lfochamon_cv.bbl", "r")
-	local lines = f:read("*all")
-	local _, count = string.gsub(lines, "\noexpand\\entry", "")
-	tex.print(count)
+	local f = io.open("lfochamon_pubs.bbl", "r")
+	if f == nil then
+		tex.print("??")
+	else
+		local lines = f:read("*all")
+		local _, total = string.gsub(lines, "\noexpand\\entry", "")
+		local _, preprints = string.gsub(lines, "\noexpand\\keyw\noexpand{preprint\noexpand}", "")
+		local _, others = string.gsub(lines, "\noexpand\\keyw\noexpand{other\noexpand}", "")
+		tex.print(total-preprints-others)
+	end
 }}
 
 \begin{document}
@@ -206,24 +213,99 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		\newline
 		\textit{Dept.\ of Electrical and Systems Engineering, University of Pennsylvania}
 	}
-\end{entrydate}
 
+	\entrylist{}{\item Travel grants to major conferences, such as IEEE ICASSP, NeurIPS,
+	and~NSDI.}
+\end{entrydate}
 
 
 %----------------------------------------------------------------------------------------
 %	GRANTS
 %----------------------------------------------------------------------------------------
-%\section*{Grants}
+\ifthenelse{\boolean{grants}}{
+\section*{Third-Party Funding}
 
-%	\item \textbf{2013}: IEEE Standard Education Committee grant.
-%	\item Travel grants to major conferences, such as ICASSP, CDC, NeurIPS, and USENIX NSDI.
+%\vspace{-0.3\baselineskip}{\color{stutt.gray!30}\rule{\textwidth}{1pt}}
+%
+%\begingroup
+%	\small
+%	Total amount: XXX \euro
+%	\hspace{1cm}
+%	Transferable: XXX \euro
+%\endgroup
+%
+%\vspace{-0.5\baselineskip}{\color{stutt.gray!30}\rule{\textwidth}{1pt}}
+%
+%\vspace{0.5\baselineskip}
 
-%\begin{entrydate}
-%	\entry{02/2015--08/2015}
-%		{Polytechnic School of the University of São Paulo}
-%		{Brazil}
-%		{\emph{Research staff, Electronic Systems Engineering Department}}
-%\end{entrydate}
+%\subsection*{Current projects}
+
+\subsection*{Completed projects}
+
+\begin{entrydate}
+	\entry{02/2013--08/2013}
+		{\textbf{Wireless battery charging for an underwater sensing probe}\\
+		\emph{PI (co-applicant with C\'{a}ssio G. Lopes)}\\
+		Source: IEEE \hfill Volume: US\$ 800}
+\end{entrydate}
+
+
+\subsection*{Participation in funded projects}
+
+\begin{entrydate}
+	\entrydetail{09/2020--present}
+		{Transferable, Hierarchical, Expressive, Optimal, Robust, Interpretable\\Networks}
+		{}
+		{\emph{Function: participation in the writing of grant proposal}\\
+		Applicants: A.\ Ribeiro (PI), E.\ Dobriban, R.\ Ghrist, G.\ Pappas\\
+		Source: National Science Foundation, USA \hfill Volume: US\$ 1.000.000}
+
+	\entrydetail{09/2017--present}
+		{Distributed and Collaborative Intelligent Systems and Technology}
+		{}
+		{\emph{Function: participation in the writing of grant proposal and partial reports}\\
+		Consortium with~37 PIs from 18 institutions\\
+		Source: Army Research Lab, USA}
+
+	\entrydetail{09/2019--08/2023}
+		{Center for the Foundations of Information Processing\\at the University of Pennsylvania}
+		{}
+		{\emph{Function: participation in the writing of grant proposal}\\
+		Applicants: A.\ Ribeiro (PI), K.\ Daniilidis, S.\ Sarkar, R.\ Ghrist, E.\ Dobriban\\
+		Source: National Science Foundation, USA \hfill Volume: US\$ 1.500.000}
+\end{entrydate}
+
+
+\subsection*{Proposals under review}
+
+\begin{entrydate}
+	\entrydetail{}
+		{Beyond (Robust) Learning: Navigating the Spectrum Between\\Average- and Worst-case Performance}
+		{}
+		{\emph{Principal Investigator}\\
+		Source: DFG (Emmy Noether program) \hfill Volume: 1.571.800 \euro}
+
+	\entrydetail{}
+		{Data-Driven Decision Making for Constrained Non-Stationary Environments}
+		{}
+		{\emph{Principal Investigator}\\
+		Co-applicants: C.\ Vernade (U.\ T\"{u}bingen), G.\ Neu (U.\ Pompeu Fabra, ES),\\
+		M.\ Calvo-Fullana (U.\ Pompeu Fabra, ES)\\
+		Source: DFG-AEI~(Spain) joint call \hfill Volume: 537.950 \euro}
+\end{entrydate}
+
+
+\subsection*{Other competitive grants}
+
+\begin{entrydate}
+	\entrydetail{10/2023--present}
+		{Science-constrained learning}
+		{}
+		{\emph{Principal Investigator}\\
+		Source: U. Stuttgart / SimTech~(DFG EXC 2075) \hfill Volume: 348.000 \euro}
+\end{entrydate}
+}{}
+
 
 
 
@@ -399,19 +481,72 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \end{entrydate}
 
 
+
 %----------------------------------------------------------------------------------------
 %	TEACHING/SUPERVISION
 %----------------------------------------------------------------------------------------
 \section*{Teaching and supervision}
 
-\begin{entrydate}
-	\entrydetail{10/2023--present}{University of Stuttgart}
-		{Supervisor}
-		{\emph{Doctoral researchers: 2}}
 
+\subsection*{Supervision of doctoral researchers}
+
+\begin{entrydate}
+	\entry{01/2024--present}
+		{Viggo Moro \hfill U. Stuttgart / IMPRS-IS}
+	\entry{10/2023--present}
+		{Aneesh Barthakur \hfill U. Stuttgart / IMPRS-IS}
+	\entry{09/2021--present}{Ignacio Hounie \hfill U. Pennsylvania\\
+		\emph{(co-supervisor; main supervisor: Prof.\ Dr.\ Alejandro Ribeiro)}}
+	\entry{08/2019--09/2022}{Luana Ruiz
+		{\small (now assistant professor at John Hopkins U.)}
+		\hfill U. Pennsylvania\\
+		\emph{(co-supervisor; main supervisor: Prof.\ Dr.\ Alejandro Ribeiro)}}
+	\entry{06/2018--07/2021}{Maria Peifer \hfill U. Pennsylvania\\
+		\emph{(co-supervisor; main supervisor: Prof.\ Dr.\ Alejandro Ribeiro)}}
+\end{entrydate}
+
+
+\subsection*{Supervision of undergraduate researchers}
+
+\begin{entrydate}
+	\entry{02/2018--06/2020}
+		{Alexandre Amice {\small (now PhD student at MIT)}
+		\hfill U. Pennsylvania\\
+		\emph{(co-supervisor; main supervisor: Prof.\ Dr.\ Alejandro Ribeiro)}}
+\end{entrydate}
+
+
+\subsection*{Teaching}
+
+\begin{entrydate}
+	\entrydetail{01/2016--05/2020}
+		{University of Pennsylvania}
+		{Teaching assistant and Lecturer}
+		{\emph{Undergraduate stochastic processes and signal processing}}
+
+	\entrydetail{2013--2014}{University of S\~{a}o Paulo}
+		{Teaching assistant}
+		{\emph{Undegraduate stochastic processes}\\
+		Created instructional videos that have accumulated over 490~followers and\\ 120.000~views
+		(\href{https://www.youtube.com/@videos-aleatorios}{\textbf{Youtube}}---in Portuguese)}
+
+	\entrydetail{2009}{INSACAST Formation Continue}
+		{Instructor}
+		{Taught undergraduate laboratories, certifying workshops~(COFREND and Dassault Aviation), and developed tutorial on nondestructive testing of concrete}
+\end{entrydate}
+
+
+\subsection*{Mentoring}
+
+\begin{entrydate}
 	\entrydetail{02/2022--03/2022}{Women in STEM}
 		{Judge}
 		{\href{http://envisionrc.com/}{\textbf{ENVISION}} \emph{research competition}}
+
+	\entrydetail{10/2019}{University of Pennsylvania}
+		{}
+		{\href{https://meyerhoff.umbc.edu/}{\textbf{Meyerhoff Scholars}} \emph{meeting
+		(U. Maryland program supporting diversity in STEM)}}
 
 	\entrydetail{06/2019--09/2019}{University of Pennsylvania}
 		{Mentor}
@@ -421,21 +556,13 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		{Mentor}
 		{\emph{Research experience for undergraduate program} (\href{https://sunfest.seas.upenn.edu}{\textbf{SUNFEST}})}
 
-	\entrydetail{01/2016--05/2020}
-		{University of Pennsylvania}
-		{Teaching assistant and Lecturer}
-		{\emph{Undergraduate stochastic processes and signal processing}}
-
-	\entrydetail{2013--2014}{University of S\~{a}o Paulo}
-		{Teaching assistant}
-		{\emph{Undegraduate stochastic processes}\\
-		Created instructional videos that have accumulated over 490~followers and\\ 120000~views
-		(\href{https://www.youtube.com/@videos-aleatorios}{\textbf{Youtube}}---in Portuguese)}
-
-	\entrydetail{2009}{INSACAST Formation Continue}
-		{Instructor}
-		{Taught undergraduate laboratories, certifying workshops~(COFREND and Dassault Aviation), and developed tutorial on nondestructive testing of concrete}
+	\entrydetail{09/2017}{University of Pennsylvania}
+		{}
+		{\href{https://meyerhoff.umbc.edu/}{\textbf{Meyerhoff Scholars}} \emph{meeting
+		(U. Maryland program supporting diversity in STEM)}}
 \end{entrydate}
+
+
 
 
 
@@ -471,10 +598,12 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \textit{Greek}~(basic)
 
 
-\ifthenelse{\boolean{publist}\and\boolean{highlights}}{
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS LIST
 %----------------------------------------------------------------------------------------
+\ifthenelse{\boolean{publist}\and\boolean{highlights}}{
+\newpage
+
 \section*{Publication list}
 
 \begin{paracol}{2}
