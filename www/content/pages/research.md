@@ -97,7 +97,7 @@ Currently, the main drive of my research is developing the theory, algorithms, a
 a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
 fairness {{- cite('Chamon20p', 'Chamon23c') }},
-safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
+safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
 smoothness {{- cite('Cervino23l') }},
 and invariance {{- cite('Hounie23a') }}.
 On the one hand, I investigate fundamental questions such as
@@ -107,13 +107,13 @@ On the one hand, I investigate fundamental questions such as
 - how much harder is it than vanilla learning? 
   <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon23c') }}
 - are there problems that only constrained learning can tackle? 
-  <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana21s') }}
+  <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana24s') }}
 
 On the other hand, I am interested in the impact constrained learning can have on traditional
 learning tasks, such as
 image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie23a') }},
 semi-supervised learning {{- cite('Cervino23l') }},
-and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }}.
+and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }}.
 Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
 shifting away from the current objective-centric paradigm towards a constraint-driven one.
 
@@ -170,7 +170,7 @@ and that they have essentially the same sample complexity&nbsp;(*up to a log fac
 solving only unconstrained learning problems&nbsp;(*using classical dual ascent techniques*).
 What is more, we know that constrained learning is strictly more expressive than its unconstrained
 counterpart, since there exists reinforcement learning tasks that can only be solved using constrained
-reinforcement learning (*no fixed reward can lead to the desired behavior*) {{- cite('Calvo-Fullana21s') }}.
+reinforcement learning (*no fixed reward can lead to the desired behavior*) {{- cite('Calvo-Fullana24s') }}.
 
 These results have enabled
 model-free wireless resource allocation

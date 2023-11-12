@@ -17,7 +17,7 @@ save_as: index.html
 <a href="https://ellis-stuttgart.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
 independent research group leader at the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
 I head the <b>Information Systems Group</b>.
-We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
+We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
 <b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
 </p>
@@ -37,6 +37,8 @@ We develop tools to enable inteligent systems to <b>extract</b>, <b>process</b>,
 &nbsp;
 
 ## News
+
+- **Nov 30th, 2023** &ndash; I am giving a talk and participating of the *"Future of AI"* panel during [Cyber Valley at University of Stuttgart](https://www.uni-stuttgart.de/en/university/news/event/Engineering-Intelligence--Cyber-Valley-at-University-of-Stuttgart/) ([register here](https://eveeno.com/universitaet-stuttgart-cv-2023) until Nov 24th).
 
 - **Oct 5th, 2023** &ndash; I am giving an invited talk on *"Learning under requirements"* at [SimTech 2023](https://www.simtech2023.uni-stuttgart.de/) in Stuttgart.
 

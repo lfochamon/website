@@ -211,6 +211,19 @@ status: draft
       - [ACS reviewing tips](https://acsoncampus.acs.org/wp-content/uploads/2021/04/ACSonC_10tips_peer-review_Poster.pdf)
     - Make the editor's life easy
 
+  > Antes de mais nada, eu levo revisoes a serio demais. Da pra fazer revisoes boas muito mais simples e menores do que as que eu escrevo. FYI.
+
+  > De qualquer forma, a estrutura de uma revisão é sempre a mesma: 1 parágrafo que descreve o que o paper faz (tipo um abstract do abstract... eu tento reescrever com minhas palavras, mas resumir o abstract é o que muita gente faz); uma lista de issues; e uma decisao. Essas coisas de strengths e weakness, só escreve "See comments to authors". E escreve a revisão na última caixa.
+
+  > O jeito mais fácil de revisar é ler o paper (de repente pode ir marcando umas coisas, se quiser) e decidir se vai aceitar ou rejeitar. Aí parte para a revisão. Congresso não tem segundo round de revisões, então minha política é: quando em dúvida, rejeita. O povo submete pro próximo congresso, se for o caso.
+
+  > Se decidir aceitar, o parágrafo inicial tem que dar uma idéia de porque o paper é bom (tema novo? teoria sólida? resultado interessante?). Depois disso, você lista as coisas que teria que melhorar no paper (coisas que você acha que falta... não tem muita simulação, as provas são enroladas, o texto é complicado... se você não entendeu algo, é culpa do autor!). E fecha aceitando o paper.
+
+  > Se decidir rejeitar, o parágrafo inicial vira simplesmente o resumo do resumo. Eu gosto também de dizer algo positivo (bem escrito, claro, sei lá). E depois disso você joga todos os motivos pelo qual o paper não está legal (sempre melhor tentar frasear do ponto de vista de "o paper não está pronto AINDA, mas se fizesse essas coisas talvez ficasse legal"... nem sempre é o caso, mas se possível... você vai ver que revisores podem ser bem agressivos e isso é ridículo).
+
+  > Dependendo do dia ou da situação, eu uso dois formatos: (i) uma especie de texto mesmo (que nem as que estão em anexo); (ii) uma listagem de pontos (em geral com 3 itens: MAJOR ISSUES, as merdas grandes; MINOR ISSUES, coisas menores como typos ou unconventional notation; MISSING REFERENCES, se for o caso). Faço o que for mais fácil. Mesmo pra congresso, eu confiro bibliografia e demonstrações, mas isso quase ninguém faz (mesmo pra journal!). Não sinta que você precisa fazer ;)
+    
+
   4. The review process (the author's sides)
     - How to read reviews?
       - Twice: first to vent, then to learn

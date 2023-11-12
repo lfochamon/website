@@ -15,7 +15,7 @@ developing the theory, algorithms, and applications of
 a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
 fairness {{- cite('Chamon20p', 'Chamon23c') }},
-safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana21s') }},
+safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
 smoothness {{- cite('Cervino23l') }},
 and invariance {{- cite('Hounie23a') }}.
 
