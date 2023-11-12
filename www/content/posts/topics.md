@@ -127,6 +127,7 @@ status: draft
     - On being at a conference:
       * Don't assume you know what people are talking about: most likely you don't
       * Walking into an ongoing conference talk
+    - https://www.youtube.com/watch?v=WVnmgUakDzs
 
 
   16. Getting into a PhD program (in the US)
