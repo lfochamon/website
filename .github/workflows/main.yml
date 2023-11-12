@@ -71,7 +71,7 @@ jobs:
       - name: LaTeX compile
         working-directory: cv
         run: |
-          lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; bibtex ${{ env.FILE_CV }}.aux; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}".tex;
+          lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; bibtex ${{ env.FILE_CV }}.aux; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}"; lualatex "\PassOptionsToClass{highlights,publist}{cvlfoc}\input{${{ env.FILE_CV }}.tex}";
           lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex; bibtex ${{ env.FILE_PUBS }}.aux; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex; lualatex ${{ env.FILE_PUBS }}.tex;
           lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; bibtex ${{ env.FILE_DFG }}.aux; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex;
 
