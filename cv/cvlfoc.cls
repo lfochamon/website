@@ -135,9 +135,7 @@
 %----------------------------------------------------------------------------------------
 \RequirePackage{fontawesome5}
 \RequirePackage[default]{raleway}
-%\RequirePackage[defaultsans]{droidsans}
-%\RequirePackage{cmbright}
-\renewcommand*{\familydefault}{\sfdefault} % Force the sans-serif version of any font used
+\renewcommand*{\familydefault}{\sfdefault}
 
 \RequirePackage{xcolor}
 \definecolor{stutt.blue}{RGB}{0,81,158}
@@ -156,24 +154,24 @@
 \setlength{\parindent}{0mm} % Suppress paragraph indentation
 
 \RequirePackage{hyperref}
-\hypersetup{backref, pdfpagemode=FullScreen, colorlinks=true, urlcolor=stutt.blue,
-			pdfstartview=FitV, pdfpagemode=None}
+\hypersetup{colorlinks=true, urlcolor=stutt.blue, citecolor=stutt.blue, linkcolor=stutt.blue,%
+			pdfstartview=FitV, pageanchor}
 
 \RequirePackage{enumitem}
 \setlist[itemize]{nosep, topsep=0pt, itemsep=3pt, left=-1pt .. 9pt,
 	label={\color{stutt.lightblue}\raisebox{-0.15em}{\scalebox{1.5}{\textbullet}}}
 }
 
-
 % Title section
 \renewcommand{\maketitle}{
 	\thispagestyle{empty}
 
+	\begin{spacing}{1}
 	{\fontsize{36pt}{0pt}\selectfont\color{another.blue}\bfseries\hspace{-0.12ex}\MakeUppercase{\@author}}
 
 	\vspace{-0.3\baselineskip}{\color{stutt.gray!30}\rule{\textwidth}{1pt}}
 
-	\vspace{0.2\baselineskip}
+	\vspace{0.15\baselineskip}
 	\textcolor{stutt.blue}{\faEnvelope}%
 	\hspace{1ex}%
 	{\small\raisebox{0.6pt}{\href{mailto:\@email}{\textbf{\@email}}}}
@@ -183,7 +181,7 @@
 	\textcolor{stutt.blue}{\faGlobe}%
 	\hspace{1ex}%
 	{\small\raisebox{0.6pt}{\href{https://\@website}{\textbf{\@website}}}}%
-	\vspace{\baselineskip-0.1ex}
+	\end{spacing}
 }
 
 
@@ -196,31 +194,40 @@
 \DeclareFieldFormat{addendum}{\space\textbf{[#1]}}
 \DeclareBibliographyCategory{highlighted}
 
-\ifthenelse{\boolean{highlights}}{
-	\defbibenvironment{bibliography}{%
-	\list
-	{\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
-	{\setlength{\parskip}{0pt}
-	\setlength{\itemsep}{3pt}
-	\setlength{\parsep}{0pt}
-	\setlength{\labelsep}{0.7\biblabelsep}
-	}
-	}{\endlist}
-	{\item}
-}{
-	\defbibenvironment{bibliography}{%
-	\list
-	{\ifcategory{highlighted}{\makebox[0pt][r]{\raisebox{1.7pt}{\tiny\faStar}~}}{}%
-	\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
-	{\setlength{\parskip}{0pt}
-	\setlength{\itemsep}{3pt}
-	\setlength{\parsep}{0pt}
-	\setlength{\labelsep}{0.7\biblabelsep}
-	}
-	}{\endlist}
-	{\item}
+\defbibenvironment{bibstarred}{%
+\list
+{\ifcategory{highlighted}{\makebox[0pt][r]{\raisebox{1.7pt}{\tiny\faStar}~}}{}%
+\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\labelsep}{0.7\biblabelsep}
 }
+}{\endlist}
+{\item}
 
+\defbibenvironment{bibhighlights}{%
+\list
+{\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\labelsep}{0.7\biblabelsep}
+}
+}{\endlist}
+{\item\clearfield{url}}
+
+
+\defbibenvironment{bibliography}{%
+\list
+{\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+{\setlength{\parskip}{0pt}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\labelsep}{0.7\biblabelsep}
+}
+}{\endlist}
+{\item}
 
 
 %----------------------------------------------------------------------------------------
@@ -324,10 +331,14 @@
 	\textcolor{stutt.blue}{\small\faOrcid}%
 	\hspace{0.92ex}%
 	{\scriptsize\raisebox{1.25pt}{\href{https://orcid.org/\@orcid}{\textbf{\@orcid}}}}\mystrut
+
+	\vspace{\baselineskip}
+  	{\small See complete list on
+  		\hyperlink{page.\getpagerefnumber{S:publist}}{p.~\getpagerefnumber{S:publist}}}
 	\switchcolumn
 	\mystrut\\
-	\vspace{-2\baselineskip-9pt}
-  	\printbibliography[heading=none, resetnumbers=true, category=highlighted]
+	\vspace{-36.2pt}
+  	\printbibliography[env=bibhighlights, heading=none, resetnumbers=true, category=highlighted]
 	\switchcolumn*
 }
 
@@ -338,8 +349,7 @@
 	\endgroup
 	\switchcolumn
 	\mystrut\\
-	\vspace{-2\baselineskip-9pt}
-  	\printbibliography[heading=none, resetnumbers=true, keyword=#2]
+	\vspace{-36.2pt}
+  	\printbibliography[env=bibstarred, heading=none, resetnumbers=true, keyword=#2]
 	\switchcolumn*
 }
-

@@ -1,8 +1,12 @@
+% !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
+%!TeX program = txs:///compile | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///compile | txs:///compile | txs:///view-pdf
 \documentclass{cvlfoc}
 
 \AtEveryBibitem{\clearfield{pages}\clearfield{isbn}\clearfield{doi}}
 
-\addbibresource{cv.bib}
+\usepackage{setspace}
+\usepackage{refcount}
+
 \addtocategory{highlighted}{%
 % CRL
 Calvo-Fullana24s, Paternain19c,
@@ -13,20 +17,16 @@ Ruiz20g, Ruiz21g,
 % CSL
 Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
-\makeatletter
-\def\convertto#1#2{\strip@pt\dimexpr #2*65536/\number\dimexpr 1#1}
-\makeatother
-
 \author[Luiz F.\ O.\ Chamon]{Luiz F.\ O.\ Chamon}
 \title{CV}
 \email{luiz.chamon@simtech.uni-stuttgart.de}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{1389}
+\citations{1394}
 \hindex{19}
 \publications{\directlua{
-	local f = io.open("lfochamon_cv.bbl", "r")
+	local f = io.open("lfochamon_cv2-blx.bbl", "r")
 	if f == nil then
 		tex.print("??")
 	else
@@ -40,7 +40,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
 \begin{document}
 \maketitle
-
+\setstretch{1}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
@@ -91,7 +91,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		{\emph{ELLIS--SimTech / KI institute}}
 
 	\entrydetail{12/2022--present}
-		{International Max Planck Research School for Intelligent Systems}
+		{Int.\ Max Planck Research School for Intelligent Systems}
 		{Faculty}
 		{}
 
@@ -211,7 +211,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
 		\item Outstanding editorial board service
 		\newline
-		\textit{Dept.\ of Electrical and Systems Engineering, University of Pennsylvania}
+		\textit{IEEE Signal Processing Society}
 	}
 
 	\entrylist{}{\item Travel grants to major conferences, such as IEEE ICASSP, NeurIPS,
@@ -240,41 +240,6 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
 %\subsection*{Current projects}
 
-\subsection*{Completed projects}
-
-\begin{entrydate}
-	\entry{02/2013--08/2013}
-		{\textbf{Wireless battery charging for an underwater sensing probe}\\
-		\emph{PI (co-applicant with C\'{a}ssio G. Lopes)}\\
-		Source: IEEE \hfill Volume: US\$ 800}
-\end{entrydate}
-
-
-\subsection*{Participation in funded projects}
-
-\begin{entrydate}
-	\entrydetail{09/2020--present}
-		{Transferable, Hierarchical, Expressive, Optimal, Robust, Interpretable\\Networks}
-		{}
-		{\emph{Function: participation in the writing of grant proposal}\\
-		Applicants: A.\ Ribeiro (PI), E.\ Dobriban, R.\ Ghrist, G.\ Pappas\\
-		Source: National Science Foundation, USA \hfill Volume: US\$ 1.000.000}
-
-	\entrydetail{09/2017--present}
-		{Distributed and Collaborative Intelligent Systems and Technology}
-		{}
-		{\emph{Function: participation in the writing of grant proposal and partial reports}\\
-		Consortium with~37 PIs from 18 institutions\\
-		Source: Army Research Lab, USA}
-
-	\entrydetail{09/2019--08/2023}
-		{Center for the Foundations of Information Processing\\at the University of Pennsylvania}
-		{}
-		{\emph{Function: participation in the writing of grant proposal}\\
-		Applicants: A.\ Ribeiro (PI), K.\ Daniilidis, S.\ Sarkar, R.\ Ghrist, E.\ Dobriban\\
-		Source: National Science Foundation, USA \hfill Volume: US\$ 1.500.000}
-\end{entrydate}
-
 
 \subsection*{Proposals under review}
 
@@ -283,15 +248,43 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		{Beyond (Robust) Learning: Navigating the Spectrum Between\\Average- and Worst-case Performance}
 		{}
 		{\emph{Principal Investigator}\\
-		Source: DFG (Emmy Noether program) \hfill Volume: 1.571.800 \euro}
+		\emph{Source:} DFG (Emmy Noether program) \hfill \emph{Volume:} 1.571.800 \euro}
 
 	\entrydetail{}
 		{Data-Driven Decision Making for Constrained Non-Stationary Environments}
 		{}
 		{\emph{Principal Investigator}\\
-		Co-applicants: C.\ Vernade (U.\ T\"{u}bingen), G.\ Neu (U.\ Pompeu Fabra, ES),\\
+		\emph{Co-applicants:} C.\ Vernade (U.\ T\"{u}bingen), G.\ Neu (U.\ Pompeu Fabra, ES),\\
 		M.\ Calvo-Fullana (U.\ Pompeu Fabra, ES)\\
-		Source: DFG-AEI~(Spain) joint call \hfill Volume: 537.950 \euro}
+		\emph{Source:} DFG-AEI~(Spain) joint call \hfill \emph{Volume:} 537.900 \euro}
+\end{entrydate}
+
+
+\subsection*{Participation in funded projects}
+
+\begin{entrydate}
+	\entrydetail{09/2020--08/2025\\\small(estimated)}
+		{Transferable, Hierarchical, Expressive, Optimal, Robust, Interpretable\\Networks
+		{\normalfont (NSF \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2031899}{\textbf{\#2031899}})}}
+		{}
+		{\emph{Function:} participation in the writing of grant proposal\\
+		\emph{Applicants:} A.\ Ribeiro (PI), E.\ Dobriban, R.\ Ghrist, G.\ Pappas\\
+		\emph{Source:} National Science Foundation, USA \hfill \emph{Volume:} US\$ 1.000.000}
+
+	\entrydetail{09/2017--09/2027\\\small(estimated)}
+		{Distributed and Collaborative Intelligent Systems and Technology}
+		{}
+		{\emph{Function:} participation in the writing of grant proposal and partial reports\\
+		\emph{Applicants:} consortium with~37 PIs from 18 institutions\\
+		\emph{Source:} Army Research Lab, USA \hfill \emph{Volume:} > US\$ 10.000.000}
+
+	\entrydetail{09/2019--08/2023}
+		{Center for the Foundations of Information Processing\\at the University of Pennsylvania
+		{\normalfont (NSF \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934960}{\textbf{\#1934960}})}}
+		{}
+		{\emph{Function:} participation in the writing of grant proposal\\
+		\emph{Applicants:} A.\ Ribeiro (PI), K.\ Daniilidis, S.\ Sarkar, R.\ Ghrist, E.\ Dobriban\\
+		\emph{Source:} National Science Foundation, USA \hfill \emph{Volume:} US\$ 1.500.000}
 \end{entrydate}
 
 
@@ -302,7 +295,17 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		{Science-constrained learning}
 		{}
 		{\emph{Principal Investigator}\\
-		Source: U. Stuttgart / SimTech~(DFG EXC 2075) \hfill Volume: 348.000 \euro}
+		\emph{Source:} U. Stuttgart / SimTech~(DFG EXC 2075) \hfill \emph{Volume:} 348.000 \euro}
+\end{entrydate}
+
+
+\subsection*{Completed projects}
+
+\begin{entrydate}
+	\entry{02/2013--08/2013}
+		{\textbf{Wireless battery charging for an underwater sensing probe}\\
+		\emph{Principal Investigator} (Co-applicant: C\'{a}ssio G. Lopes)\\
+		\emph{Source:} IEEE \hfill \emph{Volume:} US\$ 800}
 \end{entrydate}
 }{}
 
@@ -317,7 +320,6 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 }{
 	\section*{Publications}
 }
-\nocite{*}
 
 \ifthenelse{\boolean{highlights}}{}{%
 	\citationstat
@@ -326,11 +328,13 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 	\begin{paracol}{2}
 	\switchcolumn
 	\small\hfill%
-	(\textbf{Note:} selected publications are marked with a\,\,\raisebox{0.8pt}{\tiny\faStar})
+	(\textbf{Note:} highlighted publications are marked with a\,\,\raisebox{0.8pt}{\tiny\faStar})
 	\end{paracol}
 	\vspace{0.2\baselineskip}
 }
 
+\begin{refsection}[cv.bib]
+\nocite{*}
 \begin{entrydate}
 	\ifthenelse{\boolean{highlights}}{
 		\entryhighlights
@@ -343,6 +347,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		\entrybib{Signal Processing Conferences}{conf_sp}
 	}
 \end{entrydate}
+\end{refsection}
 
 
 %----------------------------------------------------------------------------------------
@@ -383,7 +388,8 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
 		% 04/2023
 		\item \emph{SHIFT: KI und eine zukünftige Gemeinschaft}
-		\hfill Kunstmuseum Stuttgart
+		\hfill Kunstmuseum Stuttgart\\
+		{\small (SHIFT: AI and a future community)}
 
 		% 02/2023
 		\item ELLIS/CIS Network Seminar \hfill EPFL
@@ -603,16 +609,20 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 %----------------------------------------------------------------------------------------
 \ifthenelse{\boolean{publist}\and\boolean{highlights}}{
 \newpage
+\title{Publication list}
 
 \section*{Publication list}
+\label{S:publist}
 
 \begin{paracol}{2}
 \switchcolumn
 \small\hfill%
-(\textbf{Note:} selected publications are marked with a\,\,\raisebox{0.9pt}{\tiny\faStar})
+(\textbf{Note:} highlighted publications are marked with a\,\,\raisebox{0.9pt}{\tiny\faStar})
 \end{paracol}
 \vspace{0.2\baselineskip}
 
+\begin{refsection}[cv.bib]
+\nocite{*}
 \begin{entrydate}
 	\entrybib{Preprints}{preprint}
 	\entrybib{Patents}{patent}
@@ -621,6 +631,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 	\entrybib{Control Conferences}{conf_control}
 	\entrybib{Signal Processing Conferences}{conf_sp}
 \end{entrydate}
+\end{refsection}
 }{}
 
 \end{document}
