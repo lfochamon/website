@@ -263,7 +263,7 @@
 	\hfill%
 	#3
 	\def\temp{#4}\ifx\temp\empty
-	%
+
 	\else
 	  \\#4%
 	\fi
