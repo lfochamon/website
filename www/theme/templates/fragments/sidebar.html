@@ -13,7 +13,7 @@
 			{% endfor %}
 		{% endif %}
 		{% for p in MENUITEMS %}
-			<a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ SITEURL }}/{{ p[1] }}">{{ p[0] }}</a>
+			<a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ p[1] | expand_links(page) }}">{{ p[0] }}</a>
 		{% endfor %}
 	</nav>
 
@@ -61,7 +61,7 @@
     {% endif %}
 
     {% for p in MENUITEMS %}
-      <li><a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ SITEURL }}/{{ p[1] }}">{{ p[0] }}</a></li>
+      <li><a class="sidebar-nav-item{% if page.url == p[1] %} active{% endif %}" href="{{ p[1] | expand_links(page) }}">{{ p[0] }}</a></li>
     {% endfor %}
   </ul>
 

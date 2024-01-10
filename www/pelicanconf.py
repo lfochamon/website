@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-from datetime import date
+from datetime import date, datetime
 import os
 
 AUTHOR = 'Luiz Chamon'
@@ -176,4 +176,17 @@ IMAGE_PROCESS = {
 def throw_error(msg):
     raise Exception(f'[ERROR]: {msg}')
 
-JINJA_FILTERS = {'error': throw_error}
+def pelican_expand_links(text, content):
+    return content._update_content(text, content.get_siteurl())
+
+def js_timestamp(date):
+    # 2022-01-31 23:00:00 GMT-0300
+    return '{:d}'.format(round(datetime.strptime(date, '%Y-%m-%d %H:%M:%S %Z%z').timestamp()*1000))
+
+def basename(path):
+    return os.path.basename(path)
+
+JINJA_FILTERS = {'expand_links': pelican_expand_links,
+                 'js_timestamp': js_timestamp,
+                 'basename': basename,
+                 'error': throw_error}

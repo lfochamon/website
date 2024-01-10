@@ -5,46 +5,16 @@ save_as: applications/index.html
 template: applications
 
 
-# Recent talks
-<div style="float:left; margin-right:1rem;" markdown="1">
-  <iframe width="280" height="160" src="https://www.youtube.com/embed/0cl35wNAfiA" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br />
-  <center>IEEE ICASSP 2020  
-  **(best student paper award)**</center>
-  <br />
-</div>
-<div style="float:left; margin-right:1rem;" markdown="1">
-  <iframe width="280" height="160" src="https://www.youtube.com/embed/9e-n8lPu5S8" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br />
-  <center>IEEE CDC 2020</center>
-  <br />
-</div>
-<div style="clear:both;"></div>
-<div style="float:left; margin-right:1rem;" markdown="1">
-  <iframe width="280" height="160" src="https://www.youtube.com/embed/YOo19MLVimA" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br />
-  <center>Deep Learning Theory Symposium  
-  (Simons Institute, Dec. 2021)</center>
-  <br />
-</div>
-
-<div style="clear:both;"></div>
-
-&nbsp;
-
-&nbsp;
-
-
 <h1 id="research">Research<br /><div style='font-size:1.5rem;'>Learning under requirements</div></h1>
 
 [**Research statement**]({static}/pdf/lfochamon_research.pdf)
 
+{#
 ## An animated overview
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://www.youtube.com/embed/thIbfzqMX1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+#}
 
 ## Why requirements?
 

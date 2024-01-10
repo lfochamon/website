@@ -39,11 +39,12 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 ## News
 
+<div class="news" markdown=1>
 - **Feb 20th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints](https://aaai.org/aaai-conference/aaai-24-tutorial-and-lab-list/#th04)" at AAAI in Vancouver, CA.
 
-- **Jan 12th, 2024** &ndash; I will be talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim
+- **Jan 12th, 2024** &ndash; I will be talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim.
 
-- **Dec 6th, 2023** &ndash; Check out our paper at NeurIPS 2023: *"Resilient constrained learning"* [[paper]({filename}/pages/publications.md#Hounie23r)]
+- **Dec 6th, 2023** &ndash; Check out our paper at NeurIPS 2023: *"Resilient constrained learning"* [[paper]({filename}/pages/publications.md#Hounie23r)].
 
 - **Nov 30th, 2023** &ndash; I am giving a talk and participating of the *"Future of AI"* panel during [Cyber Valley at University of Stuttgart](https://www.uni-stuttgart.de/en/university/news/event/Engineering-Intelligence--Cyber-Valley-at-University-of-Stuttgart/) ([register here](https://eveeno.com/universitaet-stuttgart-cv-2023) until Nov 24th).
 
@@ -180,3 +181,4 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **February 7th, 2020** &ndash; Patent *"Sparse cascaded-integrator-comb filters"*
   with Analog Devices is [out](https://patents.google.com/patent/US10367477B2).
+</div>
