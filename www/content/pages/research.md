@@ -5,7 +5,6 @@ Date: 1001-01-02
 {% from 'fragments/functions.html' import cite with context %}
 {% from 'fragments/functions.html' import collapsible_pubs with context %}
 
-
 <style>
 /* Style the button that is used to open and close the collapsible content */
 .collapsible button {
@@ -125,8 +124,9 @@ reach out to me by [email]({filename}/pages/contact.md) or check out the [prospe
 
 - [Constrained learning theory](#constrained-learning-theory)
 - [Semi-infinite constrained learning](#semi-infinite-constrained-learning)
-- [Non-convex functional optimization and sparsity](#non-convex-functional-optimization)
+- [Constrained reinforcement learning](#constrained-reinforcement-learning)
 - [Graph(on) neural networks](#graphon-neural-networks)
+- [Non-convex functional optimization and sparsity](#non-convex-functional-optimization)
 
 ### Past projects
 
@@ -163,35 +163,12 @@ the limits of this new learning task.
 
 </div>
 
-<!-- So far, we know that, in typical cases, constrained learning is possible whenever unconstrained
-learning is possible&nbsp;(*uniform convergence implies both PAC learnability and PAC constrained learnability*)
-and that they have essentially the same sample complexity&nbsp;(*up to a log factor*)
-{{- cite('Chamon20p', 'Chamon23c') }}. In fact, constrained learning tasks can be tackled by
-solving only unconstrained learning problems&nbsp;(*using classical dual ascent techniques*).
-What is more, we know that constrained learning is strictly more expressive than its unconstrained
-counterpart, since there exists reinforcement learning tasks that can only be solved using constrained
-reinforcement learning (*no fixed reward can lead to the desired behavior*) {{- cite('Calvo-Fullana24s') }}.
+{{ collapsible_pubs('Hounie23r', 'Chamon23c', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Chamon20ta') }}
 
-These results have enabled
-model-free wireless resource allocation
-[[EZCLR IEEE TSP'19]({filename}/pages/publications.md#Eisen19l)],
-safe reinforcement learning
-[[PCCR NeurIPS'19]({filename}/pages/publications.md#Paternain19c);
-[PCCR IEEE TAC'23]({filename}/pages/publications.md#Paternain23s)],
-fair classification
-[[CPCR ICASSP'20]({filename}/pages/publications.md#Chamon20ta);
-[CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p)],
-and robust learning
-[[CR NeurIPS'20]({filename}/pages/publications.md#Chamon20p);
-[RCPRH NeurIPS'21]({filename}/pages/publications.md#Robey21a)]. -->
-
-
-{{ collapsible_pubs('Chamon23c', 'Robey22p', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Paternain19c', 'Paternain23s') }}
 
 &nbsp;
 
 &nbsp;
-
 
 
 ## Semi-infinite constrained learning
@@ -216,7 +193,66 @@ interior of the expectation&ndash;almost&nbsp;sure spectrum.
 </div>
 
 
-{{ collapsible_pubs('Hounie23a', 'Cervino23l', 'Robey21a', 'Chamon20p', 'Chamon20ta') }}
+{{ collapsible_pubs('Hounie23a', 'Cervino23l', 'Robey21a', 'Robey22p', 'Chamon20p') }}
+
+&nbsp;
+
+&nbsp;
+
+
+
+## Constrained reinforcement learning
+
+<div markdown=1 class="research-item">
+
+![Constrained reinforcement learning icon]({static}/images/research/crl.png)
+{: .research-icon}
+
+Constrained reinforcement learning (CRL) tackles constrained learning tasks arising in sequential decision making.
+These interactive, dynamic settings lead to more subtle behaviors than their supervised learning counterpart.
+While we can show that CRL is essentially as hard as vanilla RL, they turn out to be considerably problems.
+In fact, there are very simple CRL tasks that cannot be solved using unconstrained RL (regardless of the choice
+of reward). This means that typical primal-dual algorithms will also fail. Using a systematic state augmentation,
+however, we can obtain a procedure that yields optimal, feasible trajectories without the need for randomization.
+These developments lead to new challenges regarding multitask/multiobjective RL, the computational complexity of
+CRL training, and the development of RL methods capable of handling non-stationary scenarios.
+
+
+</div>
+
+{{ collapsible_pubs('Calvo-Fullana24s', 'Paternain19c', 'Paternain23s') }}
+
+&nbsp;
+
+&nbsp;
+
+
+
+
+## Graph(on) neural networks
+
+<div markdown=1 class="research-item">
+
+![Graph/Graphon neural networks icon]({static}/images/research/gnn.png)
+{: .research-icon}
+
+Massive amounts of data in our increasingly interconnected world only make sense in
+the context of the networks from which they arise, be them social networks, power grids,
+IoT devices, or industry&nbsp;4.0. Graph signal processing&nbsp;(GSP) and graph neural networks&nbsp;(GNNs)
+grew out of the need to extract information from those network&nbsp;(graph) signals. These techniques,
+however, are difficult to scale, hindering their use for large networks that can only be partially
+observed or in non-stationary, dynamic settings. Yet, it seems reasonable that if two graphs are
+"similar", then their graph Fourier transforms, graph filters, and GNNs should also be similar.
+Formalizing this intuition is one of the motivations for developing the theory of
+**graphon signal processing**. In fact, it has been used to show that GNNs are transferable
+between graphs, i.e., that they can be trained on subgraphs to then be deployed on the full
+network. These results raise fundamental questions on the limits of this transferability
+as well as to what is the right graph similarity metric to characterize it.
+
+</div>
+
+{{ collapsible_pubs('Ruiz20g', 'Ruiz21g', 'Ruiz23t') }}
+
 
 &nbsp;
 
@@ -245,71 +281,7 @@ statistical questions. It is also instrumental in the development of [constraine
 
 </div>
 
-
-<!-- This is due to the fact that, under mild conditions, non-convex functional optimization manifests
-the same duality properties as convex optimization [[CER IEEE TSP'20]({filename}/pages/publications.md#Chamon20f)].
-These advances imply that we need not resort to atomic norm relaxations
-to tackle many *off-the-grid compressive sensing* problems
-[[CER ICASSP'18]({filename}/pages/publications.md#Chamon18s);
-[CER ICASSP'19]({filename}/pages/publications.md#Chamon19s);
-[CER IEEE TSP'20]({filename}/pages/publications.md#Chamon20f)].
-I have also used these results to develop multiresolution kernel methods
-able to fit functions with heterogeneous degrees of smoothness
-[[PCPR IEEE TSP'20]({filename}/pages/publications.md#Peifer20s)]
-and learn hierarchical Gaussian Processes by replacing Bayes rule by empirical risk minimization
-[[CPR Asilomar'19]({filename}/pages/publications.md#Chamon19l)].
-I continue to explore the impact of these contributions on how we process and interact
-with the continuous nature real world signals beyond classical sampling as well as
-their impact in other areas, e.g., [learning](#constrained-learning). -->
-
 {{ collapsible_pubs('Chamon20f', 'Peifer20s', 'Chamon19l') }}
-
-
-&nbsp;
-
-&nbsp;
-
-
-
-## Graph(on) neural networks
-
-<div markdown=1 class="research-item">
-
-![Graph/Graphon neural networks icon]({static}/images/research/gnn.png)
-{: .research-icon}
-
-Massive amounts of data in our increasingly interconnected world only make sense in
-the context of the networks from which they arise, be them social networks, power grids,
-IoT devices, or industry&nbsp;4.0. Graph signal processing&nbsp;(GSP) and graph neural networks&nbsp;(GNNs)
-grew out of the need to extract information from those network&nbsp;(graph) signals. These techniques,
-however, are difficult to scale, hindering their use for large networks that can only be partially
-observed or in non-stationary, dynamic settings. Yet, it seems reasonable that if two graphs are
-"similar", then their graph Fourier transforms, graph filters, and GNNs should also be similar.
-Formalizing this intuition is one of the motivations for developing the theory of
-**graphon signal processing**. In fact, it has been used to show that GNNs are transferable
-between graphs, i.e., that they can be trained on subgraphs to then be deployed on the full
-network. These results raise fundamental questions on the limits of this transferability
-as well as to what is the right graph similarity metric to characterize it.
-
-</div>
-
-<!-- Therefore, by showing that **graph signal
-processing converges to graphon signal processing** as the underlying graphs grow
-[[RCR IEEE TSP'21]({filename}/pages/publications.md#Ruiz21g)],
-we have developed a formal tool to analyze graph signals that relies on the
-more amenable compact operator theory rather than matrix theory. 
-
-1. large graphs obtained from the same graphon have similar graph Fourier transforms
-[[RCR IEEE TSP'21]({filename}/pages/publications.md#Ruiz21g)]
-2. graph filters from large graphs of the same graphon family have similar outputs
-[[RCR IEEE TSP'21]({filename}/pages/publications.md#Ruiz21g)]
-3. graph neural network trained on a smaller graph transfer to larger ones
-[[RCR NeurIPS'20]({filename}/pages/publications.md#Ruiz20g),
-[RCR arXiv'21]({filename}/pages/publications.md#Ruiz21t)] -->
-
-
-{{ collapsible_pubs('Ruiz20g', 'Ruiz21g', 'Ruiz20t', 'Ruiz20ga', 'Ruiz21t') }}
-
 
 
 &nbsp;
@@ -345,18 +317,6 @@ convex relaxations.
 </div>
 
 
-<!-- These results have
-had implications for the sampling of graph signals
-[[CR GlobaSiP'16]({filename}/pages/publications.md#Chamon16n);
-[CR IEEE TSP'18]({filename}/pages/publications.md#Chamon18g)],
-A- and E-optimal experimental design
-[[CR NeurIPS'17]({filename}/pages/publications.md#Chamon17a)],
-sensor selection for Kalman filtering
-[[CPR IEEE TAC'21]({filename}/pages/publications.md#Chamon21a)],
-and control scheduling (subject to matroid constraints)
-[[CAR IEEE TAC'22]({filename}/pages/publications.md#Chamon22a)]. -->
-
-
 {{ collapsible_pubs('Chamon22a', 'Chamon21a', 'Chamon19m', 'Chamon18g', 'Chamon17a', 'Chamon16n') }}
 
 
@@ -388,18 +348,6 @@ diversity of new applications. In one instance, a combination of simple adaptive
 filters was used to **reduce the complexity of adaptive algorithms** by
 outperforming complex, Newton-type adaptive methods at roughly 30 times
 lower computational complexity.
-
-<!-- My work proposed a myriad of new combination topologies that can
-be used to address this and other issues, including cyclic coefficients feedback
-[[CLL ICASSP'12]({filename}/pages/publications.md#Chamon12c);
-[CL arXiv'16]({filename}/pages/publications.md#Chamon16c)],
-incremental combinations
-[[CL EUSIPCO'13]({filename}/pages/publications.md#Chamon13t)].
-data-reusing combinations
-[[CFL Asilomar'12]({filename}/pages/publications.md#Chamon12a)],
-and their composition
-[[CL SBrT'13]({filename}/pages/publications.md#Chamon13o);
-[CL ICASSP'14]({filename}/pages/publications.md#Chamon14t)]. -->
 
 </div>
 

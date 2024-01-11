@@ -95,7 +95,7 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **Feb 3rd, 2022** &ndash; *"Safe policies for reinforcement learning via primal-dual methods"* was accepted for
   publication on the IEEE TAC ([paper]({filename}/pages/publications.md#Paternain23s)).
-
+{#
 - **December 10th, 2021** &ndash; New preprint: *"Transferability properties of graph neural networks"* ([arXiv](https://arxiv.org/abs/2112.04629)).
 
 - **September 29th, 2021** &ndash; *"Adversarial Robustness with Semi-Infinite Constrained Learning"* was accepted
@@ -181,4 +181,5 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **February 7th, 2020** &ndash; Patent *"Sparse cascaded-integrator-comb filters"*
   with Analog Devices is [out](https://patents.google.com/patent/US10367477B2).
+#}
 </div>
