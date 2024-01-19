@@ -44,6 +44,7 @@
 <a href="#mobile-navigation" id="mobile-menu-open-alt"><span class="fa fa-bars"></span></a>
 </div>
 <nav class="sidebar-nav">
+<a class="sidebar-nav-item" href="#schedule">Schedule</a>
 <a class="sidebar-nav-item" href="#content">Content</a>
 <a class="sidebar-nav-item" href="#presenters">Presenters</a>
 <a class="sidebar-nav-item" href=""> </a>
@@ -83,6 +84,7 @@
 </div>
 <nav class="mobile-navigation" id="mobile-navigation">
 <ul class="primary-menu">
+<li><a class="sidebar-nav-item" href="#schedule">Schedule</a></li>
 <li><a class="sidebar-nav-item" href="#content">Content</a></li>
 <li><a class="sidebar-nav-item" href="#presenters">Presenters</a></li>
 <li><a class="sidebar-nav-item" href=""> </a></li>
@@ -125,6 +127,85 @@
 </ol>
 <p>Throughout the tutorial, we illustrate the effectiveness and flexibility of constrained learning in a diverse set of applications, such as <em>fairness</em>, <em>robust image classification</em>, <em>federated learning</em>, <em>learning under invariance</em>, and <em>safe RL</em>. Ultimately, this tutorial provides a general tool that can be used to tackle a variety of problems in ML and sequential decision-making.</p>
 <p><strong>Prerequisite knowledge</strong>: only basic understanding of optimization, ML, and RL are expected. Specifically, familiarity with the basics of convex <strong>optimization</strong> and its algorithms (i.e., what are convex functions, mathematics of gradients, and gradient descent); fundamentals of empirical risk minimization (ERM) and the associated <strong>learning theory</strong> (i.e., basic notions of generalization and sample complexity); and familiarity with <strong>Markov decision processes</strong> (MDPs) and basic RL algorithms (policy gradient, e.g., REINFORCE).</p>
+<h2 id="schedule">Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8:30 - 9:30</td>
+<td><a href="#module-1"><strong>Constrained supervised learning</strong></a></td>
+</tr>
+<tr>
+<td></td>
+<td>    (un)constrained learning and ERM</td>
+</tr>
+<tr>
+<td></td>
+<td>    non-convex duality and constrained learning theory</td>
+</tr>
+<tr>
+<td></td>
+<td>    constrained learning algorithms</td>
+</tr>
+<tr>
+<td>9:30 - 10:30</td>
+<td><a href="#module-2"><strong>Robust learning</strong></a></td>
+</tr>
+<tr>
+<td></td>
+<td>    robustness-constrained learning and semi-infinite optimization</td>
+</tr>
+<tr>
+<td></td>
+<td>    sampling algorithms and MCMC</td>
+</tr>
+<tr>
+<td></td>
+<td>    probabilistic robustness</td>
+</tr>
+<tr>
+<td>10:30 - 11:00</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>11:00 - 11:30</td>
+<td><a href="#module-3"><strong>Resilient constrained learning</strong></a></td>
+</tr>
+<tr>
+<td></td>
+<td>    what is resilience?</td>
+</tr>
+<tr>
+<td></td>
+<td>    resilient constrained learning</td>
+</tr>
+<tr>
+<td></td>
+<td>    algorithms</td>
+</tr>
+<tr>
+<td>11:30 - 12:30</td>
+<td><a href="#module-4"><strong>Constrained reinforcement learning</strong></a></td>
+</tr>
+<tr>
+<td></td>
+<td>    (C)MDPs and (C)RL</td>
+</tr>
+<tr>
+<td></td>
+<td>    duality and primal-dual algorithms</td>
+</tr>
+<tr>
+<td></td>
+<td>    state augmentated algorithm</td>
+</tr>
+</tbody>
+</table>
 <h2 id="content">Content</h2>
 <h3 id="module-1">Constrained Supervised Learning: Duality, Generalization, and Algorithms</h3>
 <p>In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties.</p>
