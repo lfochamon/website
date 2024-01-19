@@ -40,9 +40,12 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 ## News
 
 <div class="news" markdown=1>
-- **Feb 20th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints](https://aaai.org/aaai-conference/aaai-24-tutorial-and-lab-list/#th04)" at AAAI in Vancouver, CA.
 
-- **Jan 12th, 2024** &ndash; I will be talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim.
+- **Feb 20th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/aaai.md)" at AAAI in Vancouver, CA.
+
+- **Jan 30th, 2024** &ndash; I am giving a talk on "(Reinforcement) learning under requirements" at the applied mathematics center (CMAP) of the [&Eacute;cole Polytechnique](http://www.cmap.polytechnique.fr/), Paris, France.
+
+- **Jan 12th, 2024** &ndash; I am talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim.
 
 - **Dec 6th, 2023** &ndash; Check out our paper at NeurIPS 2023: *"Resilient constrained learning"* [[paper]({filename}/pages/publications.md#Hounie23r)].
 

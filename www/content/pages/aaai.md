@@ -24,6 +24,28 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 **Prerequisite knowledge**: only basic understanding of optimization, ML, and RL are expected. Specifically, familiarity with the basics of convex **optimization** and its algorithms (i.e., what are convex functions, mathematics of gradients, and gradient descent); fundamentals of empirical risk minimization (ERM) and the associated **learning theory** (i.e., basic notions of generalization and sample complexity); and familiarity with **Markov decision processes** (MDPs) and basic RL algorithms (policy gradient, e.g., REINFORCE).
 
 
+## Schedule
+
+| Time | Topic |
+|---|---|
+| 8:30 - 9:30 | [**Constrained supervised learning**](#module-1) |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;(un)constrained learning and ERM |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;non-convex duality and constrained learning theory |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;constrained learning algorithms |
+| 9:30 - 10:30 | [**Robust learning**](#module-2) |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;robustness-constrained learning and semi-infinite optimization |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;sampling algorithms and MCMC |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;probabilistic robustness |
+| 10:30 - 11:00 | Break |
+| 11:00 - 11:30 | [**Resilient constrained learning**](#module-3) |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;what is resilience? |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;resilient constrained learning |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;algorithms |
+| 11:30 - 12:30 | [**Constrained reinforcement learning**](#module-4) |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;duality and primal-dual algorithms |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;state augmentated algorithm |
+
 
 ## Content
 
