@@ -49,6 +49,9 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 
 ## Content
 
+- **Slides (Part 1)** [[pdf]({static}/pdf/aaai_handout_1.pdf)]
+- **Slides (Part 2)** [[pdf]({static}/pdf/aaai_handout_2.pdf)]
+
 ### Constrained Supervised Learning: Duality, Generalization, and Algorithms {: #module-1}
 
 In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties.
