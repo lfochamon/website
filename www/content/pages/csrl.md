@@ -42,7 +42,7 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 | 11:00 - 12:30 | [**Constrained reinforcement learning**](#module-3) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;duality and primal-dual algorithms |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;state augmentated algorithm |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;state augmented algorithm |
 
 
 

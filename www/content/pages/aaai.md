@@ -1,4 +1,4 @@
-Title: Learning under Requirements
+Title: AAAI tutorial
 URL: aaai/index.html
 status: hidden
 save_as: aaai/index.html
@@ -15,8 +15,7 @@ In this tutorial, we provide an overview of theoretical and algorithmic advances
 
 1. [**Constrained supervised learning**](#module-1), where we show generalization guarantees for constrained supervised learning based on new non-convex duality results and then use them to derive practical algorithms;
 2. [**Robust learning**](#module-2), where we leverage these advances to obtain robust learning algorithms capable of achieving better trade-offs between nominal and adversarial accuracy;
-3. [**Resilient constrained learning**](#module-3), where we develop techniques to automatically specify learning requirements and balance compromises between objective and requirements;
-4. [**Constrained reinforcement learning**](#module-4), where we develop a parallel theory for constrained RL, showing that it is strictly more expressive than unconstrained RL.
+3. [**Constrained reinforcement learning**](#module-3), where we develop a parallel theory for constrained RL, showing that it is strictly more expressive than unconstrained RL.
 
 Throughout the tutorial, we illustrate the effectiveness and flexibility of constrained learning in a diverse set of applications, such as *fairness*, *robust image classification*, *federated learning*, *learning under invariance*, and *safe RL*. Ultimately, this tutorial provides a general tool that can be used to tackle a variety of problems in ML and sequential decision-making.
 
@@ -28,36 +27,30 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 
 | Time | Topic |
 |---|---|
-| 8:30 - 9:30 | [**Constrained supervised learning**](#module-1) |
+| 8:30 - 9:30 | [**Constrained supervised learning**](#module-1) ([slides]({static}/pdf/aaai_handout_1.pdf)) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(un)constrained learning and ERM |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;non-convex duality and constrained learning theory |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;constrained learning algorithms |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;resilient learning |
 | 9:30 - 10:30 | [**Robust learning**](#module-2) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;robustness-constrained learning and semi-infinite optimization |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;sampling algorithms and MCMC |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;probabilistic robustness |
 | 10:30 - 11:00 | Break |
-| 11:00 - 11:30 | [**Resilient constrained learning**](#module-3) |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;what is resilience? |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;resilient constrained learning |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;algorithms |
-| 11:30 - 12:30 | [**Constrained reinforcement learning**](#module-4) |
+| 11:00 - 12:30 | [**Constrained reinforcement learning**](#module-3) ([slides]({static}/pdf/aaai_handout_2.pdf)) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;duality and primal-dual algorithms |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;state augmentated algorithm |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;state augmented algorithm |
+
 
 
 ## Content
-
-- **Slides (Part 1)** [[pdf]({static}/pdf/aaai_handout_1.pdf)]
-- **Slides (Part 2)** [[pdf]({static}/pdf/aaai_handout_2.pdf)]
 
 ### Constrained Supervised Learning: Duality, Generalization, and Algorithms {: #module-1}
 
 In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties.
 
 **Applications**: We use *fairness* as an example of rate requirement (e.g., equality of odds, churn) and *federated learning* to illustrate how to tackle ML problems with simultaneous goals (e.g., heterogeneous data or heterogeneous performance targets). We also briefly mentions applications to other problems of current interest, such as *active learning* and *continual learning*.
-
 
 ### Robust Learning: Adversaries, Invariance, and Data Manifolds {: #module-2}
 
@@ -66,14 +59,7 @@ We begin this module by introducing the problem of robust learning, showing how 
 **Applications**: We use *adversarial robustness* in image classification as a running example. We also explore how these techniques can be use to tackle "non-robustness" applications, namely *learning in the presence of invariances*, where we show a mathematical equivalence between robustness and data augmentation, and *semi-supervised learning*, where we derive connections between robustness, Lipschitz regularization of neural networks, and manifold Laplacian regularization.
 
 
-### Resilient Constrained Learning: Adaptive Constraint Specification {: #module-3}
-
-In this module, we explore the issue of specifying learning requirements to balance the trade-off between objective and requirements. To do so, we incorporate constraint relaxations as part of the optimization space and develop strategies to balance the marginal costs and benefits of these relaxation. Leveraging duality results from previous modules, we analyze these equilibria and develop algorithms to automatically find them during training. We dub these techniques "resilient learning," from the ecological concept that describes the ability of a system to adapt to changes in their environment. We then discuss the relations to robust learning and other classical ML tasks, such as soft-margin SVMs.
-
-**Applications**: We show how all applications introduced in previous modules can benefit from resilient formulations. In particular, we return to the *federated learning* and *learning under invariances* problems to illustrate how resilient methods adapts to the underlying task (model, data), simplify constraint specification, and is able to determine specifications that improve test performance.
-
-
-### Constrained Reinforcement Learning: Duality and Algorithms {: #module-4}
+### Constrained Reinforcement Learning: Duality and Algorithms {: #module-3}
 
 The final module develops a parallel constrained learning theory in the dynamic setting of sequential decision-making problems. We start by introducing the MDP formalism and RL algorithms commonly used to tackle this setting. Using a different technique, we then derive non-convex duality results similar to the supervised case and use them to put forward a primal-dual algorithm for constrained RL. We then show how this algorithm can fail even on simple tasks and describe a systematic state augmentation procedure able to provably overcome this issue.
 
