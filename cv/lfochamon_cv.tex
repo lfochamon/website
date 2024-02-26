@@ -1,6 +1,6 @@
 % !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
 %!TeX program = txs:///compile | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///compile | txs:///compile | txs:///view-pdf
-%\documentclass[highlights,publist]{cvlfoc}
+%\documentclass[highlights,grants,publist]{cvlfoc}
 \documentclass{cvlfoc}
 
 \AtEveryBibitem{\clearfield{pages}\clearfield{isbn}\clearfield{doi}}
@@ -24,8 +24,8 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{1463}
-\hindex{19}
+\citations{1517}
+\hindex{20}
 \publications{\directlua{
 	local f = io.open("lfochamon_cv2-blx.bbl", "r")
 	if f == nil then
@@ -254,7 +254,17 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 %
 %\vspace{0.5\baselineskip}
 
-%\subsection*{Current projects}
+\subsection*{Current projects}
+
+\begin{entrydate}
+	\entrydetail{10/2023--present}
+		{Science-constrained learning}
+		{}
+		{\emph{Principal Investigator}\\
+		\emph{Source:} U. Stuttgart / SimTech~(DFG EXC 2075)
+			\hfill \emph{Volume:} 348.000 \euro\\
+			\null\hfill (non-transferable)}
+\end{entrydate}
 
 
 \subsection*{Proposals under review}
@@ -314,17 +324,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \end{entrydate}
 
 
-\subsection*{Other competitive grants}
-
-\begin{entrydate}
-	\entrydetail{10/2023--present}
-		{Science-constrained learning}
-		{}
-		{\emph{Principal Investigator}\\
-		\emph{Source:} U. Stuttgart / SimTech~(DFG EXC 2075) \hfill
-			\emph{Volume:} 348.000 \euro}
-\end{entrydate}
-
+%\subsection*{Other competitive grants}
 
 \subsection*{Completed projects}
 
@@ -375,7 +375,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \end{entrydate}
 \end{refsection}
 
-\newpage
+\ifthenelse{\boolean{grants}}{}{\newpage}
 
 %----------------------------------------------------------------------------------------
 %	INVITED TALKS
@@ -426,7 +426,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		\item ELLIS/CIS Network Seminar \hfill EPFL
 	}
 
-	\entrylist{2022}{
+	\entrylist{2022}{\ifthenelse{\boolean{grants}}{\vspace*{-12pt}}{}
 		% 04/2022
 		\item Young Investigators Lecture \hfill Caltech
 
@@ -435,7 +435,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		\hfill Simons Institute
 	}
 
-	\entrylist{2021}{%\vspace*{-12pt}
+	\entrylist{2021}{
 		% 12/2021
 		\item Deep Learning Theory Symposium \hfill Simons Institute
 		% 04/2021
@@ -494,7 +494,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 %	TEACHING/SUPERVISION
 %----------------------------------------------------------------------------------------
 \section*{Teaching and supervision}
-
+\vspace{0.2\baselineskip}
 
 \subsection*{Supervision of doctoral researchers}
 
@@ -515,7 +515,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 			\emph{Technical supervision} \hfill(Main supervisor: A.\ Ribeiro)}
 \end{entrydate}
 
-\newpage
+\ifthenelse{\boolean{grants}}{}{\newpage}
 
 \subsection*{Supervision of master thesis}
 
@@ -629,13 +629,12 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		IEEE~Journal~of Selected Topics in Signal Processing;
 		IEEE~Trans.~on Signal and Information Processing over Networks
 		IEEE~Trans.~on Control of Network Systems
-		\vspace{\entrysep}
 	}
 	\entry{\textbf{Conferences}}{NeurIPS, ICML, IEEE ICASSP, IEEE CDC, EUSIPCO}
 \end{entrydate}
 \vspace{\entrysep}
 
-\clearpage
+\ifthenelse{\boolean{grants}}{}{\clearpage}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH MANAGEMENT
@@ -681,13 +680,16 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \section*{Publication list}
 \label{S:publist}
 
+\citationstat
+
+\vspace{-0.7\baselineskip}
 \begin{paracol}{2}
 \switchcolumn
 \small\hfill%
 (\textbf{Note:} highlighted publications are marked with
 	a\,\,\raisebox{0.9pt}{\tiny\faStar})
 \end{paracol}
-\vspace{0.2\baselineskip}
+\vspace{0.5\baselineskip}
 
 \begin{refsection}[cv.bib]
 \nocite{*}
