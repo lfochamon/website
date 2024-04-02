@@ -41,6 +41,10 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 <div class="news" markdown=1>
 
+{#- **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.#}
+
+- **Mar 15th, 2024** &ndash; Check out our paper at ICLR 2024: *"Near-optimal solutions of constrained learning problems"* [[paper]({filename}/pages/publications.md#Elenter24n)].
+
 - **Feb 24th, 2024** &ndash; I was interviewed by the "[Made in Science](https://www.youtube.com/watch?v=c17XPl6ugJ8)" podcast about engineering, art, and living in foreign lands.
 
 - **Feb 20th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/aaai.md)" at AAAI in Vancouver, CA.

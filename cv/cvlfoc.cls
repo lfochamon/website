@@ -332,9 +332,11 @@
 	\hspace{0.92ex}%
 	{\scriptsize\raisebox{1.25pt}{\href{https://orcid.org/\@orcid}{\textbf{\@orcid}}}}\mystrut
 
+	\ifthenelse{\boolean{publist}}{
 	\vspace{\baselineskip}
   	{\small See complete list on
   		\hyperlink{page.\getpagerefnumber{S:publist}}{p.~\getpagerefnumber{S:publist}}}
+  	}{}
 	\switchcolumn
 	\mystrut\\
 	\vspace{-36.2pt}

@@ -1,6 +1,6 @@
 % !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
 %!TeX program = txs:///compile | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///compile | txs:///compile | txs:///view-pdf
-%\documentclass[highlights,grants,publist]{cvlfoc}
+%\documentclass[highlights,grants]{cvlfoc}
 \documentclass{cvlfoc}
 
 \AtEveryBibitem{\clearfield{pages}\clearfield{isbn}\clearfield{doi}}
@@ -24,10 +24,10 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{1517}
-\hindex{20}
+\citations{1590}
+\hindex{21}
 \publications{\directlua{
-	local f = io.open("lfochamon_cv2-blx.bbl", "r")
+	local f = io.open("lfochamon_cv1-blx.bbl", "r")
 	if f == nil then
 		tex.print("??")
 	else
