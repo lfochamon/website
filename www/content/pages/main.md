@@ -32,16 +32,26 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 {: .highlight}
 
 **And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**
-#}
 
 &nbsp;
+#}
 
 
 ## News
 
+
 <div class="news" markdown=1>
 
-{#- **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.#}
+{#- **Aug 26th, 2024** &ndash; Last chance to check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/eusipco.md)" at EUSIPCO in Lyon, France.#}
+
+- **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.
+
+{#- **May 28th, 2024** &ndash; I gave an interview on the challenges of diversity and internationalization as part of the University of Stuttgart's diversity day. Check out the full inteview [here](#).#}
+
+
+- **May 15th, 2024** &ndash; I have been invited to take part of SimTech's [Beyond the thesis](https://www.simtech.uni-stuttgart.de/events/early-career-events/Beyond-the-Thesis/) career panel. Follow the link for more details and registration.
+
+------
 
 - **Mar 15th, 2024** &ndash; Check out our paper at ICLR 2024: *"Near-optimal solutions of constrained learning problems"* [[paper]({filename}/pages/publications.md#Elenter24n)].
 
