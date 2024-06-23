@@ -113,7 +113,7 @@ concludes the proof.
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>When~<span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> &lt; c_t </span><span class="nv">\tau</span><span class="s">$</span>, we obtain that
 <span class="c">%</span>
 <span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
     <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 <span class="c">%</span>
@@ -150,7 +150,7 @@ Latex environments from the text to improve your source readability.</p>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>It therefore holds that
 <span class="c">%</span>
 <span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z - z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z - z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
     <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 <span class="c">%</span>
@@ -200,40 +200,40 @@ line~<span class="s">$</span><span class="nb">z</span><span class="o">(</span><s
 </code></pre></div>
 <p>If the expression is too long, break it down in logical parts and use indentation as if you were coding Python!</p>
 <div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span> <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span> <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
-<span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\Big</span>( <span class="k">\E</span><span class="nb">_{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD</span><span class="nb">_</span>i<span class="nb">}</span>
+<span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\Big</span>( <span class="k">\E_</span><span class="nb">{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD_i</span><span class="nb">}</span>
 <span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span> <span class="k">\Big</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
 <span class="k">\hat</span><span class="nb">{</span>L<span class="nb">}</span>(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>= <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span>
-<span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell</span><span class="nb">_</span>0<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)<span class="k">\\</span>
-<span class="nb">{}&amp;</span>+ <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\left</span>[ <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
-<span class="k">\ell</span><span class="nb">_</span>i<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>) <span class="k">\right</span>] <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
+<span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell_</span>0<span class="k">\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)<span class="k">\\</span>
+<span class="nb">{}&amp;</span>+ <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\left</span>[ <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
+<span class="k">\ell_i\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>) <span class="k">\right</span>] <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </code></pre></div>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
     <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>  <span class="c">% Separate and indent punctuation and text</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
-  <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\Big</span>(    <span class="c">% Break when opening brackets...</span>
-    <span class="k">\E</span><span class="nb">_{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD</span><span class="nb">_</span>i<span class="nb">}</span> <span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span>
+  <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\Big</span>(    <span class="c">% Break when opening brackets...</span>
+    <span class="k">\E_</span><span class="nb">{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD_i</span><span class="nb">}</span> <span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span>
   <span class="k">\Big</span>)   <span class="c">% ...then close it on a separate line</span>
     <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
   L(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>=   <span class="c">% Break at binary operators</span>
-    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell</span><span class="nb">_</span>0<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)
+    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell_</span>0<span class="k">\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)
   <span class="k">\\</span>  <span class="c">% Clearly separate equations groups</span>
-  <span class="nb">{}&amp;</span>+ <span class="k">\sum</span><span class="nb">_{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu</span><span class="nb">_</span>i <span class="k">\left</span>[
-    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum</span><span class="nb">_{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
-      <span class="k">\ell</span><span class="nb">_</span>i<span class="k">\big</span>( f(<span class="k">\bx</span><span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>)   <span class="c">% Indent to show continuation</span>
+  <span class="nb">{}&amp;</span>+ <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\left</span>[
+    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
+      <span class="k">\ell_i\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>)   <span class="c">% Indent to show continuation</span>
   <span class="k">\right</span>]
     <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
@@ -254,10 +254,10 @@ and~<span class="s">$</span><span class="nv">\calH</span><span class="s">$</span
 </code></pre></div>
 <h4 id="10-begin-and-end-on-separate-lines">10. <code>begin</code> and <code>end</code> on separate lines</h4>
 <p>Latex environments must always <code>begin</code> and <code>end</code> on separate lines.</p>
-<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span> z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span> <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span> z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span> <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 </code></pre></div>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 </code></pre></div>
 <h4 id="11-give-binary-operators-their-space">11. Give binary operators their space</h4>
@@ -288,13 +288,13 @@ sub/superscripts that are not variables, i.e.,
 (or worse, <code style="background:#FFCECC;">$J_{\max}$</code>!);
 and punctuation, i.e.,</p>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
     <span class="k">\text</span><span class="nb">{</span>.<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 </code></pre></div>
 <p>and not</p>
 <div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert</span><span class="nb">_</span><span class="k">\infty</span>.
+  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>.
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 </code></pre></div>
 <p>If you are writing in the context of a definition or theorem environment, which are sometimes typeset in italic, you should use the <code>\textup</code> tag.</p>
@@ -319,7 +319,7 @@ Here are the main suspects you should know how to use, in order of importance:</
 <p>Two other "math environments" worth knowing (and using) involve matrices (<code>pmatrix</code> for parenthesis and <code>bmatrix</code> for brackets) and equation with
 cases as in</p>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  <span class="k">\phi</span><span class="nb">_{</span><span class="k">\epsilon</span><span class="nb">}</span>(<span class="k">\bx</span>) =
+  <span class="k">\phi_</span><span class="nb">{</span><span class="k">\epsilon</span><span class="nb">}</span>(<span class="k">\bx</span>) =
     <span class="k">\begin</span><span class="nb">{</span>cases<span class="nb">}</span>
       <span class="k">\phi</span>(<span class="k">\bx</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
         <span class="nb">&amp;</span><span class="k">\text</span><span class="nb">{</span>for <span class="nb">}</span> <span class="k">\bx</span> <span class="k">\in</span> <span class="k">\calT</span>
