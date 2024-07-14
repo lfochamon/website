@@ -27,7 +27,7 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 
 | Time | Topic |
 |---|---|
-| 14:00 - 14:15 | [**Introduction**](#) ([slides]({static}/pdf/l4dc_handout_1.pdf)) |
+| 14:00 - 14:15 | [**Introduction**](#) |
 | 14:15 - 15:00 | [**Constrained supervised learning**](#module-1) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(un)constrained learning and ERM |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;non-convex duality and constrained learning theory |
@@ -38,7 +38,7 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 |             | &nbsp;&nbsp;&nbsp;&nbsp;sampling algorithms and MCMC |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;probabilistic robustness |
 | 15:30 - 16:00 | Break |
-| 16:00 - 17:30 | [**Constrained reinforcement learning**](#module-3) ([slides]({static}/pdf/l4dc_handout_2.pdf)) |
+| 16:00 - 17:30 | [**Constrained reinforcement learning**](#module-3) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL duality |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL algorithms |
