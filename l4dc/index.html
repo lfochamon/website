@@ -121,10 +121,10 @@
 <p>In this tutorial, we provide an overview of theoretical and algorithmic advances from the past 5 years that show when and how it is possible to learn under constraints and effectively impose constraints on ML systems, both during training and at test time. Specifically, we explore the role and impact of different types of requirements in supervised learning, robust learning, and RL:</p>
 <ol>
 <li><a href="#module-1"><strong>Constrained supervised learning</strong></a>, where we show generalization guarantees for constrained supervised learning based on new non-convex duality results and then use them to derive practical algorithms;</li>
-<li><a href="#module-2"><strong>Robust and resilient learning</strong></a>, where we leverage these advances to obtain resilient and robust learning algorithms capable of achieving better compromises between, e.g., nominal and adversarial accuracy (robust learning) or global vs local performance (federated learning);</li>
+<li><a href="#module-2"><strong>Robust learning</strong></a>, where we leverage these advances to obtain robust learning algorithms capable of achieving better compromises between, e.g., nominal and adversarial accuracy (robust learning);</li>
 <li><a href="#module-3"><strong>Constrained reinforcement learning</strong></a>, where we develop a parallel theory for constrained RL, showing that it is strictly more expressive than unconstrained RL and providing guaranteed algorithms.</li>
 </ol>
-<p>Throughout the tutorial, we illustrate the effectiveness and flexibility of constrained learning in a diverse set of applications, such as <em>fairness</em>, <em>robust image classification</em>, <em>federated learning</em>, <em>smooth learning</em>, and <em>safe RL</em>. Ultimately, this tutorial provides a general tool that can be used to tackle a variety of problems in ML and sequential decision-making.</p>
+<p>Throughout the tutorial, we illustrate the effectiveness and flexibility of constrained learning in a diverse set of applications, such as <em>fairness</em>, <em>federated learning</em>, <em>robust image classification</em>, <em>imitation learning</em>, <em>safe RL</em>, and <em>wireless communications</em>. Ultimately, this tutorial provides a general tool that can be used to tackle a variety of problems in ML and sequential decision-making.</p>
 <p><strong>Prerequisite knowledge</strong>: only basic understanding of optimization, ML, and RL are expected. Specifically, familiarity with the basics of convex <strong>optimization</strong> and its algorithms (i.e., what are convex functions, mathematics of gradients, and gradient descent); fundamentals of empirical risk minimization (ERM) and the associated <strong>learning theory</strong> (i.e., basic notions of generalization and sample complexity); and familiarity with <strong>Markov decision processes</strong> (MDPs) and basic RL algorithms (policy gradient, e.g., REINFORCE).</p>
 <h2 id="schedule">Schedule</h2>
 <table>
@@ -136,7 +136,11 @@
 </thead>
 <tbody>
 <tr>
-<td>14:00 - 14:45</td>
+<td>14:00 - 14:15</td>
+<td><a href="#"><strong>Introduction</strong></a> (<a href="https://www.luizchamon.com/pdf/l4dc_handout_1.pdf">slides</a>)</td>
+</tr>
+<tr>
+<td>14:15 - 15:00</td>
 <td><a href="#module-1"><strong>Constrained supervised learning</strong></a></td>
 </tr>
 <tr>
@@ -152,12 +156,12 @@
 <td>    constrained learning algorithms</td>
 </tr>
 <tr>
-<td>14:45 - 15:30</td>
-<td><a href="#module-2"><strong>Robust and resilient learning</strong></a></td>
-</tr>
-<tr>
 <td></td>
 <td>    resilient learning</td>
+</tr>
+<tr>
+<td>15:00 - 15:30</td>
+<td><a href="#module-2"><strong>Robust learning</strong></a></td>
 </tr>
 <tr>
 <td></td>
@@ -177,7 +181,7 @@
 </tr>
 <tr>
 <td>16:00 - 17:30</td>
-<td><a href="#module-3"><strong>Constrained reinforcement learning</strong></a></td>
+<td><a href="#module-3"><strong>Constrained reinforcement learning</strong></a> (<a href="https://www.luizchamon.com/pdf/l4dc_handout_2.pdf">slides</a>)</td>
 </tr>
 <tr>
 <td></td>
@@ -185,25 +189,24 @@
 </tr>
 <tr>
 <td></td>
-<td>    duality and primal-dual algorithms</td>
+<td>    CRL duality</td>
 </tr>
 <tr>
 <td></td>
-<td>    state augmented algorithm</td>
+<td>    CRL algorithms</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content">Content</h2>
-<h3 id="module-1">Constrained Supervised Learning: Duality, Generalization, and Algorithms</h3>
-<p>In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties.</p>
-<p><strong>Applications</strong>: We use <em>fairness</em> as an example of rate requirement (e.g., equality of odds, churn) and <em>federated learning</em> to illustrate how to tackle ML problems with simultaneous goals (e.g., heterogeneous data or heterogeneous performance targets). We also briefly mentions applications to other problems of current interest, such as <em>active learning</em> and <em>continual learning</em>.</p>
-<h3 id="module-2">Robust and resilient learning: Adversaries, Invariance, and Data Manifolds</h3>
-<p>We begin this module by exploring how learning requirements should be specified to balance the trade-off between objective and requirements. To do so, we incorporate constraint relaxations as part of the optimization space and develop strategies to balance the marginal costs and benefits of these relaxation. We use duality results from the previous to analyze these equilibria and develop algorithms to automatically find them during training. We dub these techniques "resilient learning," from the ecological concept that describes the ability of a system to adapt to changes in their environment.</p>
+<h3 id="module-1">Constrained Supervised Learning: Duality, Generalization, and Resilience</h3>
+<p>In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties. We explore how these duality results can be used to adapt the trade-off between objective and requirements and balance the marginal costs and benefits of relaxing constraints. We dub these techniques "resilient learning," from the ecological concept that describes the ability of a system to adapt to changes in their environment.</p>
+<p><strong>Applications</strong>: We use <em>fairness</em> as an example of rate requirement (e.g., equality of odds, churn) and <em>federated learning</em> to illustrate how to tackle ML problems with simultaneous goals (e.g., heterogeneous data or heterogeneous performance targets). We then revisit this <em>heterogeneous federated learning</em> application to illustrate the use of resilient learning.</p>
+<h3 id="module-2">Robust learning: Adversaries, Invariance, and Data Manifolds</h3>
 <p>This is in contrast to robustness, which seeks to resist rather than adapt to disturbances. To tackle this problem, we introduce epigraph formulations of robustness that feature one constraint per sample and disturbance and extend previous duality results to this semi-infinite constrained learning problem. We then derive a practical algorithm for tackling robustness-constrained learning based on Markov Chain Monte Carlo (MCMC) and stochastic optimization, showing how it generalizes previous solutions based on adversarial training (e.g., "PGD") and penalty methods (e.g., TRADES). Additionally, we showcase how it achieves stronger guarantees, better compromises, and mitigate the challenges involved in computing worst-case perturbations during training.</p>
-<p><strong>Applications</strong>: We revisit the <em>heterogeneous federated learning</em> applications to illustrate the use of resilient learning. For robustness, we tackle the issue of <em>adversarial examples</em> in image classification. We also explore how semi-infinite constrained learning can be use to tackle "non-robustness" applications, namely <em>learning in the presence of invariances</em>, where we show a mathematical equivalence between robustness and data augmentation, and <em>semi-supervised learning</em>, where we derive connections between robustness, Lipschitz regularization of neural networks, and manifold Laplacian regularization. We illustrate the latter in a <em>navigation</em> example.</p>
+<p><strong>Applications</strong>: We consider the issue of <em>adversarial examples</em> in image classification. We also explore how semi-infinite constrained learning can be use to tackle "non-robustness" applications, namely <em>learning in the presence of invariances</em>, where we show a mathematical equivalence between robustness and data augmentation, and <em>semi-supervised learning</em>, where we derive connections between robustness, Lipschitz regularization of neural networks, and manifold Laplacian regularization. We illustrate the latter in a <em>navigation</em> example.</p>
 <h3 id="module-3">Constrained Reinforcement Learning: Duality and Algorithms</h3>
 <p>The final module develops a parallel constrained learning theory in the dynamic setting of sequential decision-making problems. We start by introducing the MDP formalism and RL algorithms commonly used to tackle this setting. Using a different technique, we then derive non-convex duality results similar to the supervised case and use them to put forward a primal-dual algorithm for constrained RL. We then show how this algorithm can fail even on simple tasks and describe a systematic state augmentation procedure able to provably overcome this issue.</p>
-<p><strong>Applications</strong>: We consider the task of learning <em>safe policies</em> to motivate and illustrate the results of this module. We then turn to a <em>continuous monitoring problem</em> to illustrate the limitations of unconstrained RL and show the need for state augmentation.</p>
+<p><strong>Applications</strong>: We consider the task of learning <em>safe policies</em> and <em>wireless resource allocation</em> to motivate and illustrate the results of this module. We then turn to a <em>continuous monitoring problem</em> to illustrate the limitations of unconstrained RL and show the need for state augmentation.</p>
 <h2 id="presenters">Presenters</h2>
 <p><a href="https://scholar.google.com/citations?user=pcwmurcAAAAJ"><strong>Miguel Calvo-Fullana</strong></a> received the B.Sc. degree in electrical engineering from the Universitat de les Illes Balears (UIB) in 2010 and the M.Sc. and Ph.D. degrees in electrical engineering from the Universitat Politècnica de Catalunya (UPC) in 2013 and 2017, respectively. He joined Universitat Pompeu Fabra (UPF) in 2023, where he is a Ramón y Cajal fellow. Prior to joining UPF, he held postdoctoral appointments at the University of Pennsylvania and the Massachusetts Institute of Technology and was a research assistant at the Centre Tecnològic de Telecomunicacions de Catalunya (CTTC). His research interests include learning, optimization, multi-agent systems, and wireless communication. He is the recipient of best paper awards at ICC 2015, IEEE GlobalSIP 2015, and IEEE ICASSP 2020.</p>
 <p><a href="https://luizchamon.com"><strong>Luiz F. O. Chamon</strong></a> received the B.Sc. and M.Sc. degrees in electrical engineering from the University of São Paulo, Brazil, in 2011 and 2015 and the Ph.D. degree in electrical and systems engineering from the University of Pennsylvania (Penn), USA, in 2020. Until 2022, he was a postdoctoral fellow at the Simons Institute of the University of California, Berkeley, USA. He is currently an independent research group leader at the University of Stuttgart, Germany. In 2009, he was an undergraduate exchange student of the Masters in Acoustics of the École Centrale de Lyon, France. He received both the best student paper and the best paper awards at IEEE ICASSP 2020 and was recognized by the IEEE Signal Processing Society for his distinguished work for the editorial board of the IEEE Transactions on Signal Processing in 2018. His research interests include optimization, signal processing, machine learning, statistics, and control.</p>
