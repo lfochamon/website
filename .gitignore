@@ -1,7 +1,7 @@
 www/output
-www/content/*.bib
+www/content/publications.bib
 **/lfochamon_cv.pdf
-cv/*.bib
+cv/cv.bib
 cv/*.pdf
 **/__pycache__
 *.aux
