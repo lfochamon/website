@@ -42,11 +42,11 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 <div class="news" markdown=1>
 
-- **Aug 26th, 2024** &ndash; Last chance to catch our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints](https://eusipcolyon.sciencesconf.org/resource/page/id/28)" at EUSIPCO in Lyon, France.
-
-- **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.
+- **Aug 26th, 2024** &ndash; Last chance to catch our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/eusipco.md)" at EUSIPCO in Lyon, France.
 
 ------
+
+- **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.
 
 - **May 28th, 2024** &ndash; I gave an interview on the challenges of diversity and internationalization as part of the University of Stuttgart's diversity day. Check out a sample on [Instagram](https://www.instagram.com/reel/C7WkH69o9tF/?igsh=MXg1NTQ0dWlrNDY1bw==).
 

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITETITLE }} - {{ page.title|striptags }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+
+  <style>
+    .sidebar-social, .sidebar-about {
+        display: none;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+<body class="layout-reverse">
+    {% set DISPLAY_PAGES_ON_MENU = False %}
+    {% set MENUITEMS = [('Schedule','#schedule'), ('Content','#content'), ('Presenters','#presenters'), ('&nbsp;',''), ('&#x2190;&nbsp;&nbsp;Main website', SITEURL)] %}
+    {% include 'fragments/sidebar.html' %}
+    
+    <div class="content container">
+            {{ page.content }}
+    </div>
+</body>
+{% endblock %}

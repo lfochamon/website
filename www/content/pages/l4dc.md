@@ -2,7 +2,8 @@ Title: L4DC tutorial
 URL: l4dc/index.html
 status: hidden
 save_as: l4dc/index.html
-template: standalone
+template: tutorial_refs
+bibtex: content/csrl_tutorial.bib
 
 
 # L4DC 2024 Tutorial &ndash;<br>Learning under Requirements: Supervised and Reinforcement Learning with Constraints

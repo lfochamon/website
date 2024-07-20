@@ -2,7 +2,7 @@ Title: AAAI tutorial
 URL: aaai/index.html
 status: hidden
 save_as: aaai/index.html
-template: standalone
+template: tutorial
 
 
 # AAAI 2024 Tutorial &ndash; TH4<br>Learning under Requirements: Supervised and Reinforcement Learning with Constraints

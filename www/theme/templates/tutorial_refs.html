@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITETITLE }} - {{ page.title|striptags }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+
+  <style>
+    .pubs_list ul{
+      padding: 0 30px;
+      font-size: 17px;
+      list-style-type: none;
+    }
+    
+    .pubs_list li{
+      margin: 0 0 15px 0;
+    }
+    
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible a {
+      cursor: pointer;
+    }
+    
+    .active {
+      font-weight: bold;
+    }
+    
+    .collapsible p {
+      margin: 0;
+    }
+    
+    /* Style the collapsible content. Note: hidden by default */
+    .collapsible-content {
+      display: none;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    </style>
+    
+  <style>
+    .sidebar-social, .sidebar-about {
+        display: none;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+<body class="layout-reverse">
+    {% set DISPLAY_PAGES_ON_MENU = False %}
+    {% set MENUITEMS = [('Schedule','#schedule'), ('Content','#content'), ('Presenters','#presenters'), ('References','#references'), ('&nbsp;',''), ('&#x2190;&nbsp;&nbsp;Main website', SITEURL)] %}
+    {% include 'fragments/sidebar.html' %}
+
+    
+    <div class="content container">
+        {{ page.content }}
+
+
+        <h2 id="references">References</h2>
+        
+        {% for name, tag in [('Main references', 'main'), ('Constrained supervised learning', 'csl'), ('Constrained reinforcement learning', 'crl'), ('Others', 'other')] %}
+          <h2 id="{{ tag }}">{{ name }}</h2>
+          
+          <div class="pubs_list">
+            <ul>
+              {% for publication in page.publications_lists[tag] | sort(True, attribute='year') %}
+                <li id='{{ publication.key }}'>
+                  {{ publication.text }}
+                  {% if publication.award %}
+                    <strong>({{ publication.award }})</strong>
+                  {% endif %}
+                <br />
+                {% for label, target in [('PDF', publication.pdf), ('arXiv', publication.arxiv), ('YouTube', publication.video), ('Slides', publication.slides), ('Poster', publication.poster), ('Link', publication.url)] -%}
+                  {{- "[&nbsp;<a href=\"%s\" onClick=\"gtag('event', 'Publications', {'event_category' : '%s', 'event_label' : '%s'});\">%s</a>&nbsp;]" % (target, label, publication.key, label) if target -}}
+                {%- endfor -%}
+                <span class="collapsible">
+                  [&nbsp;<a class="collapsible_link">Bibtex</a>&nbsp;]
+                  <div class="collapsible-content"><pre>{{ publication.bibtex }}</pre></div>
+              </span>
+              </li>
+              {% endfor -%}
+            </ul>
+          </div>
+        
+          &nbsp;
+        {% endfor %}
+
+        <!--
+
+        <div class="pubs_list">
+            <ul>
+              {% for publication in page.publications | sort(True, attribute='year') %}
+              <li id='{{ publication.key }}'>
+                {{ publication.text }}
+                {%- if publication.award -%}
+                  &nbsp;<strong>({{ publication.award }})</strong>
+                {%- endif %}
+                <br />
+                {% for label, target, event in [('PDF', publication.pdf, 'Publications'), ('arXiv', publication.arxiv, 'Publications'), ('YouTube', publication.video, 'Presentations'), ('Slides', publication.slides, 'Presentations'), ('Poster', publication.poster, 'Presentations'), ('Link', publication.url, 'Publications')] -%}
+                  {{- "[&nbsp;<a href=\"%s\" onClick=\"gtag('event', '%s', {'event_category' : '%s', 'event_label' : '%s'});\">%s</a>&nbsp;]" % (target, event, label, publication.key, label) if target -}}
+                {%- endfor -%}
+                <span class="collapsible">
+                    [&nbsp;<a class="collapsible_link">Bibtex</a>&nbsp;]
+                    <div class="collapsible-content"><pre>{{ publication.bibtex }}</pre></div>
+                </span>
+              {% endfor -%}
+            </ul>
+        </div> -->
+
+    </div>
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].getElementsByClassName("collapsible_link")[0].addEventListener("click", function() {
+        this.classList.toggle("active");
+    
+        // Sentinel
+        var content = this.nextElementSibling;
+        while (content) {
+          if (content.matches('.collapsible-content')) break;
+          content = sibling.nextElementSibling;
+        }
+    
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
+{% endblock %}
