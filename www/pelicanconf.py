@@ -38,8 +38,6 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["pelican_bib", "render_math", "jinja2content", "image_process"]
 PUBLICATIONS_SRC = "content/publications.bib"
 PUBLICATIONS_SPLIT_BY = "keywords"
-PUBLICATIONS_CUSTOM_STYLE = True
-PUBLICATIONS_PLUGIN_PATH = "theme"
 
 MATH_JAX = {
     # align: [string] 'left', 'right' or 'center'. Default Value: 'center'.
