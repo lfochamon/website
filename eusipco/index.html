@@ -30,6 +30,37 @@
 <link href="https://www.luizchamon.com/theme/icon/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="https://www.luizchamon.com/theme/icon/favicon-192.png" rel="icon" sizes="192x192"/>
 <style>
+    .pubs_list ul{
+      padding: 0 30px;
+      font-size: 17px;
+      list-style-type: none;
+    }
+    
+    .pubs_list li{
+      margin: 0 0 15px 0;
+    }
+    
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible a {
+      cursor: pointer;
+    }
+    
+    .active {
+      font-weight: bold;
+    }
+    
+    .collapsible p {
+      margin: 0;
+    }
+    
+    /* Style the collapsible content. Note: hidden by default */
+    .collapsible-content {
+      display: none;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    </style>
+<style>
     .sidebar-social, .sidebar-about {
         display: none;
     }
@@ -47,6 +78,7 @@
 <a class="sidebar-nav-item" href="#schedule">Schedule</a>
 <a class="sidebar-nav-item" href="#content">Content</a>
 <a class="sidebar-nav-item" href="#presenters">Presenters</a>
+<a class="sidebar-nav-item" href="#references">References</a>
 <a class="sidebar-nav-item" href=""> </a>
 <a class="sidebar-nav-item" href="https://www.luizchamon.com">←  Main website</a>
 </nav>
@@ -87,6 +119,7 @@
 <li><a class="sidebar-nav-item" href="#schedule">Schedule</a></li>
 <li><a class="sidebar-nav-item" href="#content">Content</a></li>
 <li><a class="sidebar-nav-item" href="#presenters">Presenters</a></li>
+<li><a class="sidebar-nav-item" href="#references">References</a></li>
 <li><a class="sidebar-nav-item" href=""> </a></li>
 <li><a class="sidebar-nav-item" href="https://www.luizchamon.com">←  Main website</a></li>
 </ul>
@@ -180,6 +213,7 @@
 </tr>
 </tbody>
 </table>
+<p>We have provided a selected bibliography for the tutorial <a href="#bibliography">here</a>.</p>
 <h2 id="content">Content</h2>
 <h3 id="module-1">Constrained Supervised Learning: Duality, Generalization, and Resilience</h3>
 <p>In this module, we formalize statistical learning and empirical risk minimization (ERM), discuss different types of requirements that arise in ML, and show how these requirements are imposed using constrained optimization. We then introduce constrained learning theory and proceed to show a family of generalization bounds for constrained learning using not constrained ERM, but non-convex duality. Based on these results, we develop primal-dual training algorithms, discuss practical aspects of their implementation (step sizes, stopping criteria), and elucidate their convergence properties. We explore how these duality results can be used to adapt the trade-off between objective and requirements and balance the marginal costs and benefits of relaxing constraints. We dub these techniques "resilient learning," from the ecological concept that describes the ability of a system to adapt to changes in their environment.</p>
@@ -197,6 +231,29 @@
 <p><a href="https://alelab.seas.upenn.edu/"><strong>Alejandro Ribeiro</strong></a> received the B.Sc. degree in electrical engineering from the Universidad de la República Oriental del Uruguay in 1998 and the M.Sc. and Ph.D. degrees in electrical engineering from the University of Minnesota in 2005 and 2007. He joined the University of Pennsylvania (Penn) in 2008 where he is currently Professor of Electrical and Systems Engineering. His research is in wireless autonomous networks, machine learning on network data and distributed collaborative learning. Papers coauthored by Dr. Ribeiro received the 2022 IEEE Signal Processing Society Best Paper Award, the 2022 IEEE Brain Initiative Student Paper Award, the 2021 Cambridge Ring Publication of the Year Award, the 2020 IEEE Signal Processing Society Young Author Best Paper Award, the 2014 O. Hugo Schuck best paper award, and paper awards at EUSIPCO, IEEE ICASSP, IEEE CDC, IEEE SSP, IEEE SAM, Asilomar SSC Conference, and ACC. His teaching has been recognized with the 2017 Lindback award for distinguished teaching and the 2012 S. Reid Warren, Jr. Award presented by Penn’s undergraduate student body for outstanding teaching. Dr. Ribeiro received an Outstanding Researcher Award from Intel University Research Programs in 2019. He is a Penn Fellow class of 2015 and a Fulbright scholar class of 2003.</p>
 </div>
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].getElementsByClassName("collapsible_link")[0].addEventListener("click", function() {
+        this.classList.toggle("active");
+    
+        // Sentinel
+        var content = this.nextElementSibling;
+        while (content) {
+          if (content.matches('.collapsible-content')) break;
+          content = sibling.nextElementSibling;
+        }
+    
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
 <script type="text/javascript">
   const menuBtn = document.getElementById('mobile-menu-open');
   const menuBtnAlt = document.getElementById('mobile-menu-open-alt');
