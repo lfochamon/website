@@ -9,7 +9,7 @@ from pybtex.database import BibliographyData, PybtexError
 from pybtex.backends import html
 
 from pybtex.database import Person
-from pybtex.style.formatting import BaseStyle, unsrt
+from pybtex.style.formatting import unsrt
 from pybtex.style.template import tag, words, href, field, optional, join
 
 from pelican import signals
@@ -24,7 +24,7 @@ class PelicanStyle(unsrt.Style):
         self.site_author = Person("L. F. O. Chamon")
         self.site_author_star = Person("L. F. O. Chamon*")
 
-        # Allows to apply special formatting to a specific author.
+        # Allows to apply special formatting to a specific author
         def format_name(person, abbr=False):
             if person == self.site_author:
                 return tag("strong")[self.name_style.format(person, abbr)]
@@ -37,10 +37,7 @@ class PelicanStyle(unsrt.Style):
             self.format_name = format_name
 
         # Skip URL
-        def format_web_refs(e):
-            pass
-
-        self.format_web_refs = format_web_refs
+        self.format_web_refs = lambda _: None
 
 
 def parse_pubs(generator, refs_file, highlight=True):
@@ -51,10 +48,9 @@ def parse_pubs(generator, refs_file, highlight=True):
 
     publications = []
     publications_lists = {}
-    publications_untagged = []
 
     split_by = generator.settings.get("PUBLICATIONS_SPLIT_BY", None)
-    untagged_title = generator.settings.get("PUBLICATIONS_UNTAGGED_TITLE", None)
+    untagged_title = generator.settings.get("PUBLICATIONS_UNTAGGED_TITLE", "other")
 
     # format entries
     html_backend = html.Backend()
@@ -64,47 +60,51 @@ def parse_pubs(generator, refs_file, highlight=True):
         key = formatted_entry.key
         entry = bibdata_all.entries[key]
 
+        # get and clean up entry tags
         tags = []
         if split_by:
             tags = entry.fields.get(split_by, [])
-
-            # parse to list, and trim each string
             if tags:
                 tags = [tag.strip() for tag in tags.split(",")]
 
-                # create keys in publications_lists if at least one
-                # tag is given
-                for tag in tags:
-                    publications_lists[tag] = publications_lists.get(tag, [])
+        # create pelican entry
+        entry_pelican = {}
+        entry_pelican["key"] = key
+        entry_pelican["text"] = formatted_entry.text.render(html_backend)
+
+        # add fields removing url
+        for key, value in entry.fields.items():
+            if type(value) is str and value.startswith("\\url"):
+                entry_pelican[key] = value[5:-1]
+            else:
+                entry_pelican[key] = value
 
         # render the bibtex string for the entry
+        for trash_field in ["pdf", "poster", "slide", "video"]:
+            entry.fields.pop(trash_field, None)
         bib_buf = StringIO()
         bibdata_this = BibliographyData(entries={key: entry})
         Writer().write_stream(bibdata_this, bib_buf)
-        text = formatted_entry.text.render(html_backend)
+        entry_pelican["bibtex"] = bib_buf.getvalue()
 
-        entry_tuple = {}
-        entry_tuple["key"] = key
-        entry_tuple["text"] = text
-        entry_tuple["bibtex"] = bib_buf.getvalue()
-
-        for key, value in entry.fields.items():
-            if type(value) is str and value.startswith("\\url"):
-                entry_tuple[key] = value[5:-1]
-            else:
-                entry_tuple[key] = value
-
-        publications.append(entry_tuple)
+        # add entry to lists
+        publications.append(entry_pelican)
 
         for tag in tags:
-            publications_lists[tag].append(entry_tuple)
+            if tag in publications_lists:
+                publications_lists[tag].append(entry_pelican)
+            else:
+                publications_lists[tag] = [entry_pelican]
 
-        if not tags and untagged_title:
-            publications_untagged.append(entry_tuple)
+        if not tags:
+            if untagged_title in publications_lists:
+                publications_lists[untagged_title].append(entry_pelican)
+            else:
+                publications_lists[untagged_title] = [entry_pelican]
 
-    # append untagged list if title is given
-    if untagged_title and publications_untagged:
-        publications_lists[untagged_title] = publications_untagged
+    # # append untagged list if title is given
+    # if untagged_title and publications_untagged:
+    #     publications_lists[untagged_title] = publications_untagged
 
     return publications, publications_lists
 

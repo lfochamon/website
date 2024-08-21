@@ -45,6 +45,8 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL algorithms |
 
 
+We have provided a selected bibliography for the tutorial [here](#bibliography).
+
 
 ## Content
 

@@ -2,7 +2,7 @@ Title: Learning under Requirements
 URL: csrl/index.html
 status: hidden
 save_as: csrl/index.html
-template: tutorial
+template: tutorial_refs
 
 
 # Learning under Requirements: Supervised and Reinforcement Learning with Constraints

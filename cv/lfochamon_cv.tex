@@ -1,5 +1,6 @@
 % !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
-%!TeX program = txs:///compile | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///compile | txs:///compile | txs:///view-pdf
+%!TeX program = txs:///lualatex | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///lualatex | txs:///lualatex | txs:///view-pdf
+%\documentclass[highlights]{cvlfoc}
 %\documentclass[highlights,grants]{cvlfoc}
 \documentclass{cvlfoc}
 
@@ -24,7 +25,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{1708}
+\citations{1731}
 \hindex{22}
 \publications{\directlua{
 	local f = io.open("lfochamon_cv1-blx.bbl", "r")
@@ -384,6 +385,18 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 
 \begin{entrydate}
 	\entrylist{2024}{
+		% 08/2024
+		\item Tutorial: ``Constrained learning: From supervised to reinforced''
+		\hfill EUSIPCO
+
+		% 07/2024
+		\item Tutorial: ``Constrained learning: From supervised to reinforced''
+		\hfill L4DC
+
+		% 06/2024
+		\item Statistics and learning theory in the era of AI
+		\hfill MFO, Oberwolfach
+
 		% 02/2024
 		\item Tutorial: ``Constrained learning: From supervised to reinforced''
 		\hfill AAAI
@@ -426,7 +439,7 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 		\item ELLIS/CIS Network Seminar \hfill EPFL
 	}
 
-	\entrylist{2022}{\ifthenelse{\boolean{grants}}{\vspace*{-12pt}}{}
+	\entrylist{2022}{%\ifthenelse{\boolean{grants}}{\vspace*{-12pt}}{}
 		% 04/2022
 		\item Young Investigators Lecture \hfill Caltech
 
@@ -515,12 +528,12 @@ Chamon23c, Robey21a, Chamon20p, Eisen19l}
 			\emph{Technical supervision} \hfill(Main supervisor: A.\ Ribeiro)}
 \end{entrydate}
 
-\ifthenelse{\boolean{grants}}{}{\newpage}
+%\ifthenelse{\boolean{grants}}{}{\newpage}
 
 \subsection*{Supervision of master thesis}
 
 \begin{entrydate}
-	\entry{12/2023--present}
+	\entry{12/2023--08/2024}
 		{Nadin Elsharbatly \hfill U. Stuttgart}
 \end{entrydate}
 

@@ -2,7 +2,7 @@ Title: EUSIPCO tutorial
 URL: eusipco/index.html
 status: hidden
 save_as: eusipco/index.html
-template: tutorial
+template: tutorial_refs
 
 
 # EUSIPCO 2024 Tutorial &ndash;<br>Learning under Requirements: Supervised and Reinforcement Learning with Constraints
@@ -43,6 +43,8 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL duality |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL algorithms |
 | 12:15 - 12:30 | [**Q&A and discussion**](#) |
+
+We have provided a selected bibliography for the tutorial [here](#bibliography).
 
 
 ## Content

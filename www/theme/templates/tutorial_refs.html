@@ -55,57 +55,36 @@
     <div class="content container">
         {{ page.content }}
 
-
-        <h2 id="references">Bibliography</h2>
-        
-        {% for name, tag in [('Main references', 'main'), ('Constrained supervised learning', 'csl'), ('Constrained reinforcement learning', 'crl'), ('Others', 'other')] %}
-          <h2 id="{{ tag }}">{{ name }}</h2>
+        {% if page.publications_lists is defined %}
+          <h2 id="bibliography">Bibliography</h2>
           
-          <div class="pubs_list">
-            <ul>
-              {% for publication in page.publications_lists[tag] | sort(True, attribute='year') %}
-                <li id='{{ publication.key }}'>
-                  {{ publication.text }}
-                  {% if publication.award %}
-                    <strong>({{ publication.award }})</strong>
-                  {% endif %}
-                <br />
-                {% for label, target in [('PDF', publication.pdf), ('arXiv', publication.arxiv), ('YouTube', publication.video), ('Slides', publication.slides), ('Poster', publication.poster), ('Link', publication.url)] -%}
-                  {{- "[&nbsp;<a href=\"%s\" onClick=\"gtag('event', 'Publications', {'event_category' : '%s', 'event_label' : '%s'});\">%s</a>&nbsp;]" % (target, label, publication.key, label) if target -}}
-                {%- endfor -%}
-                <span class="collapsible">
-                  [&nbsp;<a class="collapsible_link">Bibtex</a>&nbsp;]
-                  <div class="collapsible-content"><pre>{{ publication.bibtex }}</pre></div>
-              </span>
-              </li>
-              {% endfor -%}
-            </ul>
-          </div>
-        
-          &nbsp;
-        {% endfor %}
-
-        <!--
-
-        <div class="pubs_list">
-            <ul>
-              {% for publication in page.publications | sort(True, attribute='year') %}
-              <li id='{{ publication.key }}'>
-                {{ publication.text }}
-                {%- if publication.award -%}
-                  &nbsp;<strong>({{ publication.award }})</strong>
-                {%- endif %}
-                <br />
-                {% for label, target, event in [('PDF', publication.pdf, 'Publications'), ('arXiv', publication.arxiv, 'Publications'), ('YouTube', publication.video, 'Presentations'), ('Slides', publication.slides, 'Presentations'), ('Poster', publication.poster, 'Presentations'), ('Link', publication.url, 'Publications')] -%}
-                  {{- "[&nbsp;<a href=\"%s\" onClick=\"gtag('event', '%s', {'event_category' : '%s', 'event_label' : '%s'});\">%s</a>&nbsp;]" % (target, event, label, publication.key, label) if target -}}
-                {%- endfor -%}
-                <span class="collapsible">
+          {% for name, tag in [('Main references', 'main'), ('Constrained supervised learning', 'csl'), ('Constrained reinforcement learning', 'crl'), ('Others', 'other')] %}
+            <h2 id="{{ tag }}">{{ name }}</h2>
+            
+            <div class="pubs_list">
+              <ul>
+                {% for publication in page.publications_lists[tag] | sort(True, attribute='year') %}
+                  <li id='{{ publication.key }}'>
+                    {{ publication.text }}
+                    {% if publication.award %}
+                      <strong>({{ publication.award }})</strong>
+                    {% endif %}
+                  <br />
+                  {% for label, target in [('PDF', publication.pdf), ('arXiv', publication.arxiv), ('YouTube', publication.video), ('Slides', publication.slides), ('Poster', publication.poster), ('Link', publication.url)] -%}
+                    {{- "[&nbsp;<a href=\"%s\" onClick=\"gtag('event', 'Publications', {'event_category' : '%s', 'event_label' : '%s'});\">%s</a>&nbsp;]" % (target, label, publication.key, label) if target -}}
+                  {%- endfor -%}
+                  <span class="collapsible">
                     [&nbsp;<a class="collapsible_link">Bibtex</a>&nbsp;]
                     <div class="collapsible-content"><pre>{{ publication.bibtex }}</pre></div>
                 </span>
-              {% endfor -%}
-            </ul>
-        </div> -->
+                </li>
+                {% endfor -%}
+              </ul>
+            </div>
+          
+            &nbsp;
+          {% endfor %}
+        {% endif %}
 
     </div>
 </body>

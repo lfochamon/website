@@ -79,7 +79,6 @@ Date: 1002-01-01
 
 &nbsp;
 
-
 {% for name, tag in pub_dict %}
 <h2 id="{{ tag }}">{{ name }}</h2>
 
