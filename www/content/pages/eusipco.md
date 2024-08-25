@@ -27,7 +27,7 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 
 | Time | Topic |
 |---|---|
-| 9:00 - 9:15 | [**Introduction**](#) |
+| 9:00 - 9:15 | [**Introduction**](#) ([slides]({static}/pdf/eusipco_handout_1.pdf)) |
 | 9:15 - 10:00 | [**Constrained supervised learning**](#module-1) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(un)constrained learning and ERM |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;non-convex duality and constrained learning theory |
@@ -38,7 +38,7 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 |             | &nbsp;&nbsp;&nbsp;&nbsp;sampling algorithms and MCMC |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;probabilistic robustness |
 | 10:30 - 11:00 | Break |
-| 11:00 - 12:15 | [**Constrained reinforcement learning**](#module-3) |
+| 11:00 - 12:15 | [**Constrained reinforcement learning**](#module-3) ([slides]({static}/pdf/eusipco_handout_2.pdf)) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL duality |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL algorithms |
