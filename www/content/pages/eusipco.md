@@ -3,6 +3,7 @@ URL: eusipco/index.html
 status: hidden
 save_as: eusipco/index.html
 template: tutorial_refs
+bibtex: content/csrl_tutorial.bib
 
 
 # EUSIPCO 2024 Tutorial &ndash;<br>Learning under Requirements: Supervised and Reinforcement Learning with Constraints
