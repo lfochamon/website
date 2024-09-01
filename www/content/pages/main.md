@@ -44,9 +44,9 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **Sep 18th, 2024** &ndash; I have been invited to be part of a panel on career steps for doctoral students at this year's [IMPRS-IS](https://imprs.is.mpg.de/) bootcamp.
 
-- **Aug 26th, 2024** &ndash; Last chance to catch our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/eusipco.md)" at EUSIPCO in Lyon, France.
-
 ------
+
+- **Aug 26th, 2024** &ndash; Last chance to catch our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/eusipco.md)" at EUSIPCO in Lyon, France.
 
 - **Jul 15th, 2024** &ndash; Check out our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/l4dc.md)" at L4DC in Oxford, UK.
 
