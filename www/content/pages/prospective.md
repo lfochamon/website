@@ -1,6 +1,5 @@
 Title: Prospective members
 Date: 1004-01-01
-status: hidden
 
 <style>
 
@@ -30,6 +29,7 @@ If this is something you're interested in, consider joining us in one of the fol
 
 &nbsp;
 
+{#
 <div class='highlight' style='font-size:85%;' markdown=1>
 The University of Stuttgart, the Cluster of Excellence EXC 2075, and myself are committed to
 promoting diversity. Applications from people with international
@@ -41,6 +41,7 @@ Information in accordance with Article 13 GDPR on the processing of applicant da
 can be found [here](https://careers.uni-stuttgart.de/content/Data-Privacy/?locale=en_US).
 {: style='margin-bottom:0px;'}
 </div>
+#}
 
 &nbsp;
 
@@ -59,10 +60,8 @@ to discuss potential opportunities if you are interested in working with me. Inc
 
 ## PhD student
 
-I do not have any PhD position calls open at the moment.
-But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss if you are interested in working with me.
-{# I am always willing to consider outstanding students to join my group. #}
-
+{# I do not have any PhD position calls open at the moment.
+But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss if you are interested in working with me. I am always willing to consider outstanding students to join my group. #}
 
 {#
 <div class='highlight' markdown=1>
@@ -89,6 +88,20 @@ If you have any questions about the positions and/or life in Germany, do not hes
 </div>
 #}
 
+<div class='highlight' markdown=1>
+I am currently looking for people interested in joining my group as a PhD student next year at [&Eacute;cole Polytechnique](https://www.polytechnique.edu/) to work on topics at the intersection of optimization, learning, control, and statistics.
+
+Projects in my group are typically at the interface of theory and practice, so there is room for those more mathematically-inclined as well as those more empirically-inclined. While all of my students are expected to know and do a bit of both, there are opportunities for you to position yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
+
+**Deadline**: applications are accepted on a rolling basis (the position will be filled as soon as a suitable candidate is found).  
+**Target starting date:** Fall 2025 (flexible)  
+**Salary:** 2300&nbsp;€ gross ([How much is that?](#so-how-much-is-my-salary-exactly))  
+
+If you have any questions about the positions and/or life in Paris, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
+{: style='margin-bottom:0px;'}
+</div>
+
+
 ### Requirements
 
 Consider applying if you
@@ -96,15 +109,15 @@ Consider applying if you
 
 - have obtained or will soon obtain a master degree* in electrical engineering, computer science, or a related field (applied math, operations research, etc.)  
 {# <span class="prospect-comment">\*or equivalently a 5-year bachelor degree from outside of Europe (as is the case, e.g., in South America)</span> #}
-<span class="prospect-comment">\*If you have a 5-year bachelor degree (as is the case, e.g., in South America) and an <em>amazing</em> CV, you should still apply! We'll find a way to make it work.</span>
+<span class="prospect-comment">\*If you have a 5-year bachelor degree (as is the case, e.g., in South America) and an <em>amazing</em> CV, you can still apply. We'll find a way to make it work.</span>
 {: .prospect-item}
 
 - have reading, writing, and oral proficiency in technical English  
-<span class="prospect-comment">([Do you need to speak German?](#do-i-need-to-speak-german) **No**, the official and working language of the group is English)</span>
+<span class="prospect-comment">([Do you need to speak French?](#do-i-need-to-speak-french) **No**, the official and working language of the group is English)</span>
 {: .prospect-item}
 
 - have experience with at least one of the usual suspects: Python, MATLAB, Python, Julia, R, Python  
-<span class="prospect-comment">(I'm not a Python fanboy and you don't have to be a master programmer, but the official programming language of the group is Python)</span>
+<span class="prospect-comment">(I'm not a Python fanboy and you don't have to be a super programmer, but since I know Python, so should you)</span>
 {: .prospect-item}
 
 - are familiar with at least one "deep learning" (autodiff) framework, e.g., PyTorch, Tensorflow, PyTorch, Jax, PyTorch  
@@ -121,13 +134,13 @@ If in addition you
 - are collaborative and appreciate working with peers and junior (undergraduate) students;
 {: .prospect-item}
 
-- enjoy presenting and discussing your work to academic and non-academic audiences; and
+- enjoy presenting to and discussing your work with academic and non-academic audiences; and
 {: .prospect-item}
 
 - are motivated to do high-level research in a demanding, but supportive environment,
 {: .prospect-item}
 
-then you should not only consider, but make sure to apply!
+then you should not only consider, but make sure you apply!
 
 
 
@@ -135,10 +148,11 @@ then you should not only consider, but make sure to apply!
 
 Interested candidate should submit their applications via [email](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) starting the subject line with `[App PhD]` and including:
 
-- Motivation letter describing background and research interests (1-2 pages)  
-<span class="prospect-comment">Your letter must outline your prior work and the kind of research you are excited to conduct in the future.
-Make sure to relate your interests and goals to the publications and research topics of the group. Also, point to papers, reports,
-personal projects, anything that showcases your English writing, mathematical, and/or coding [proficiency](#requirements).</span>
+- Short motivation statement describing background and research interests (1 page max.)  
+<span class="prospect-comment">Your letter must outline your prior work and the kind of research you are excited
+to conduct in the future. Make sure to relate your interests and goals to the publications and research topics of
+the group. Also, point to papers, reports, personal projects, anything that showcases your English writing,
+mathematical, and/or coding [proficiency](#requirements).</span>
 {: .prospect-item}
 
 - CV (including a list of publications and research/coding projects, if you have any)
@@ -155,15 +169,12 @@ Prior to applying, candidates are expected to review the [requirements](#require
 
 ### Additional information
 
-
 #### Why pursue your PhD here?
 
-At the University of Stuttgart and SimTech, you have access to a world-class research infrastructure and support,
-including high performance computing clusters and scientific data infrastructures. You also have the opportunity&nbsp;(and means)
-to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world;
-and attend major conferences.
+At the &Eacute;cole Polytechnique (also known as X) and CMAP, you have access to a world-class research infrastructure and support, including high performance computing clusters. You also have the opportunity&nbsp;(and means) to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world; and attend major conferences. X is part of the [Institut Polytechnique de Paris](https://www.ip-paris.fr/), among the 50 best universities world-wide and #2 in France ([QS rank](https://www.topuniversities.com/universities/institut-polytechnique-de-paris)). Located on the Plateau de Saclay, it is surrounded by world-class institutions (such as INRIA, Telecom Paris, CentraleSup&eacute;lec, ENSAE, HEC), industrial research centers (such as Danone, Thales), and a vibrant start-up community.
 
-On the&nbsp;(not-less-important) logistic side, while Germany is known for its bureaucracy,
+{#
+On the&nbsp;(not-less-important) logistic side, while France is known for its bureaucracy,
 the requirements for PhD positions here are actually quite straightforward. In particular,
 
 - you are *not* required to take German language exams, TOEFL, GRE, or pay application fees;
@@ -178,37 +189,28 @@ Additionally, you enjoy several benefits, such as
 - full-time employment by the university that entitles you to social benefits,
   including healthcare, family assistance, and 30 days of paid time-off (holidays);
 - fully-funded opportunities to attend conferences.
+#}
 
-If you have any questions about the positions, the PhD in general, and/or life in Germany, do not hesitate to
+You can find more information about the French doctorate system at [Campus France](https://www.campusfrance.org/en/what-involved-Doctorate-France). If you have any questions about the positions, the PhD in general, and/or life in France, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
+
+
+#### So how much is my salary exactly?
+
+PhD student minimal salaries are defined nationally by the government. You can easily find *gross* values in the
+[law](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046820748). *Net* salaries are harder to determine
+as they depend on your tax situation. In an informal poll of *net* salaries among PhD students, I got to something
+in the range of **1700&ndash;1800&nbsp;€** (which is consistent with what you get on [this](https://www.salaire-brut-en-net.fr/) website). These are unofficial estimates and therefore come with the typical caveat on internet sources. It is worth noting that PhD students in France are contracted, full-time employees entitled to the all social benefits of traditional public sector employment, including sick days and paid time-off&nbsp;(holidays).
+
+Again, if you have any questions about the positions, the PhD in general, and/or life in Paris, do not hesitate to
 [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
 
-#### So how much is E13 exactly?
+#### Do I need to speak French?
 
-PhD student salaries are negotiated nationally by the worker's association. You can easily find *gross* values on
-[this](https://oeffentlicher-dienst.info/tv-l/allg/) government website. *Net* salaries are harder to determine as they
-depend on things like years within the PhD, marital status, whether you have kids, what kind of health insurance you choose...
-In an informal poll of *net* salaries among PhD students, I got to an average of **2300&nbsp;€** (which is consistent with
-[this tier](https://oeffentlicher-dienst.info/c/t/rechner/tv-l/allg?id=tv-l&g=E_13&s=1&zv=VBL&z=100&zulage=&stkl=1&r=&zkf=&kk=15.5%25)).
-You can compare that with whatever you find when typing `cost of living stuttgart` on Google (with the typical caveat on internet sources).
+The answer is a resounding **NO**. The official and working language of the group is English.
+Additionally, many courses are offered in English and most of the university staff speaks English.
 
-It is worth noting that PhD students in Germany are full-time employees of the university entitled to social benefits
-(healthcare, pension plans, family assistance, etc.), sick days, and 30 days of paid time-off&nbsp;(holidays) per year.
-
-Again, if you have any questions about the positions, the PhD in general, and/or life in Germany, do not hesitate to
-[reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
-
-
-#### Do I need to speak German?
-
-The answer is a resounding **NO**. The official and working language of the group is English (the same holds for ELLIS and SimTech).
-Additionally, the majority of graduate course are offered in English and most of the university staff speaks English.
-I myself do not currently speak German and I'm surviving.
-
-Now, *should* you speak German? Probably eventually. Even if Stuttgart is a highly international city (more than 25% of its
-population has a foreign passport), speaking German will definitely make your life easier and more fun outside of the university.
-And if you are going to spend multiple years in a country, you might as well learn the local language. If you do decide to
-give German a try, the university and the city offer a variety of German language courses and resources, many of them free of charge.
+Now, *should* you speak French? Probably eventually. Even if Paris is a highly international city, speaking French will definitely make your life easier and more fun outside of the university. And if you are going to spend multiple years in a country, you might as well learn the local language. If you do decide to give French a try, there are plenty of French language courses and resources at and around the university, many of them free of charge.
 
 
 
@@ -233,7 +235,7 @@ We work on a variety of exciting topics upon which your Master project can be ba
 
 Master projects typically combine the use of a novel optimization, control, or statistics tool with a practical machine learning or signal processing
 application. We expect interested students to have a strong theoretical background and/or be good programmers as well as being able to come up with
-fresh ideas for challenging research problems. Thesis topics are primarily for students currently enrolled at University of Stuttgart.
+fresh ideas for challenging research problems. Thesis topics are primarily for students currently enrolled at &Eacute;cole Polytechnique.
 
 
 &nbsp;
@@ -245,7 +247,7 @@ fresh ideas for challenging research problems. Thesis topics are primarily for s
 
 My group does not currently have student assistants calls open. However, we are always looking for motivated students interested in
 collaborating in our projects. Feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App SA]) to discuss if you are interested in working with us
-(include `[App SA]` in your subject line). Student assistant positions are primarily for students currently enrolled at University of Stuttgart.
+(include `[App SA]` in your subject line). Student assistant positions are primarily for students currently enrolled at &Eacute;cole Polytechnique.
 
 
 

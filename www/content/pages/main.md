@@ -25,6 +25,14 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 &nbsp;
 
 
+**I am joining the center for applied math ([CMAP](https://cmap.ip-paris.fr/)) of the [&Eacute;cole Polytechnique de Paris](https://www.polytechnique.edu/) next January.**<br><br>
+**If you are looking to work with me, I will soon be filling a PhD student position.**<br>
+**Read more on how to join my group [here]({filename}/pages/prospective.md).**
+{: .highlight}
+
+&nbsp;
+
+
 {#
 **I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
 **More details in the [call]({filename}/pages/prospective.md#phd-student)!**<br><br>
@@ -42,9 +50,11 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 <div class="news" markdown=1>
 
-- **Sep 18th, 2024** &ndash; I have been invited to be part of a panel on career steps for doctoral students at this year's [IMPRS-IS](https://imprs.is.mpg.de/) bootcamp.
+- **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
 
 ------
+
+- **Sep 18th, 2024** &ndash; I have been invited to be part of a panel on career steps for doctoral students at this year's [IMPRS-IS](https://imprs.is.mpg.de/) bootcamp.
 
 - **Aug 26th, 2024** &ndash; Last chance to catch our tutorial on "[Learning under Requirements: Supervised and Reinforcement Learning with Constraints]({filename}/pages/eusipco.md)" at EUSIPCO in Lyon, France.
 
