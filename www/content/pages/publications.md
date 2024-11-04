@@ -60,7 +60,7 @@ Date: 1002-01-01
 
 <div class="pubs_list">
 <ul>
-  {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', ['Chamon23c', 'Robey21a', 'Chamon20f', 'Chamon20p', 'Chamon20ta', 'Kalogerias20b', 'Eisen19l', 'Paternain19c']) %}
+  {% for publication in publications | sort(True, attribute='year') | selectattr('key', 'in', ['Chamon24c', 'Calvo-Fullana24s', 'Chamon23c', 'Robey21a', 'Chamon20p', 'Chamon20ta', 'Kalogerias20b', 'Eisen19l', 'Paternain19c']) %}
   <li id='{{ publication.key }}'>
     {{ publication.text }}
     {%- if publication.award -%}

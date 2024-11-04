@@ -26,8 +26,7 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 
 **I am joining the center for applied math ([CMAP](https://cmap.ip-paris.fr/)) of the [&Eacute;cole Polytechnique de Paris](https://www.polytechnique.edu/) next January.**<br><br>
-**If you are looking to work with me, I will soon be filling a PhD student position.**<br>
-**Read more on how to join my group [here]({filename}/pages/prospective.md).**
+**If you are looking to work with me, I will soon be filling a PhD student position (applications reviews will begin February/March 2025). Read more on how to join my group [here]({filename}/pages/prospective.md).**
 {: .highlight}
 
 &nbsp;
@@ -49,6 +48,8 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 
 <div class="news" markdown=1>
+
+- **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
 - **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
 
@@ -78,6 +79,7 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **Nov 30th, 2023** &ndash; I am giving a talk and participating of the *"Future of AI"* panel during [Cyber Valley at University of Stuttgart](https://www.uni-stuttgart.de/en/university/news/event/Engineering-Intelligence--Cyber-Valley-at-University-of-Stuttgart/) ([register here](https://eveeno.com/universitaet-stuttgart-cv-2023) until Nov 24th).
 
+{#
 - **Oct 5th, 2023** &ndash; I am giving an invited talk on *"Learning under requirements"* at [SimTech 2023](https://www.simtech2023.uni-stuttgart.de/) in Stuttgart.
 
 - **Sep 25th, 2023** &ndash; I am giving a talk on *"Learning under robustness constraints"* at [EUCCO 2023](https://scoop.iwr.uni-heidelberg.de/events/2023_eucco/) in Heidelberg.
@@ -125,7 +127,7 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 - **Feb 3rd, 2022** &ndash; *"Safe policies for reinforcement learning via primal-dual methods"* was accepted for
   publication on the IEEE TAC ([paper]({filename}/pages/publications.md#Paternain23s)).
-{#
+
 - **December 10th, 2021** &ndash; New preprint: *"Transferability properties of graph neural networks"* ([arXiv](https://arxiv.org/abs/2112.04629)).
 
 - **September 29th, 2021** &ndash; *"Adversarial Robustness with Semi-Infinite Constrained Learning"* was accepted
