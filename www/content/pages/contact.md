@@ -6,16 +6,16 @@ Date: 1003-01-03
 
 ## ...at my office
 
-Universitätsstraße 32, Room 141  
-70569 - Stuttgart, Germany
+CMAP, &Eacute;cole Polytechnique  
+Route de Saclay  
+91128 Cedex - Palaiseau, France
 
-**Note:** This is *not* the main computer science building (Universitätsstraße 38).  
-My office is accessible via the reception of Universitätsstraße 34 near the bus stop.  
-Once inside, turn right at the reception to access the courtyard.  
-The entrance to Universitätsstraße 32 will be on your right.
+**Note:** The CMAP is located in Laboratories Aisle 0 ([Google maps](https://maps.app.goo.gl/6vEVuoCV5zLty8n26)).
+It is accessible from the RER B stations "Massy-Palaiseau" (bus 91.06 or 91.10 to stop "Place Marguerite Perey")
+or "Loz&egrave;re" (15 minutes walk including roughly 300 stairs).
 
 
 
 ## ...by email
 
-<a href='mailto&#58;{{SITEEMAIL}}'>lu&#105;z&#46;c&#104;amo&#110;&#64;&#115;im&#116;&#101;c&#104;&#46;uni-s&#116;ut&#116;gar&#116;&#46;&#100;e</a>
+<a href='mailto&#58;{{SITEEMAIL}}'>lu&#105;&#122;&#046;c&#104;&#097;mo&#110;&#064;p&#111;ly&#116;&#101;&#099;hni&#113;&#117;&#101;&#046;&#101;&#100;u</a>

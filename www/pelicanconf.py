@@ -7,7 +7,7 @@ import os
 AUTHOR = "Luiz Chamon"
 SITENAME = "Luiz Chamon"
 SITETITLE = "Luiz Chamon"
-SITEEMAIL = "l%75%&#54;9&#37;7&#65;&#46;c&#37;6&#56;&#97;&#37;6Don&#64;si%6D&#37;&#55;&#52;&#101;ch&#46;u&#37;6E&#37;69-stutt&#103;art&#46;&#100;%&#54;5"
+SITEEMAIL = "&#108;&#117;&#105;&#122;&#046;&#099;&#104;&#097;&#109;&#111;&#110;&#064;&#112;&#111;&#108;&#121;&#116;&#101;&#099;&#104;&#110;&#105;&#113;&#117;&#101;&#046;&#101;&#100;&#117;"
 CURRENTYEAR = date.today().year
 SITEURL = os.path.join(os.path.dirname(os.path.realpath(__file__)), "output")
 

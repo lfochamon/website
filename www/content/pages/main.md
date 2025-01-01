@@ -11,13 +11,13 @@ save_as: index.html
 }
 </style>
 
+
 # Hello there!
 
-<p style="font-size: 20px;">I am the
-<a href="https://ellis-stuttgart.eu/">ELLIS</a>&ndash;<a href="https://simtech.uni-stuttgart.de/">SimTech</a>
-independent research group leader of the <a href="https://www.uni-stuttgart.de/">University of Stuttgart</a>, Germany.
-I head the <b>Information Systems Group</b> associated to the <a href="https://www.ki.uni-stuttgart.de/">AI institute</a>.
-We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
+<p style="font-size: 20px;">I am an assistant professor
+of the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of the
+<a href="https://www.polytechnique.edu">&Eacute;cole Polytechnique</a>.
+My group develops tools to enable intelligent systems to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
 <b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
 </p>
@@ -25,23 +25,11 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 &nbsp;
 
 
-**I am joining the center for applied math ([CMAP](https://cmap.ip-paris.fr/)) of the [&Eacute;cole Polytechnique de Paris](https://www.polytechnique.edu/) next January.**<br><br>
-**If you are looking to work with me, I will soon be filling a PhD student position (applications reviews will begin February/March 2025). Read more on how to join my group [here]({filename}/pages/prospective.md).**
+**I am currently hiring one PhD student interested in working at the intersection of optimization, machine learning, and statistics (applications reviews will occur February/March 2025). Read more on how to join my group [here]({filename}/pages/prospective.md).**<br><br>
+**I also have open master thesis topics on generative models, sampling, and reinforcement learning. [Reach out]({filename}/pages/contact.md) if you are interested in any of these fields or my research more broadly!**
 {: .highlight}
 
 &nbsp;
-
-
-{#
-**I'm currently hiring PhD students interested in working at the intersection of optimization, machine learning, and statistics.**
-**More details in the [call]({filename}/pages/prospective.md#phd-student)!**<br><br>
-**You can also find out more about the different opportunities to join the group [here]({filename}/pages/prospective.md)!**
-{: .highlight}
-
-**And if you are a Bachelor or Master students interested in writing your thesis on machine learning, signal processing, and/or control... [reach out]({filename}/pages/contact.md)!.**
-
-&nbsp;
-#}
 
 
 ## News
@@ -49,11 +37,13 @@ We develop tools to enable intelligent systems to <b>extract</b>, <b>process</b>
 
 <div class="news" markdown=1>
 
+- **Jan 1st, 2025** &ndash; I have been accepted as an [ELLIS scholar](https://ellis.eu/fellows).
+
 - **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
-- **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
-
 ------
+
+- **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
 
 - **Sep 18th, 2024** &ndash; I have been invited to be part of a panel on career steps for doctoral students at this year's [IMPRS-IS](https://imprs.is.mpg.de/) bootcamp.
 

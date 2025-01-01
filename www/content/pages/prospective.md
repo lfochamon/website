@@ -25,7 +25,7 @@ If this is something you're interested in, consider joining us in one of the fol
 - [Postdoc](#postdoc)
 - [PhD student](#phd-student)
 - [Master thesis](#master-thesis)
-- [Student assistant](#student-assistant)
+{#- [Student assistant](#student-assistant)#}
 
 &nbsp;
 
@@ -50,8 +50,10 @@ can be found [here](https://careers.uni-stuttgart.de/content/Data-Privacy/?local
 
 ## Postdoc
 
-I do not have postdoc position calls open at the moment. But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App Postdoc])
-to discuss potential opportunities if you are interested in working with me. Include `[App Postdoc]` the subject line.
+I do not have open calls for postdoc positions at the moment. But feel free to
+[reach out](mailto&#58;{{SITEEMAIL}}?subject=[App Postdoc])
+to discuss potential opportunities if you are interested in working with me.
+Include `[App postdoc]` in the subject line.
 
 &nbsp;
 
@@ -60,12 +62,14 @@ to discuss potential opportunities if you are interested in working with me. Inc
 
 ## PhD student
 
-{# I do not have any PhD position calls open at the moment.
-But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss if you are interested in working with me. I am always willing to consider outstanding students to join my group. #}
+{# I do not have PhD position calls open at the moment.
+But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss potential opportunities
+if you are interested in working with me. I am always willing to consider outstanding students to join my group. #}
 
-{#
+
 <div class='highlight' markdown=1>
 I am currently looking for people interested in joining my group as a PhD student to work on topics at the intersection of optimization, learning, and statistics.
+{#
 Example projects include, but are certainly not limited to,
 
 - Science-constrained learning
@@ -74,28 +78,15 @@ Example projects include, but are certainly not limited to,
 - Rethinking generalization as a learning requirements
 
 Also feel free to [apply](#how-to-apply) if you are interested in any other direction of my research.
-
-Projects in my group are typically at the interface of theory and practice, so there is room for those more mathematically-inclined as well as those
-more empirically-inclined. While all of my students are expected to know and do a bit of both, there are opportunities for you to position
-yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
-
-**Deadline**: applications are accepted on a rolling basis (positions will be filled as soon as a suitable candidate is found).  
-**Target starting date:** Fall 2023 (flexible)  
-**Salary:** 100% TV-L E13 ([What?!](#so-how-much-is-e13-exactly))  
-
-If you have any questions about the positions and/or life in Germany, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
-{: style='margin-bottom:0px;'}
-</div>
 #}
 
-<div class='highlight' markdown=1>
-I am currently looking for people interested in joining my group as a PhD student next year at [&Eacute;cole Polytechnique](https://www.polytechnique.edu/) to work on topics at the intersection of optimization, learning, control, and statistics.
-
-Projects in my group are typically at the interface of theory and practice, so there is room for those more mathematically-inclined as well as those more empirically-inclined. While all of my students are expected to know and do a bit of both, there are opportunities for you to position yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
+Projects in my group are typically at the interface of theory and practice, so there is room for those more mathematically-inclined as well as those more empirically-inclined. While I expect all of my students to know and do a bit of both, there are opportunities for you to position yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 
 **Deadline**: applications are accepted on a rolling basis (the position will be filled as soon as a suitable candidate is found).  
 **Target starting date:** Fall 2025 (flexible)  
+{#
 **Salary:** 2300&nbsp;€ gross ([How much is that?](#so-how-much-is-my-salary-exactly))  
+#}
 
 If you have any questions about the positions and/or life in Paris, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 {: style='margin-bottom:0px;'}
@@ -108,7 +99,6 @@ Consider applying if you
 {: .prospect-item}
 
 - have obtained or will soon obtain a master degree* in electrical engineering, computer science, or a related field (applied math, operations research, etc.)  
-{# <span class="prospect-comment">\*or equivalently a 5-year bachelor degree from outside of Europe (as is the case, e.g., in South America)</span> #}
 <span class="prospect-comment">\*If you have a 5-year bachelor degree (as is the case, e.g., in South America) and an <em>amazing</em> CV, you can still apply. We'll find a way to make it work.</span>
 {: .prospect-item}
 
@@ -148,11 +138,12 @@ then you should not only consider, but make sure you apply!
 
 Interested candidate should submit their applications via [email](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) starting the subject line with `[App PhD]` and including:
 
-- Short motivation statement describing background and research interests (1 page max.)  
-<span class="prospect-comment">Your letter must outline your prior work and the kind of research you are excited
-to conduct in the future. Make sure to relate your interests and goals to the publications and research topics of
-the group. Also, point to papers, reports, personal projects, anything that showcases your English writing,
-mathematical, and/or coding [proficiency](#requirements).</span>
+- Short motivation statement describing background and research interests (2&ndash;5 paragraphs)  
+<span class="prospect-comment">Your statement must outline your prior work and the research you are interested in.
+Make sure to relate your interests to the publications and research topics of my group.
+Also, point to papers, reports, anything that showcases your English writing,
+mathematical, and/or coding [proficiency](#requirements).
+You do **NOT** need to write an extensive essay.</span>
 {: .prospect-item}
 
 - CV (including a list of publications and research/coding projects, if you have any)
@@ -161,9 +152,7 @@ mathematical, and/or coding [proficiency](#requirements).</span>
 - Full transcripts of completed academic degrees
 {: .prospect-item}
 
-- Name and contact of (up to three) references
-
-Prior to applying, candidates are expected to review the [requirements](#requirements) and my [recent publications]({filename}/pages/publications.md).
+Prior to applying, candidates are expected to review the [requirements](#requirements) and [recent publications]({filename}/pages/publications.md).
 
 
 
@@ -171,7 +160,7 @@ Prior to applying, candidates are expected to review the [requirements](#require
 
 #### Why pursue your PhD here?
 
-At the &Eacute;cole Polytechnique (also known as X) and CMAP, you have access to a world-class research infrastructure and support, including high performance computing clusters. You also have the opportunity&nbsp;(and means) to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world; and attend major conferences. X is part of the [Institut Polytechnique de Paris](https://www.ip-paris.fr/), among the 50 best universities world-wide and #2 in France ([QS rank](https://www.topuniversities.com/universities/institut-polytechnique-de-paris)). Located on the Plateau de Saclay, it is surrounded by world-class institutions (such as INRIA, Telecom Paris, CentraleSup&eacute;lec, ENSAE, HEC), industrial research centers (such as Danone, Thales), and a vibrant start-up community.
+At the &Eacute;cole Polytechnique (also known as "X") and the CMAP, you have access to a world-class research infrastructure and support, including high performance computing clusters. You also have the opportunity&nbsp;(and means) to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world; and attend major conferences. X is part of the [Institut Polytechnique de Paris](https://www.ip-paris.fr/), among the 50 best universities world-wide and #2 in France ([QS rank](https://www.topuniversities.com/universities/institut-polytechnique-de-paris)). Located on the Plateau de Saclay, it is surrounded by world-class institutions (such as INRIA, Telecom Paris, CentraleSup&eacute;lec, ENSAE, HEC), industrial research centers (such as Danone, Thales), and a vibrant start-up community.
 
 {#
 On the&nbsp;(not-less-important) logistic side, while France is known for its bureaucracy,
@@ -194,6 +183,7 @@ Additionally, you enjoy several benefits, such as
 You can find more information about the French doctorate system at [Campus France](https://www.campusfrance.org/en/what-involved-Doctorate-France). If you have any questions about the positions, the PhD in general, and/or life in France, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
 
+{#
 #### So how much is my salary exactly?
 
 PhD student minimal salaries are defined nationally by the government. You can easily find *gross* values in the
@@ -203,14 +193,16 @@ in the range of **1700&ndash;1800&nbsp;€** (which is consistent with what you 
 
 Again, if you have any questions about the positions, the PhD in general, and/or life in Paris, do not hesitate to
 [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
+#}
 
 
 #### Do I need to speak French?
 
-The answer is a resounding **NO**. The official and working language of the group is English.
-Additionally, many courses are offered in English and most of the university staff speaks English.
+The answer is **NO**. The official and working language of the group is English.
+I take this point seriously: having been a foreigner for half of my life, I appreciate the difficulties involved in navigating a new country, culture, and language.
+Additionally, many courses are offered in English and the majority of university business can be conducted in English.
 
-Now, *should* you speak French? Probably eventually. Even if Paris is a highly international city, speaking French will definitely make your life easier and more fun outside of the university. And if you are going to spend multiple years in a country, you might as well learn the local language. If you do decide to give French a try, there are plenty of French language courses and resources at and around the university, many of them free of charge.
+Now, *should* you speak French? Probably eventually. Even if Paris is a very international city, speaking French will definitely make your life easier and more fun outside of the university. And if you are going to spend multiple years in a country, you might as well learn the local language. If you do decide to give French a try, there are plenty of French language courses and resources at and around the university, many of them free of charge.
 
 
 
@@ -228,16 +220,32 @@ Now, *should* you speak French? Probably eventually. Even if Paris is a highly i
 ### Open Topics
 #}
 
-
+{#
 My group does not have Master project calls open at the moment. However, feel free to [get in touch](mailto&#58;{{SITEEMAIL}}?subject=[App Master])
 if you are interested in writing your Master thesis with us (include `[App Master]` in your subject line).
 We work on a variety of exciting topics upon which your Master project can be based.
+#}
 
-Master projects typically combine the use of a novel optimization, control, or statistics tool with a practical machine learning or signal processing
-application. We expect interested students to have a strong theoretical background and/or be good programmers as well as being able to come up with
-fresh ideas for challenging research problems. Thesis topics are primarily for students currently enrolled at &Eacute;cole Polytechnique.
+The group has a few open master thesis topics, particularly in the areas of *generative modeling*, *inverse design*, and *reinforcement learning*. Master projects typically combine the use of a novel optimization, control, or statistics tool with a practical machine learning or signal processing application. Interested students are expected to have a strong theoretical background and/or be good programmers as well as being able to come up with fresh ideas for challenging research problems.
+
+If you are interested in working with us on any of these topics
+or other [research topic]({filename}/pages/publications.md) from my group, feel free to send us an [email](mailto&#58;{{SITEEMAIL}}?subject=[App master]) starting the subject line with `[App master]` and including:
+
+- Short motivation statement describing background and research interests (1 paragraph)  
+<span class="prospect-comment">Do **NOT** write an extensive essay, but do outline your background
+and research interests as they relate to research topics and publications of my group.</span>
+{: .prospect-item}
+
+- CV (including a list of research/coding projects, if you have any)
+{: .prospect-item}
+
+- Transcripts
+{: .prospect-item}
+
+{# Master thesis topics are primarily for students currently enrolled at &Eacute;cole Polytechnique. #}
 
 
+{#
 &nbsp;
 
 -----
@@ -251,7 +259,7 @@ collaborating in our projects. Feel free to [reach out](mailto&#58;{{SITEEMAIL}}
 
 
 
-{#
+
 Visitors/Exchanges
 
 I am honored to host self-funded visitors in my lab and will support their effort to secure required funding. In my experience, both the host and visitor are most productive if the terms and the program of the research visit are discussed ahead of time. Please email me at dvorkin@nyu.edu so we can discuss the matter.

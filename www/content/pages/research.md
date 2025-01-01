@@ -1,4 +1,4 @@
-Title: Research
+Title: Research group
 Date: 1001-01-02
 
 
@@ -66,7 +66,7 @@ Date: 1001-01-02
 </style>
 
 
-# Research
+# Research group
 
 My group develops tools that enable intelligent systems to
 
@@ -133,6 +133,33 @@ reach out to me by [email]({filename}/pages/contact.md) or check out the [prospe
 - [Combinatorial optimization and approximate submodularity](#combinatorial-optimization-and-approximate-submodularity)
 - [Combinations of adaptive filters](#combinations-of-adaptive-filters)
 - [Real-sized aircraft cabin simulator](#aircraft-cabin-simulator)
+
+&nbsp;
+
+-----
+
+# People
+
+Students I currently work with
+
+- Aneesh Barthakur, PhD student. U. Stuttgart, 2023&ndash;current
+- Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*). U. Stuttgart, 2024&ndash;current
+- Vinh Tong, PhD student (*main supervisor: Mathias Niepert*). U. Stuttgart, 2024&ndash;current
+
+Students I've worked with in the past
+
+- Viggo Moro. U. Stuttgart, 2024 (*PhD student at the University of Oxford*)
+- Juan Elenter, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2023&ndash;2024  
+  (*Spotify*)
+- Nadin Elsharbatly, Master student. U. Stuttgart, 2024
+- Ignacio Hounie, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2021&ndash;2023
+- Luana Ruiz, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2019&ndash;2022  
+  (*professor at Johns Hopkins university*)
+- Maria Peifer, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2018&ndash;2021  
+  (*machine learning engineer at Comcast*)
+- Alexandre Amice,  bachelor student (*main supervisor: Alejandro Ribeiro*).
+  U. Pennsylvania, 2018&ndash;2020  
+  (*PhD student at MIT*)
 
 &nbsp;
 

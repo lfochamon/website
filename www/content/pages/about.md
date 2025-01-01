@@ -6,8 +6,8 @@ Date: 1001-01-01
 
 # About ([formal bio]({filename}/pages/bio.md))
 
-I am a joint [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/)
-independent research group leader at the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany,
+I am an assistant professor of the center for applied math ([CMAP](https://cmap.ip-paris.fr)) of the
+[&Eacute;cole Polytechnique](https://www.polytechnique.edu), France,
 broadly interested in optimization, machine learning, signal processing, and control,
 and in particular, in the intersections of these fields. Currently, the main drive of my research is
 developing the theory, algorithms, and applications of
@@ -29,8 +29,7 @@ or learn more about some of my [**personal&nbsp;interests**]({filename}/pages/ab
 
 I did my Ph.D. at the [University of Pennsylvania](https://www.seas.upenn.edu/)
 advised by [Alejandro&nbsp;Ribeiro](https://alelab.seas.upenn.edu/), immediately followed by a postdoc at the
-[Simons Institute](https://simons.berkeley.edu/) of the [University of California, Berkeley](https://www.berkeley.edu/).
-During this time, I developed
+[Simons Institute](https://simons.berkeley.edu/) of the [University of California, Berkeley](https://www.berkeley.edu/). During this time, I developed
 
 - [**near-optimal selection methods**]({filename}/pages/research.md#combinatorial-optimization-and-approximate-submodularity)
   for experimental design {{- cite('Chamon17a') }}, actuator scheduling {{- cite('Chamon22a') }}, and sampling {{- cite('Chamon18g', 'Chamon21a') }};
@@ -46,6 +45,8 @@ During this time, I developed
 - a new [**risk-aware estimator**]({filename}/pages/publications.md#Kalogerias20b)&nbsp;(together with
   [Dionysios&nbsp;Kalogerias](https://www.dkalogerias.org/)) that received the
   [*best paper award*](https://2020.ieeeicassp.org/general/icassp-best-paper-awards/) at ICASSP 2020.
+
+After that, I spent two years as the [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/) independent research group leader at the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany.
 
 Prior to moving to the US, I received my bachelor and master degrees in electrical
 engineering from the [University of São Paulo](https://www.poli.usp.br), Brazil,

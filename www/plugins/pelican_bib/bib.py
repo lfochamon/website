@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import sys, logging
+import logging
 from io import StringIO
 
 from pybtex.database.input.bibtex import Parser
@@ -10,7 +10,7 @@ from pybtex.backends import html
 
 from pybtex.database import Person
 from pybtex.style.formatting import unsrt
-from pybtex.style.template import tag, words, href, field, optional, join
+from pybtex.style.template import tag, join
 
 from pelican import signals
 
@@ -74,27 +74,27 @@ def parse_pubs(generator, refs_file, highlight=True):
 
         # add fields removing url
         for key, value in entry.fields.items():
-            if type(value) is str and value.startswith("\\url"):
+            if isinstance(value, str) and value.startswith("\\url"):
                 entry_pelican[key] = value[5:-1]
             else:
                 entry_pelican[key] = value
 
         # render the bibtex string for the entry
-        for trash_field in ["pdf", "poster", "slide", "video"]:
+        for trash_field in ["pdf", "poster", "slide", "video", "keywords"]:
             entry.fields.pop(trash_field, None)
         bib_buf = StringIO()
-        bibdata_this = BibliographyData(entries={key: entry})
+        bibdata_this = BibliographyData(entries={entry_pelican["key"]: entry})
         Writer().write_stream(bibdata_this, bib_buf)
         entry_pelican["bibtex"] = bib_buf.getvalue()
 
         # add entry to lists
         publications.append(entry_pelican)
 
-        for tag in tags:
+        for t in tags:
             if tag in publications_lists:
-                publications_lists[tag].append(entry_pelican)
+                publications_lists[t].append(entry_pelican)
             else:
-                publications_lists[tag] = [entry_pelican]
+                publications_lists[t] = [entry_pelican]
 
         if not tags:
             if untagged_title in publications_lists:
@@ -116,14 +116,14 @@ def global_publications(generator):
         try:
             publications, publications_lists = parse_pubs(generator, refs_file, highlight=True)
         except ImportError as e:
-            logger.warn(f"`pelican_bib` failed to load {str(e)}")
+            logger.warning("`pelican_bib` failed to load %s", str(e))
             return
         except PybtexError as e:
-            logger.warn("`pelican_bib` failed to parse file %s: %s" % (refs_file, str(e)))
+            logger.warning("`pelican_bib` failed to parse file %s: %s", refs_file, str(e))
             return
         except TypeError as e:
-            logger.warn(
-                f"PelicanStyle must be a subclass of pybtex.style.formatting.BaseStyle {str(e)}"
+            logger.warning(
+                "PelicanStyle must be a subclass of pybtex.style.formatting.BaseStyle %s", str(e)
             )
             return
 
@@ -140,14 +140,14 @@ def tutorial_publications(generator, content):
         try:
             publications, publications_lists = parse_pubs(generator, refs_file, highlight=False)
         except ImportError as e:
-            logger.warn(f"`pelican_bib` failed to load {str(e)}")
+            logger.warning("`pelican_bib` failed to load %s", str(e))
             return
         except PybtexError as e:
-            logger.warn("`pelican_bib` failed to parse file %s: %s" % (refs_file, str(e)))
+            logger.warning("`pelican_bib` failed to parse file %s: %s", refs_file, str(e))
             return
         except TypeError as e:
-            logger.warn(
-                f"PelicanStyle must be a subclass of pybtex.style.formatting.BaseStyle {str(e)}"
+            logger.warning(
+                "PelicanStyle must be a subclass of pybtex.style.formatting.BaseStyle %s", str(e)
             )
             return
 
