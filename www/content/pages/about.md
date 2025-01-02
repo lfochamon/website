@@ -46,7 +46,7 @@ advised by [Alejandro&nbsp;Ribeiro](https://alelab.seas.upenn.edu/), immediately
   [Dionysios&nbsp;Kalogerias](https://www.dkalogerias.org/)) that received the
   [*best paper award*](https://2020.ieeeicassp.org/general/icassp-best-paper-awards/) at ICASSP 2020.
 
-After that, I spent two years as the [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/) independent research group leader at the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany.
+After that, I spent two years as the [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/) independent research group leader of the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany.
 
 Prior to moving to the US, I received my bachelor and master degrees in electrical
 engineering from the [University of São Paulo](https://www.poli.usp.br), Brazil,
@@ -72,8 +72,8 @@ sun ray or sun light in a Brazilian indigenous language. *Forró* is a folk musi
 surprisingly widespread worldwide: I've managed to find some underground Forró dance party in almost every city I've lived in.
 
 Back in Brazil, I worked in many recording studios&nbsp;(most small, some even smaller) and was involved in the production of
-international theater and art exhibitions, most notably Bob Wilson's "Quartett"&nbsp;(with Théâtre de l’Odéon, France) and
-Wajdi Mouawad's "The three sisters"&nbsp;(with Théâtre du Trident, Canada). This is actually how I got into electrical engineering and
+international theater and art exhibitions, notably Bob Wilson's "Quartett"&nbsp;(with Théâtre de l’Odéon, France) and
+Wajdi Mouawad's "The three sisters"&nbsp;(with Théâtre du Trident, Canada). This is actually how I got interested in electrical engineering and
 later, signal processing. Amidst the 2020 pandemic, I went back to recording in what served as my bedroom/office/gym/homestudio
 and released my first solo EP, *Philathina*, in July&nbsp;2022. You can check it out on my [music&nbsp;website](https://www.lfochamon.com) or
 any major music streaming service&nbsp;([Spotify](https://open.spotify.com/album/4dLuLYglloY8fPcuK9uNrU),

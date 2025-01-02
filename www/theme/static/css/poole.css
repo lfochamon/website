@@ -24,8 +24,9 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -133,7 +134,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: .8rem;
+  font-size: 80%;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
