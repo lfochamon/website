@@ -68,7 +68,7 @@ Date: 1001-01-02
 
 # Research group
 
-My group develops tools that enable intelligent systems to
+My [group](#people) develops tools that enable intelligent systems to
 
   * <b>extract</b>,
     <span style="color:#999;font-size:90%;">e.g.,
@@ -91,7 +91,7 @@ My group develops tools that enable intelligent systems to
 
 on information.
 
-Currently, the main drive of my research is developing the theory, algorithms, and applications of
+Currently, the main drive of this research is developing the theory, algorithms, and applications of
 [**constrained learning**](#constrained-learning),
 a tool that enables the data-driven design of systems that satisfy requirements
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
@@ -113,11 +113,11 @@ learning tasks, such as
 image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie23a') }},
 semi-supervised learning {{- cite('Cervino23l') }},
 and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }}.
-Most importantly, I think of constrained learning as **a new mindset for the design data-driven solutions**
+Most importantly, constrained learning represents **a new mindset for the design data-driven solutions**
 shifting away from the current objective-centric paradigm towards a constraint-driven one.
 
 You can read more about this as well as other current and past projects below. If anything piques your interest,
-reach out to me by [email]({filename}/pages/contact.md) or check out the [prospective members]({filename}/pages/prospective.md) page.
+feel free to reach out to me by [email]({filename}/pages/contact.md) or check the [prospective members]({filename}/pages/prospective.md) page.
 
 
 ### Current projects
@@ -140,24 +140,24 @@ reach out to me by [email]({filename}/pages/contact.md) or check out the [prospe
 
 # People
 
-Students I currently work with
+I am fortunate to work with many talented students, including
 
-- Aneesh Barthakur, PhD student. U. Stuttgart, 2023&ndash;current
-- Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*). U. Stuttgart, 2024&ndash;current
-- Vinh Tong, PhD student (*main supervisor: Mathias Niepert*). U. Stuttgart, 2024&ndash;current
+- Aneesh Barthakur, PhD student, U. Stuttgart, 2023&ndash;current
+- Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
+- Vinh Tong, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 
-Students I've worked with in the past
+They will join the many other brilliant students I've had the pleasure of working with:
 
-- Viggo Moro. U. Stuttgart, 2024 (*PhD student at the University of Oxford*)
-- Juan Elenter, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2023&ndash;2024  
+- Viggo Moro, U. Stuttgart, 2024 (*PhD student at the University of Oxford*)
+- Juan Elenter, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2023&ndash;2024  
   (*Spotify*)
-- Nadin Elsharbatly, Master student. U. Stuttgart, 2024
-- Ignacio Hounie, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2021&ndash;2023
-- Luana Ruiz, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2019&ndash;2022  
+- Nadin Elsharbatly, Master student, U. Stuttgart, 2024
+- Ignacio Hounie, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2021&ndash;2023
+- Luana Ruiz, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2019&ndash;2022  
   (*professor at Johns Hopkins university*)
-- Maria Peifer, PhD student (*main supervisor: Alejandro Ribeiro*). U. Pennsylvania, 2018&ndash;2021  
+- Maria Peifer, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2018&ndash;2021  
   (*machine learning engineer at Comcast*)
-- Alexandre Amice,  bachelor student (*main supervisor: Alejandro Ribeiro*).
+- Alexandre Amice,  bachelor student (*main supervisor: Alejandro Ribeiro*),
   U. Pennsylvania, 2018&ndash;2020  
   (*PhD student at MIT*)
 
