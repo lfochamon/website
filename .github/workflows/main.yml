@@ -34,7 +34,7 @@ jobs:
           python website/.github/workflows/bib_to_website.py
 
       - name: Save bibliography
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bibliography
           path: |
@@ -63,7 +63,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-luatex texlive-bibtex-extra texlive-fonts-extra
 
       - name: Load bib files
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bibliography
           path: cv
@@ -76,7 +76,7 @@ jobs:
           lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; bibtex ${{ env.FILE_DFG }}.aux; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex; lualatex ${{ env.FILE_DFG }}.tex;
 
       - name: Save cv and publications list
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cv
           path: |
@@ -106,13 +106,13 @@ jobs:
       - run: pip install -r .github/workflows/requirements.txt
 
       - name: Load bib files
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bibliography
           path: www/content
 
       - name: Load CV and publications list
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cv
           path: www/content/pdf
@@ -122,7 +122,7 @@ jobs:
         run: pelican -s publishconf.py
 
       - name: Save output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: website
           path: www/output
@@ -146,7 +146,7 @@ jobs:
           ref: 'main'
 
       - name: Recover website
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: website
 

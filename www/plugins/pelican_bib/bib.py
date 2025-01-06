@@ -91,7 +91,7 @@ def parse_pubs(generator, refs_file, highlight=True):
         publications.append(entry_pelican)
 
         for t in tags:
-            if tag in publications_lists:
+            if t in publications_lists:
                 publications_lists[t].append(entry_pelican)
             else:
                 publications_lists[t] = [entry_pelican]

@@ -146,7 +146,7 @@ I am fortunate to work with many talented students, including
 - Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 - Vinh Tong, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 
-They will join the many other brilliant students I've had the pleasure of working with:
+They are part of the many brilliant students I've had the pleasure of working with:
 
 - Viggo Moro, U. Stuttgart, 2024 (*PhD student at the University of Oxford*)
 - Juan Elenter, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2023&ndash;2024  
