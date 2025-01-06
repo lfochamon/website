@@ -109,12 +109,12 @@ $$</div>
   z &amp;= \cos(x)^{10}
 \end{align}</div>
 <p><span class="math">\(\eqref{E:test}\)</span> Proin bibendum urna vitae purus bibendum hendrerit. Sed faucibus sit amet ex in eleifend. Duis pellentesque suscipit metus faucibus scelerisque. Vivamus consequat turpis at eros consequat, maximus dapibus enim accumsan. Donec quis justo quis lacus pretium iaculis ut vitae nibh. Pellentesque tempus est sed nisl ultricies varius. Ut sed fermentum magna. Suspendisse purus sapien, sollicitudin sed <code>code</code> maximus sed, feugiat sed orci. Sed sit amet nibh sollicitudin, venenatis justo ut, efficitur felis. Phasellus dignissim ligula in mi gravida condimentum.</p>
-<div class="code-highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Iterator</span>
+<div class="code-highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Iterator</span>
 
 <span class="c1"># This is an example</span>
-<span class="hll"><span class="k">class</span> <span class="nc">Math</span><span class="p">:</span>
+<span class="hll"><span class="k">class</span><span class="w"> </span><span class="nc">Math</span><span class="p">:</span>
 </span>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="hll"><span class="w">        </span><span class="sd">""" Fibonacci series up to n """</span>
 </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
         <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
