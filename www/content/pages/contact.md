@@ -6,12 +6,14 @@ Date: 1003-01-03
 
 ## ...at my office
 
-CMAP, &Eacute;cole Polytechnique  
+&Eacute;cole Polytechnique (CMAP, office 3020B)  
 Route de Saclay  
 91128 Cedex - Palaiseau, France
 
-**Note:** The CMAP is located in Laboratories Aisle 0 ([Google maps](https://maps.app.goo.gl/6vEVuoCV5zLty8n26)).
-It is accessible from the RER B stations "Massy-Palaiseau" (bus 91.06 or 91.10 to stop "Place Marguerite Perey")
+**Note:** The CMAP is located on the third floor of the Lab Aisle 0
+([Google maps](https://maps.app.goo.gl/6vEVuoCV5zLty8n26)).
+It is accessible from the RER B stations "Massy-Palaiseau"
+(bus 91.06 or 91.10 to stop "Place Marguerite Perey")
 or "Loz&egrave;re" (15 minutes walk including roughly 300 stairs).
 
 

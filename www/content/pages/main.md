@@ -4,7 +4,7 @@ URL: index.html
 save_as: index.html
 
 <style>
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   br.responsive {
     display: none;
   }
@@ -15,9 +15,9 @@ save_as: index.html
 # Hello there!
 
 <p style="font-size: 20px;">I am an assistant professor
-of the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of the<br class="responsive">
+of the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of the
 <a href="https://www.polytechnique.edu">&Eacute;cole Polytechnique</a>.
-My group develops tools to enable intelligent systems<br class="responsive">
+My group develops tools to enable intelligent systems
 to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
 <b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
@@ -26,9 +26,12 @@ to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 &nbsp;
 
 
-**I am currently hiring one PhD student interested in working at the intersection of optimization, machine learning, and statistics (applications reviews will occur February/March 2025).<br class="responsive">
-Read more on how to join my group [here]({filename}/pages/prospective.md).**<br><br>
-**I also have open master thesis topics on generative models, sampling, and reinforcement learning. [Reach out]({filename}/pages/contact.md) if you are interested in any of these fields or my research more broadly!**
+**I am currently looking for a PhD student interested in working at the intersection of optimization, machine learning, and statistics (applications reviews are scheduled for February/March 2025).<br class="responsive">
+Read more on how to join my group [here]({filename}/pages/prospective.md).**
+{: .highlight}
+
+**I have open master thesis topics on generative models, sampling, and reinforcement learning.<br class="responsive">
+[Reach out]({filename}/pages/contact.md) if you are interested in any of these fields or my research more broadly!**
 {: .highlight}
 
 &nbsp;
@@ -39,7 +42,7 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**<br>
 
 <div class="news" markdown=1>
 
-- **Jan 1st, 2025** &ndash; I have been accepted as an [ELLIS scholar](https://ellis.eu/fellows).
+- **Jan 1st, 2025** &ndash; I have been appointed an [ELLIS scholar](https://ellis.eu/fellows).
 
 - **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
