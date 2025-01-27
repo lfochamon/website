@@ -144,6 +144,7 @@ I am fortunate to work with many talented students, including
 
 - Aneesh Barthakur, PhD student, U. Stuttgart, 2023&ndash;current
 - Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
+- Tim Schneider, PhD student (*main supervisor: Steffen Staab*), U. Stuttgart, 2024&ndash;current
 - Vinh Tong, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 
 They are part of the many brilliant students I've had the pleasure of working with:

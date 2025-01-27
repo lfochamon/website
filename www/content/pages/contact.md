@@ -15,6 +15,8 @@ Route de Saclay
 It is accessible from the RER B stations "Massy-Palaiseau"
 (bus 91.06 or 91.10 to stop "Place Marguerite Perey")
 or "Loz&egrave;re" (15 minutes walk including roughly 300 stairs).
+If you do not have a badge, I will come to pick you up at the gate
+[here (Google maps)](https://maps.app.goo.gl/Gw5ipjgK9jyDu9sJ6).
 
 
 

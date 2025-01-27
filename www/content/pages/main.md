@@ -42,11 +42,13 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Jan 27th, 2025** &ndash; Our paper *"Solving differential equations with constrained learning"* has been accepted to ICLR 2025 [[paper]({filename}/pages/publications.md#Moro25s)].
+
 - **Jan 1st, 2025** &ndash; I have been appointed an [ELLIS scholar](https://ellis.eu/fellows).
 
-- **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
-
 ------
+
+- **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
 - **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
 
