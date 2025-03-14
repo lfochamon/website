@@ -68,55 +68,44 @@ Date: 1001-01-02
 
 # Research group
 
-My [group](#people) develops tools that enable intelligent systems to
+My [group](#people) develops and analyzes tools that enable intelligent systems to **extract**, **process**, and **act** on information, i.e.,
 
-  * <b>extract</b>,
-    <span style="color:#999;font-size:90%;">e.g.,
-      sampling {{- cite('Chamon18g')}},
-      sensor selection {{- cite('Chamon21a')}},
-      experimental design {{- cite('Chamon17a')}}
-    </span>
-  * <b>process</b>,
-    <span style="color:#999;font-size:90%;">e.g.,
-      constrained learning {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon23c')}},
-      network data processing {{- cite('Ruiz20g', 'Ruiz21g')}},
-      estimation/inference {{- cite('Chamon20f', 'Peifer20s', 'Kalogerias20b', 'Arzani180')}}
-    </span>
-  * <b>act</b>,
-    <span style="color:#999;font-size:90%;">e.g.,
-      resource allocation {{- cite('Eisen19l')}},
-      scheduling {{- cite('Chamon22a')}},
-      resilient control {{- cite('Chamon20r', 'Chamon20c')}},
-      (safe) reinforcement learning {{- cite('Paternain19c', 'Paternain23s')}}</span>
+  - **gather data**,
+  <span style="color:#999;font-size:90%;">e.g.,
+    using sampling {{- cite('Chamon18g', 'Chamon21a') }} and active learning {{- cite('Chamon17a') }} techniques,
+  </span>
+  - **turn this data into insights**,
+  <span style="color:#999;font-size:90%;">e.g.,
+    using ML {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon23c')}},
+    geometric ML {{- cite('Ruiz20g', 'Ruiz21g', 'Ruiz23t')}},
+    and statistical methods {{- cite('Chamon20f', 'Peifer20s', 'Kalogerias20b', 'Arzani180')}},
+  </span>
+  - and **turn these insights into actions**
+  <span style="color:#999;font-size:90%;">e.g.,
+    using
+    resource allocation {{- cite('Eisen19l')}},
+    optimal control {{- cite('Chamon20r', 'Chamon20c', 'Chamon22a')}},
+    and reinforcement learning {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s')}}
+    algorithms.
+  </span>
 
-on information.
 
-Currently, the main drive of this research is developing the theory, algorithms, and applications of
-[**constrained learning**](#constrained-learning),
-a tool that enables the data-driven design of systems that satisfy requirements
-such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
-fairness {{- cite('Chamon20p', 'Chamon23c') }},
-safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
-smoothness {{- cite('Cervino23l') }},
-and invariance {{- cite('Hounie23a') }}.
-On the one hand, I investigate fundamental questions such as
+Our goal is to design AI systems that can learn and adapt with minimal human intervention while ensuring that they comply with rigorous operational requirements, such as
+**fairness** of outcomes {{- cite('Chamon20p', 'Chamon23c') }},
+**robustness** of predictions {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
+**safety** of behaviors {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
+and **alignment** with prior knowledge or desired features (e.g., smoothness {{- cite('Cervino23l') }}, invariance {{- cite('Hounie23a') }}, scientific models {{- cite('Moro25s') }}).
+Typically, these requirements are *induced* by aggregating violation metrics into the learning objective. To be effective, this objective-driven approach requires careful hyperparameter tuning and cross-validation, a time consuming and resource intensive (data, compute, environment) process.
 
-- when is it possible to learning under requirements? 
-  <span style="color:#999;">(whenever&nbsp;you&nbsp;can&nbsp;learn&nbsp;at&nbsp;all)</span> {{- cite('Chamon20p', 'Chamon23c') }}
-- how much harder is it than vanilla learning? 
-  <span style="color:#999;">(essentially&nbsp;the&nbsp;same&nbsp;difficulty)</span> {{- cite('Chamon20p', 'Chamon23c') }}
-- are there problems that only constrained learning can tackle? 
-  <span style="color:#999;">(in&nbsp;short,&nbsp;yes)</span> {{- cite('Calvo-Fullana24s') }}
-
-On the other hand, I am interested in the impact constrained learning can have on traditional
-learning tasks, such as
-image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c', 'Hounie23a') }},
+To build trustworthy AI systems, **my group treats requirements as integral parts of learning** rather than afterthoughts or secondary objectives **to build a requirement-driven learning paradigm.**
+We look at fundamental questions such as
+"when is it possible to learn under requirements?" or "how much harder is it than vanilla learning?"&nbsp;(e.g., {{cite('Chamon20p', 'Chamon23c') }}) as well as applications&nbsp;(e.g.,
+image classification {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Hounie23a') }},
 semi-supervised learning {{- cite('Cervino23l') }},
-and data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }}.
-Most importantly, constrained learning represents **a new mindset for the design data-driven solutions**
-shifting away from the current objective-centric paradigm towards a constraint-driven one.
+data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }}).
+This shift represents not just a technical advancement, but a fundamental reimagining of how we design and deploy intelligent systems. Ultimately, my vision is to take us away from a notion of **artificial intelligence** that is supposed to implicitly emerge from data to one of **engineered intelligence** that explicitly does what we want.
 
-You can read more about this as well as other current and past projects below. If anything piques your interest,
+You can read more about this and other research projects below. If anything piques your interest,
 feel free to reach out to me by [email]({filename}/pages/contact.md) or check the [prospective members]({filename}/pages/prospective.md) page.
 
 
@@ -126,10 +115,10 @@ feel free to reach out to me by [email]({filename}/pages/contact.md) or check th
 - [Semi-infinite constrained learning](#semi-infinite-constrained-learning)
 - [Constrained reinforcement learning](#constrained-reinforcement-learning)
 - [Graph(on) neural networks](#graphon-neural-networks)
-- [Non-convex functional optimization and sparsity](#non-convex-functional-optimization)
 
 ### Past projects
 
+- [Non-convex functional optimization and sparsity](#non-convex-functional-optimization)
 - [Combinatorial optimization and approximate submodularity](#combinatorial-optimization-and-approximate-submodularity)
 - [Combinations of adaptive filters](#combinations-of-adaptive-filters)
 - [Real-sized aircraft cabin simulator](#aircraft-cabin-simulator)
@@ -191,7 +180,7 @@ the limits of this new learning task.
 
 </div>
 
-{{ collapsible_pubs('Hounie23r', 'Chamon23c', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Chamon20ta') }}
+{{ collapsible_pubs('Moro25s', 'Chamon23c', 'Chamon20ta', 'Chamon20p', 'Eisen19l', 'Chamon20ta') }}
 
 
 &nbsp;
@@ -221,7 +210,7 @@ interior of the expectation&ndash;almost&nbsp;sure spectrum.
 </div>
 
 
-{{ collapsible_pubs('Hounie23a', 'Cervino23l', 'Robey21a', 'Robey22p', 'Chamon20p') }}
+{{ collapsible_pubs('Moro25s', 'Hounie23a', 'Cervino23l', 'Robey21a', 'Robey22p', 'Chamon20p') }}
 
 &nbsp;
 
@@ -281,11 +270,14 @@ as well as to what is the right graph similarity metric to characterize it.
 
 {{ collapsible_pubs('Ruiz20g', 'Ruiz21g', 'Ruiz23t') }}
 
-
 &nbsp;
 
 &nbsp;
 
+-----
+
+
+# Past projects
 
 
 ## Non-convex functional optimization
@@ -311,13 +303,11 @@ statistical questions. It is also instrumental in the development of [constraine
 
 {{ collapsible_pubs('Chamon20f', 'Peifer20s', 'Chamon19l') }}
 
+&nbsp;
 
 &nbsp;
 
------
 
-
-# Past projects
 
 ## Combinatorial optimization and approximate submodularity
 
@@ -423,13 +413,13 @@ between the University of São&nbsp;Paulo and aeronautic industries.
 
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.querySelectorAll(".collapsible button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.getElementsByClassName("collapsible-content")[0];
+    this.parentNode.classList.toggle("active");
+    var content = this.parentNode.getElementsByClassName("collapsible-content")[0];
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {

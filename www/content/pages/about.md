@@ -6,29 +6,48 @@ Date: 1001-01-01
 
 # About ([formal bio]({filename}/pages/bio.md))
 
-I am an assistant professor of the center for applied math ([CMAP](https://cmap.ip-paris.fr)) of the
+I am an assistant professor (tenure-track) and [Hi! Paris](https://www.hi-paris.fr) chair holder
+in the center for applied math ([CMAP](https://cmap.ip-paris.fr)) of the
 [&Eacute;cole Polytechnique](https://www.polytechnique.edu), France,
 broadly interested in optimization, machine learning, signal processing, and control,
-and in particular, in the intersections of these fields. Currently, the main drive of my research is
-developing the theory, algorithms, and applications of
-[**constrained learning**]({filename}/pages/research.md#constrained-learning),
-a tool that enables the data-driven design of systems that satisfy requirements
+and in particular, in the intersections of these fields. In my research, I develop and analyze tools
+that enable intelligent systems to **extract**, **process**, and **act** on information. That is,
+
+  - **gather data**,
+  <span style="color:#999;font-size:90%;">e.g.,
+    using sampling {{- cite('Chamon18g', 'Chamon21a') }} and active learning {{- cite('Chamon17a') }} techniques,
+  </span>
+  - **turn this data into insights**,
+  <span style="color:#999;font-size:90%;">e.g.,
+    using ML {{- cite('Chamon20p', 'Robey21a', 'Robey22p', 'Chamon23c')}},
+    geometric ML {{- cite('Ruiz20g', 'Ruiz21g', 'Ruiz23t')}},
+    and statistical methods {{- cite('Chamon20f', 'Peifer20s', 'Kalogerias20b', 'Arzani180')}},
+  </span>
+  - and **turn these insights into actions**
+  <span style="color:#999;font-size:90%;">e.g.,
+    using
+    resource allocation {{- cite('Eisen19l')}},
+    optimal control {{- cite('Chamon20r', 'Chamon20c', 'Chamon22a')}},
+    and reinforcement learning {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s')}}
+    algorithms.
+  </span>
+
+My goal is to design AI systems that can learn and adapt with minimal human intervention while ensuring that they comply with rigorous operational requirements,
 such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
 fairness {{- cite('Chamon20p', 'Chamon23c') }},
 safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
 smoothness {{- cite('Cervino23l') }},
 and invariance {{- cite('Hounie23a') }}.
 
-For more information, you can check out my&nbsp;[**CV**]({static}/pdf/lfochamon_cv.pdf),
+For more information, you can explore my [**research&nbsp;projects**]({filename}/pages/research.md),
+check out my&nbsp;[**CV**]({static}/pdf/lfochamon_cv.pdf),
 read a more [**formal&nbsp;bio**]({filename}/pages/bio.md),
-explore my [**research&nbsp;projects**]({filename}/pages/research.md),
 or learn more about some of my [**personal&nbsp;interests**]({filename}/pages/about.md#personal-interests).
 
 
 ### My background
 
-I did my Ph.D. at the [University of Pennsylvania](https://www.seas.upenn.edu/)
-advised by [Alejandro&nbsp;Ribeiro](https://alelab.seas.upenn.edu/), immediately followed by a postdoc at the
+I did my Ph.D. at the [University of Pennsylvania](https://www.seas.upenn.edu/) immediately followed by a postdoc at the
 [Simons Institute](https://simons.berkeley.edu/) of the [University of California, Berkeley](https://www.berkeley.edu/). During this time, I developed
 
 - [**near-optimal selection methods**]({filename}/pages/research.md#combinatorial-optimization-and-approximate-submodularity)
@@ -44,7 +63,13 @@ advised by [Alejandro&nbsp;Ribeiro](https://alelab.seas.upenn.edu/), immediately
   that we used to demonstrate the transferability of **graph neural networks** {{- cite('Ruiz20g', 'Ruiz21t') }};
 - a new [**risk-aware estimator**]({filename}/pages/publications.md#Kalogerias20b)&nbsp;(together with
   [Dionysios&nbsp;Kalogerias](https://www.dkalogerias.org/)) that received the
-  [*best paper award*](https://2020.ieeeicassp.org/general/icassp-best-paper-awards/) at ICASSP 2020.
+  [*best paper award*](https://2020.ieeeicassp.org/general/icassp-best-paper-awards/) at ICASSP 2020;
+- **constrained [learning](({filename}/pages/research.md#)) and [reinforcement learning]((({filename}/pages/research.md#)))** theory and algorithms to enable the design of intelligent systems that satisfy requirements
+such as robustness {{- cite('Chamon20p', 'Robey21a','Robey22p', 'Chamon23c') }},
+fairness {{- cite('Chamon20p', 'Chamon23c') }},
+safety {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }},
+smoothness {{- cite('Cervino23l') }},
+and invariance {{- cite('Hounie23a') }}.
 
 After that, I spent two years as the [ELLIS](https://ellis.eu/)&ndash;[SimTech](https://simtech.uni-stuttgart.de/) independent research group leader of the [University of Stuttgart](https://www.uni-stuttgart.de/), Germany.
 

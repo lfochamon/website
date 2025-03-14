@@ -14,10 +14,11 @@ save_as: index.html
 
 # Hello there!
 
-<p style="font-size: 20px;">I am an assistant professor
+<p style="font-size: 20px;">I am an assistant professor (tenure-track)
 of the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of the
-<a href="https://www.polytechnique.edu">&Eacute;cole Polytechnique</a>.
-My group develops tools to enable intelligent systems
+<a href="https://www.polytechnique.edu">&Eacute;cole Polytechnique</a> holding a
+<a href="https://www.hi-paris.fr">Hi! Paris</a> chair.
+My group develops tools that enable intelligent systems
 to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
 <b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
@@ -41,6 +42,10 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 
 <div class="news" markdown=1>
+
+- **Mar 14th, 2025** &ndash; New preprint: *"The Lagrangian method for solving constrained Markov games,"* work with S&nbsp;Das, S.&nbsp;Paternain, and C.&nbsp;Eksin ([arXiv]({filename}/pages/publications.md#Das25t)).
+
+- **Mar 11th, 2025** &ndash; New preprint: *"Benign overfitting and the geometry of the ridge regression solution in binary classification,"* work with A&nbsp;Tsigler, S.&nbsp;Frei, and P.L.&nbsp;Bartlett ([arXiv]({filename}/pages/publications.md#Tsigler25b)).
 
 - **Jan 27th, 2025** &ndash; Our paper *"Solving differential equations with constrained learning"* has been accepted to ICLR 2025 [[paper]({filename}/pages/publications.md#Moro25s)].
 
@@ -72,11 +77,12 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 - **Jan 12th, 2024** &ndash; I am talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim.
 
+
+{#
 - **Dec 6th, 2023** &ndash; Check out our paper at NeurIPS 2023: *"Resilient constrained learning"* [[paper]({filename}/pages/publications.md#Hounie23r)].
 
 - **Nov 30th, 2023** &ndash; I am giving a talk and participating of the *"Future of AI"* panel during [Cyber Valley at University of Stuttgart](https://www.uni-stuttgart.de/en/university/news/event/Engineering-Intelligence--Cyber-Valley-at-University-of-Stuttgart/) ([register here](https://eveeno.com/universitaet-stuttgart-cv-2023) until Nov 24th).
 
-{#
 - **Oct 5th, 2023** &ndash; I am giving an invited talk on *"Learning under requirements"* at [SimTech 2023](https://www.simtech2023.uni-stuttgart.de/) in Stuttgart.
 
 - **Sep 25th, 2023** &ndash; I am giving a talk on *"Learning under robustness constraints"* at [EUCCO 2023](https://scoop.iwr.uni-heidelberg.de/events/2023_eucco/) in Heidelberg.
