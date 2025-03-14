@@ -344,31 +344,31 @@ div.news {
 .news hr {
   margin: 1rem 0;
 }
-.news li:nth-child(4) {
+.news ul:nth-of-type(2) li:nth-child(4) {
   opacity: 0.8;
 }
-.news li:nth-child(5) {
+.news ul:nth-of-type(2) li:nth-child(5) {
   opacity: 0.6;
 }
-.news li:nth-child(6) {
+.news ul:nth-of-type(2) li:nth-child(6) {
   opacity: 0.5;
 }
-.news li:nth-child(7) {
+.news ul:nth-of-type(2) li:nth-child(7) {
   opacity: 0.4;
 }
-.news li:nth-child(8) {
+.news ul:nth-of-type(2) li:nth-child(8) {
   opacity: 0.3;
 }
-.news li:nth-child(9) {
+.news ul:nth-of-type(2) li:nth-child(9) {
   opacity: 0.25;
 }
-.news li:nth-child(10) {
+.news ul:nth-of-type(2) li:nth-child(10) {
   opacity: 0.2;
 }
-.news li:nth-child(11) {
+.news ul:nth-of-type(2) li:nth-child(11) {
   opacity: 0.15;
 }
-.news li:nth-child(n+12) {
+.news ul:nth-of-type(2) li:nth-child(n+12) {
   display: none;
 }
 
