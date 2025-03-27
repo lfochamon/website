@@ -43,6 +43,8 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Mar 20th, 2025** &ndash; I will give an invited talk at [UC3M](https://www.uc3m.es/), Spain.
+
 - **Mar 14th, 2025** &ndash; New preprint: *"The Lagrangian method for solving constrained Markov games,"* work with S&nbsp;Das, S.&nbsp;Paternain, and C.&nbsp;Eksin ([arXiv]({filename}/pages/publications.md#Das25t)).
 
 - **Mar 11th, 2025** &ndash; New preprint: *"Benign overfitting and the geometry of the ridge regression solution in binary classification,"* work with A&nbsp;Tsigler, S.&nbsp;Frei, and P.L.&nbsp;Bartlett ([arXiv]({filename}/pages/publications.md#Tsigler25b)).
