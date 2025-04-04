@@ -26,19 +26,19 @@ Throughout the tutorial, we illustrate the effectiveness and flexibility of cons
 | Time | Topic |
 |---|---|
 | 10:00 - 10:15 | [**Introduction**](#) |
-| 10:15 - 11:00 | [**Constrained supervised learning**](#module-1) |
+| 10:15 - 11:00 | [**Constrained supervised learning**](#module-1) ([slides]({static}/pdf/sgm_handout_1.pdf)) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(un)constrained learning and ERM |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;non-convex duality and constrained learning theory |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;constrained learning algorithms |
-|             | &nbsp;&nbsp;&nbsp;&nbsp;resilient learning |
+|             | &nbsp;&nbsp;&nbsp;&nbsp;(robust or resilient) learning |
 | 11:00 - 11:10 | Break |
-| 11:10 - 11:45 | [**Constrained reinforcement learning**](#module-2) |
+| 11:10 - 11:45 | [**Constrained reinforcement learning**](#module-2) ([slides]({static}/pdf/sgm_handout_2.pdf)) |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;(C)MDPs and (C)RL |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL duality |
 |             | &nbsp;&nbsp;&nbsp;&nbsp;CRL algorithms |
 | 11:45 - 12:00 | [**Q&A and discussion**](#) |
 
-We have provided a selected bibliography for the tutorial [here](#bibliography).
+A selected bibliography for the tutorial is available [here](#bibliography).
 
 
 ## Content

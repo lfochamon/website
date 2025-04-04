@@ -1,6 +1,6 @@
 Title: Application package
 URL: applications/index.html
-status: hidden
+status: skip
 save_as: applications/index.html
 template: applications
 
