@@ -7,8 +7,8 @@ Date: 1001-01-01
 # About ([formal bio]({filename}/pages/bio.md))
 
 I am an assistant professor (tenure-track) and [Hi! Paris](https://www.hi-paris.fr) chair holder
-in the center for applied math ([CMAP](https://cmap.ip-paris.fr)) of the
-[&Eacute;cole Polytechnique](https://www.polytechnique.edu), France,
+in the center for applied math ([CMAP](https://cmap.ip-paris.fr)) of
+[&Eacute;cole polytechnique](https://www.polytechnique.edu), France,
 broadly interested in optimization, machine learning, signal processing, and control,
 and in particular, in the intersections of these fields. In my research, I develop and analyze tools
 that enable intelligent systems to **extract**, **process**, and **act** on information. That is,

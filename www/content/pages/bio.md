@@ -9,7 +9,7 @@ Status: hidden
 
 &nbsp;
 
-Luiz F. O. Chamon is an assistant professor (tenure-track) and Hi! PARIS chair holder in the center for applied mathematics (CMAP) of the École Polytechnique (X), France.
+Luiz F. O. Chamon is an assistant professor (tenure-track) and Hi! PARIS chair holder in the center for applied mathematics (CMAP) of École polytechnique (X), France.
 He received the B.Sc. and M.Sc. degrees in electrical engineering from the University of São Paulo, Brazil, in 2011 and 2015 and the Ph.D. degree in electrical and systems engineering from the University of Pennsylvania (Penn), USA, in 2020. Until 2022, he was a postdoctoral fellow at the Simons Institute of the University of California, Berkeley, and until 2024, he was an independent research group leader at the University of Stuttgart, Germany.
 In 2009, he was an undergraduate exchange student of the Masters in Acoustics of the École Centrale de Lyon, France, and worked as an Assistant Instructor and Consultant on nondestructive testing at INSACAST Formation Continue. From 2010 to 2014, he worked as a Signal Processing and Statistics Consultant on a research project with EMBRAER.
 

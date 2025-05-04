@@ -50,8 +50,8 @@ can be found [here](https://careers.uni-stuttgart.de/content/Data-Privacy/?local
 
 ## Postdoc
 
-I do not have open calls for postdoc positions at the moment. But feel free to
-[reach out](mailto&#58;{{SITEEMAIL}}?subject=[App Postdoc])
+I do not have open calls for postdoc positions at the moment, but I'm always looking for
+talented people to join my group. Feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App Postdoc])
 to discuss potential opportunities if you are interested in working with me.
 Include `[App postdoc]` in the subject line.
 
@@ -62,14 +62,15 @@ Include `[App postdoc]` in the subject line.
 
 ## PhD student
 
-{# I do not have PhD position calls open at the moment.
-But feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) to discuss potential opportunities
-if you are interested in working with me. I am always willing to consider outstanding students to join my group. #}
+I do not have open calls for PhD position at the moment, but I am always looking for
+outstanding students to join my group. Feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD])
+to discuss potential opportunities if you are interested in working with me.
 
+{#
 
 <div class='highlight' markdown=1>
 I am currently looking for people interested in joining my group as a PhD student to work on topics at the intersection of optimization, learning, and statistics.
-{#
+
 Example projects include, but are certainly not limited to,
 
 - Science-constrained learning
@@ -78,19 +79,40 @@ Example projects include, but are certainly not limited to,
 - Rethinking generalization as a learning requirements
 
 Also feel free to [apply](#how-to-apply) if you are interested in any other direction of my research.
-#}
 
 Projects in my group are typically at the interface of theory and practice, so there is room for those more mathematically-inclined as well as those more empirically-inclined. While I expect all of my students to know and do a bit of both, there are opportunities for you to position yourself along a wide range of the theory/math&ndash;practice/coding spectrum.
 
 **Deadline**: applications are accepted on a rolling basis (the position will be filled as soon as a suitable candidate is found).  
 **Target starting date:** Fall 2025 (flexible)  
-{#
-**Salary:** 2300&nbsp;€ gross ([How much is that?](#so-how-much-is-my-salary-exactly))  
-#}
+**Salary:** 2300&nbsp;€ gross ([How much is that?](#so-how-much-is-my-salary-exactly))
 
 If you have any questions about the positions and/or life in Paris, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 {: style='margin-bottom:0px;'}
 </div>
+
+#}
+
+
+### How to apply
+
+Interested candidate should submit their applications via [email](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) starting the subject line with `[App PhD]` and including:
+
+- Short motivation statement describing background and research interests (2&ndash;5 paragraphs)  
+<span class="prospect-comment">Your statement must outline your prior work and the research you are interested in.
+Make sure to relate your interests to the publications and research topics of my group.
+Also, point to papers, reports, anything that showcases your English writing,
+mathematical, and/or coding [proficiency](#requirements).
+You do **NOT** need to write an extensive essay.</span>
+{: .prospect-item}
+
+- CV (including a list of publications and research/coding projects, if you have any)
+{: .prospect-item}
+
+- Full transcripts of completed academic degrees
+{: .prospect-item}
+
+Prior to applying, candidates are expected to review the [requirements](#requirements) and [recent publications]({filename}/pages/publications.md).
+
 
 
 ### Requirements
@@ -134,33 +156,11 @@ then you should not only consider, but make sure you apply!
 
 
 
-### How to apply
-
-Interested candidate should submit their applications via [email](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]) starting the subject line with `[App PhD]` and including:
-
-- Short motivation statement describing background and research interests (2&ndash;5 paragraphs)  
-<span class="prospect-comment">Your statement must outline your prior work and the research you are interested in.
-Make sure to relate your interests to the publications and research topics of my group.
-Also, point to papers, reports, anything that showcases your English writing,
-mathematical, and/or coding [proficiency](#requirements).
-You do **NOT** need to write an extensive essay.</span>
-{: .prospect-item}
-
-- CV (including a list of publications and research/coding projects, if you have any)
-{: .prospect-item}
-
-- Full transcripts of completed academic degrees
-{: .prospect-item}
-
-Prior to applying, candidates are expected to review the [requirements](#requirements) and [recent publications]({filename}/pages/publications.md).
-
-
-
 ### Additional information
 
 #### Why pursue your PhD here?
 
-At the &Eacute;cole Polytechnique (also known as "X") and the CMAP, you have access to a world-class research infrastructure and support, including high performance computing clusters. You also have the opportunity&nbsp;(and means) to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world; and attend major conferences. X is part of the [Institut Polytechnique de Paris](https://www.ip-paris.fr/), among the 50 best universities world-wide and #2 in France ([QS rank](https://www.topuniversities.com/universities/institut-polytechnique-de-paris)). Located on the Plateau de Saclay, it is surrounded by world-class institutions (such as INRIA, Telecom Paris, CentraleSup&eacute;lec, ENSAE, HEC), industrial research centers (such as Danone, Thales), and a vibrant start-up community.
+At &Eacute;cole polytechnique (also known as "X") and the CMAP, you have access to a world-class research infrastructure and support, including high performance computing clusters. You also have the opportunity&nbsp;(and means) to interact with leading scientists from a variety of fields; sit on seminars from noteworthy researchers from around the world; and attend major conferences. X is part of the [Institut Polytechnique de Paris](https://www.ip-paris.fr/), among the 50 best universities world-wide and #2 in France ([QS rank](https://www.topuniversities.com/universities/institut-polytechnique-de-paris)). Located on the Plateau de Saclay, it is surrounded by world-class institutions (such as INRIA, Telecom Paris, CentraleSup&eacute;lec, ENSAE, HEC), industrial research centers (such as Danone, Thales), and a vibrant start-up community.
 
 {#
 On the&nbsp;(not-less-important) logistic side, while France is known for its bureaucracy,
@@ -183,17 +183,16 @@ Additionally, you enjoy several benefits, such as
 You can find more information about the French doctorate system at [Campus France](https://www.campusfrance.org/en/what-involved-Doctorate-France). If you have any questions about the positions, the PhD in general, and/or life in France, do not hesitate to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
 
 
-{#
-#### So how much is my salary exactly?
+#### How much is a PhD salary in France?
 
 PhD student minimal salaries are defined nationally by the government. You can easily find *gross* values in the
 [law](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046820748). *Net* salaries are harder to determine
 as they depend on your tax situation. In an informal poll of *net* salaries among PhD students, I got to something
-in the range of **1700&ndash;1800&nbsp;€** (which is consistent with what you get on [this](https://www.salaire-brut-en-net.fr/) website). These are unofficial estimates and therefore come with the typical caveat on internet sources. It is worth noting that PhD students in France are contracted, full-time employees entitled to the all social benefits of traditional public sector employment, including sick days and paid time-off&nbsp;(holidays).
+in the range of **1700&ndash;1800&nbsp;€** (which is consistent with what you get on [this](https://www.salaire-brut-en-net.fr/) website). These are unofficial estimates and therefore come with the typical caveat on internet sources. It is worth noting that PhD students in France are contracted, full-time employees entitled to all social benefits of traditional public sector employment, including sick days and paid time-off&nbsp;(holidays).
 
 Again, if you have any questions about the positions, the PhD in general, and/or life in Paris, do not hesitate to
 [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App PhD]).
-#}
+
 
 
 #### Do I need to speak French?
@@ -242,7 +241,7 @@ and research interests as they relate to research topics and publications of my 
 - Transcripts
 {: .prospect-item}
 
-{# Master thesis topics are primarily for students currently enrolled at &Eacute;cole Polytechnique. #}
+{# Master thesis topics are primarily for students currently enrolled at &Eacute;cole polytechnique. #}
 
 
 {#
@@ -255,7 +254,7 @@ and research interests as they relate to research topics and publications of my 
 
 My group does not currently have student assistants calls open. However, we are always looking for motivated students interested in
 collaborating in our projects. Feel free to [reach out](mailto&#58;{{SITEEMAIL}}?subject=[App SA]) to discuss if you are interested in working with us
-(include `[App SA]` in your subject line). Student assistant positions are primarily for students currently enrolled at &Eacute;cole Polytechnique.
+(include `[App SA]` in your subject line). Student assistant positions are primarily for students currently enrolled at &Eacute;cole polytechnique.
 
 
 

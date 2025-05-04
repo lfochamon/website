@@ -14,10 +14,10 @@ save_as: index.html
 
 # Hello there!
 
-<p style="font-size: 20px;">I am an assistant professor (tenure-track)
-of the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of the
-<a href="https://www.polytechnique.edu">&Eacute;cole Polytechnique</a> holding a
-<a href="https://www.hi-paris.fr">Hi! Paris</a> chair.
+<p style="font-size: 20px;">I am an assistant professor (tenure-track) and
+<a href="https://www.hi-paris.fr">Hi! Paris</a> chair holder
+in the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of
+<a href="https://www.polytechnique.edu">&Eacute;cole polytechnique</a>.
 My group develops tools that enable intelligent systems
 to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <!-- I study the theoretical underpinnings of <b>constrained learning</b> and its applications in
@@ -27,11 +27,13 @@ to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 &nbsp;
 
 
+{#
 **I am currently looking for a PhD student interested in working at the intersection of optimization, machine learning, and statistics (applications reviews are scheduled for February/March 2025).<br class="responsive">
 Read more on how to join my group [here]({filename}/pages/prospective.md).**
 {: .highlight}
+#}
 
-**I have open master thesis topics on generative models, sampling, and reinforcement learning.<br class="responsive">
+**I have open master research topics on generative models, sampling, and reinforcement learning.<br class="responsive">
 [Reach out]({filename}/pages/contact.md) if you are interested in any of these fields or my research more broadly!**
 {: .highlight}
 
@@ -43,9 +45,17 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Jun 29th, 2025** &ndash; Invited talk at [EUROPT 2025](https://europt2025.org/) in Southampton, UK.
+
+- **Jun 26th, 2025** &ndash; Seminar at [ENS Ulm](#) in Paris, France.
+
+- **Jun 11th, 2025** &ndash; Seminar at [Rice Paris Summit](https://sites.google.com/view/rip-silo2025/).
+
+------
+
 - **Apr 3rd, 2025** &ndash; Seminar at [GIPSA](https://www.gipsa-lab.grenoble-inp.fr)-[LJK](https://www-ljk.imag.fr/), Grenoble, France.
 
-- **Mar 20th, 2025** &ndash; Seminar at [UC3M](https://www.uc3m.es/), Spain.
+- **Mar 20th, 2025** &ndash; Seminar at [UC3M](https://www.uc3m.es/), Madrid, Spain.
 
 - **Mar 14th, 2025** &ndash; New preprint: *"The Lagrangian method for solving constrained Markov games,"* with S.&nbsp;Das, S.&nbsp;Paternain, and C.&nbsp;Eksin ([arXiv]({filename}/pages/publications.md#Das25t)).
 
@@ -53,9 +63,7 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 - **Jan 27th, 2025** &ndash; Our paper *"Solving differential equations with constrained learning"* has been accepted to ICLR 2025 [[paper]({filename}/pages/publications.md#Moro25s)].
 
-- **Jan 1st, 2025** &ndash; I have been appointed an [ELLIS scholar](https://ellis.eu/fellows).
-
-------
+- **Jan 1st, 2025** &ndash; I have been appointed to [ELLIS scholar](https://ellis.eu/fellows).
 
 - **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
