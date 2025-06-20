@@ -49,9 +49,11 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 - **Jun 26th, 2025** &ndash; Seminar at [ENS Ulm](#) in Paris, France.
 
-- **Jun 11th, 2025** &ndash; Seminar at [Rice Paris Summit](https://sites.google.com/view/rip-silo2025/).
+- **Jun 20th, 2025** &ndash; New preprint: *"Learning (Approximately) Equivariant Networks via Constrained Optimization,"* with A.&nbsp;Manolache and M.&nbsp;Niepert ([arXiv]({filename}/pages/publications.md#Manolache25l)).
 
 ------
+
+- **Jun 11th, 2025** &ndash; Seminar at [Rice Paris Summit](https://sites.google.com/view/rip-silo2025/).
 
 - **Apr 3rd, 2025** &ndash; Seminar at [GIPSA](https://www.gipsa-lab.grenoble-inp.fr)-[LJK](https://www-ljk.imag.fr/), Grenoble, France.
 
