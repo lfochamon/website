@@ -11,11 +11,13 @@ save_as: index.html
 }
 </style>
 
+{% from 'fragments/functions.html' import youtube with context %}
+
 
 # Hello there!
 
 <p style="font-size: 20px;">I am an assistant professor (tenure-track) and
-<a href="https://www.hi-paris.fr">Hi! Paris</a> chair holder
+<a href="https://www.hi-paris.fr/2025/07/18/from-theory-to-impact-rethinking-how-we-train-intelligent-systems">Hi!PARIS</a> chair holder
 in the center for applied math (<a href="https://cmap.ip-paris.fr">CMAP</a>) of
 <a href="https://www.polytechnique.edu">&Eacute;cole polytechnique</a>.
 My group develops tools that enable intelligent systems
@@ -24,18 +26,20 @@ to <b>extract</b>, <b>process</b>, and <b>act</b> on information.
 <b>signal processing</b>, <b>control</b>, and <b>machine learning</b>. -->
 </p>
 
+{#
 &nbsp;
 
+{{ youtube('0JdLWC_h66o', aspect='16by9') }}
 
-{#
 **I am currently looking for a PhD student interested in working at the intersection of optimization, machine learning, and statistics (applications reviews are scheduled for February/March 2025).<br class="responsive">
 Read more on how to join my group [here]({filename}/pages/prospective.md).**
 {: .highlight}
-#}
 
 **I have open master research topics on generative models, sampling, and reinforcement learning.<br class="responsive">
 [Reach out]({filename}/pages/contact.md) if you are interested in any of these fields or my research more broadly!**
 {: .highlight}
+#}
+
 
 &nbsp;
 
@@ -45,13 +49,21 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Jul 21st, 2025** &ndash; I was interviewed about the research of my [Hi!PARIS](https://www.hi-paris.fr/) chair. Check out the full article and video pitch [here](https://www.hi-paris.fr/2025/07/18/from-theory-to-impact-rethinking-how-we-train-intelligent-systems/).
+
+- **Jul 20th, 2025** &ndash; Invited keynote speaker at the NeurIPS 2025 workshop on *"Constrained Optimization for Machine Learning"*. Submit your contributions [here](https://constrained-opt-ml.github.io/).
+
+- **Jul 17th, 2025** &ndash; Funded 4-year project on *"Beyond (Robust) Learning: Striking Compromises in Machine Learning"* ([ANR JCJC](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2025/)).
+
+- **Jul 16th, 2025** &ndash; Paper accepted at IEEE CDC 2025: *"A Lagrangian Framework for Safe Cooperative Reinforcement Learning"* with S. Das, S. Paternain, and C. Eksin [[paper]({filename}/pages/publications.md#Das25a)].
+
+------
+
 - **Jun 29th, 2025** &ndash; Invited talk at [EUROPT 2025](https://europt2025.org/) in Southampton, UK.
 
 - **Jun 26th, 2025** &ndash; Seminar at [ENS Ulm](#) in Paris, France.
 
 - **Jun 20th, 2025** &ndash; New preprint: *"Learning (Approximately) Equivariant Networks via Constrained Optimization,"* with A.&nbsp;Manolache and M.&nbsp;Niepert ([arXiv]({filename}/pages/publications.md#Manolache25l)).
-
-------
 
 - **Jun 11th, 2025** &ndash; Seminar at [Rice Paris Summit](https://sites.google.com/view/rip-silo2025/).
 

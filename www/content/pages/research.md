@@ -4,6 +4,8 @@ Date: 1001-01-02
 
 {% from 'fragments/functions.html' import cite with context %}
 {% from 'fragments/functions.html' import collapsible_pubs with context %}
+{% from 'fragments/functions.html' import youtube with context %}
+
 
 <style>
 /* Style the button that is used to open and close the collapsible content */
@@ -105,8 +107,13 @@ semi-supervised learning {{- cite('Cervino23l') }},
 data-driven control {{- cite('Paternain19c', 'Paternain23s', 'Calvo-Fullana24s') }}).
 This shift represents not just a technical advancement, but a fundamental reimagining of how we design and deploy intelligent systems. Ultimately, my vision is to take us away from a notion of **artificial intelligence** that is supposed to implicitly emerge from data to one of **engineered intelligence** that explicitly does what we want.
 
-You can read more about this and other research projects below. If anything piques your interest,
-feel free to reach out to me by [email]({filename}/pages/contact.md) or check the [prospective members]({filename}/pages/prospective.md) page.
+You can read more about this and other research projects or watch the research pitch for my Hi!PARIS chair below .
+If anything piques your interest, feel free to reach out to me by [email]({filename}/pages/contact.md) or check the [prospective members]({filename}/pages/prospective.md) page.
+
+
+{{ youtube('0JdLWC_h66o', aspect='16by9') }}
+
+
 
 
 ### Current projects
