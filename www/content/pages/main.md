@@ -49,15 +49,26 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
-- **Jul 21st, 2025** &ndash; I was interviewed about the research of my [Hi!PARIS](https://www.hi-paris.fr/) chair. Check out the full article and video pitch [here](https://www.hi-paris.fr/2025/07/18/from-theory-to-impact-rethinking-how-we-train-intelligent-systems/).
+- **Nov 27th, 2025** &ndash; Check out our papers at NeurIPS 2025:
+    - *"Learning (approximately) equivariant networks via constrained optimization"* (oral)
+    [[paper]({filename}/pages/publications.md#Manolache25l)]
+    - *"Learning with statistical equality constraints"*
+    [[paper]({filename}/pages/publications.md#Barthakur25l)]
+    - Keynote: *"The 5 W's and H of constrained learning"*
+    at [COML@NeurIPS](https://constrained-opt-ml.github.io/)
+
+- **Nov 24th, 2025** &ndash; I received the [Shiing-Shen Chern Young Faculty award](https://www.polytechnique.edu/fondation/actualites/toutes-les-actualites/annalaura-stingo-et-luiz-chamon-laureats-des-ss-chern-young-faculty-awards-2025),
+a recognition of talented young mathematicians at École polytechnique.
+
+- **Jul 21st, 2025** &ndash; I was interviewed about my research within my [Hi!PARIS](https://www.hi-paris.fr/) chair. Check out the full article and video pitch [here](https://www.hi-paris.fr/2025/07/18/from-theory-to-impact-rethinking-how-we-train-intelligent-systems/).
+
+- **Jul 17th, 2025** &ndash; Funded 4-year grant on *"Beyond (Robust) Learning: Striking Compromises in Machine Learning"* ([ANR JCJC](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2025/)). PhD and postdoc positions will be announced soon.
+
+------
 
 - **Jul 20th, 2025** &ndash; Invited keynote speaker at the NeurIPS 2025 workshop on *"Constrained Optimization for Machine Learning"*. Submit your contributions [here](https://constrained-opt-ml.github.io/).
 
-- **Jul 17th, 2025** &ndash; Funded 4-year project on *"Beyond (Robust) Learning: Striking Compromises in Machine Learning"* ([ANR JCJC](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2025/)).
-
 - **Jul 16th, 2025** &ndash; Paper accepted at IEEE CDC 2025: *"A Lagrangian Framework for Safe Cooperative Reinforcement Learning"* with S. Das, S. Paternain, and C. Eksin [[paper]({filename}/pages/publications.md#Das25a)].
-
-------
 
 - **Jun 29th, 2025** &ndash; Invited talk at [EUROPT 2025](https://europt2025.org/) in Southampton, UK.
 
