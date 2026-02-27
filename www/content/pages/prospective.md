@@ -210,7 +210,7 @@ Now, *should* you speak French? Probably eventually. Even if Paris is a very int
 -----
 
 
-## Master thesis
+## Master internship
 
 {# https://www.ist.uni-stuttgart.de/teaching/bama/ #}
 
@@ -219,16 +219,18 @@ Now, *should* you speak French? Probably eventually. Even if Paris is a very int
 ### Open Topics
 #}
 
-{#
-My group does not have Master project calls open at the moment. However, feel free to [get in touch](mailto&#58;{{SITEEMAIL}}?subject=[App Master])
-if you are interested in writing your Master thesis with us (include `[App Master]` in your subject line).
-We work on a variety of exciting topics upon which your Master project can be based.
-#}
 
+My group does not have Master internship calls open at the moment. However, feel free to [get in touch](mailto&#58;{{SITEEMAIL}}?subject=[App Master])
+if you are interested in doing an internship with us.
+We work on a variety of exciting topics on which you could base your master project.
+Make sure to start your subject line with `[App master]` and include:
+
+{#
 The group has a few open master thesis topics, particularly in the areas of *generative modeling*, *inverse design*, and *reinforcement learning*. Master projects typically combine the use of a novel optimization, control, or statistics tool with a practical machine learning or signal processing application. Interested students are expected to have a strong theoretical background and/or be good programmers as well as being able to come up with fresh ideas for challenging research problems.
 
 If you are interested in working with us on any of these topics
 or other [research topic]({filename}/pages/publications.md) from my group, feel free to send us an [email](mailto&#58;{{SITEEMAIL}}?subject=[App master]) starting the subject line with `[App master]` and including:
+#}
 
 - Short motivation statement describing background and research interests (1 paragraph)  
 <span class="prospect-comment">Do **NOT** write an extensive essay, but do outline your background

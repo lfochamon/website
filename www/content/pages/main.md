@@ -49,6 +49,8 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Mar 17th, 2026** &ndash; I will give a talk at HEC's "Law, Society & AI" seminar series
+
 - **Nov 27th, 2025** &ndash; Check out our papers at NeurIPS 2025:
     - *"Learning (approximately) equivariant networks via constrained optimization"* (oral)
     [[paper]({filename}/pages/publications.md#Manolache25l)]
@@ -90,6 +92,7 @@ a recognition of talented young mathematicians at École polytechnique.
 
 - **Jan 1st, 2025** &ndash; I have been appointed to [ELLIS scholar](https://ellis.eu/fellows).
 
+{#
 - **Nov 4th, 2024** &ndash; New preprint: *"Solving differential equations with constrained learning"* ([arXiv](https://arxiv.org/abs/2410.22796)).
 
 - **Oct 10th, 2024** &ndash; Check out our paper at NeurIPS 2024: *"Constrained sampling with primal-dual Langevin Monte Carlo"* [[paper]({filename}/pages/publications.md#Chamon24c)].
@@ -114,8 +117,6 @@ a recognition of talented young mathematicians at École polytechnique.
 
 - **Jan 12th, 2024** &ndash; I am talking about "Constrained reinforcement learning" at the [Workshop on RL](https://www.wim.uni-mannheim.de/doering/conferences/rl-2024) of the University of Mannheim.
 
-
-{#
 - **Dec 6th, 2023** &ndash; Check out our paper at NeurIPS 2023: *"Resilient constrained learning"* [[paper]({filename}/pages/publications.md#Hounie23r)].
 
 - **Nov 30th, 2023** &ndash; I am giving a talk and participating of the *"Future of AI"* panel during [Cyber Valley at University of Stuttgart](https://www.uni-stuttgart.de/en/university/news/event/Engineering-Intelligence--Cyber-Valley-at-University-of-Stuttgart/) ([register here](https://eveeno.com/universitaet-stuttgart-cv-2023) until Nov 24th).

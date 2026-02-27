@@ -138,25 +138,26 @@ If anything piques your interest, feel free to reach out to me by [email]({filen
 
 I am fortunate to work with many talented students, including
 
+- Gabriel Foy, PhD student, École polytechnique (CIFRE: TotalEnergies), 2025&ndash;current
 - Aneesh Barthakur, PhD student, U. Stuttgart, 2023&ndash;current
 - Andrei Manolache, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 - Tim Schneider, PhD student (*main supervisor: Steffen Staab*), U. Stuttgart, 2024&ndash;current
-- Vinh Tong, PhD student (*main supervisor: Mathias Niepert*), U. Stuttgart, 2024&ndash;current
 
 They are part of the many brilliant students I've had the pleasure of working with:
 
-- Viggo Moro, U. Stuttgart, 2024 (*PhD student at the University of Oxford*)
+- Viggo Moro, U. Stuttgart, 2024
+(*last I heard: PhD student at the University of Oxford*)
 - Juan Elenter, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2023&ndash;2024  
-  (*Spotify*)
+  (*last I heard: Spotify*)
 - Nadin Elsharbatly, Master student, U. Stuttgart, 2024
 - Ignacio Hounie, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2021&ndash;2023
 - Luana Ruiz, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2019&ndash;2022  
-  (*professor at Johns Hopkins university*)
+  (*last I heard: professor at Johns Hopkins university*)
 - Maria Peifer, PhD student (*main supervisor: Alejandro Ribeiro*), U. Pennsylvania, 2018&ndash;2021  
-  (*machine learning engineer at Comcast*)
+  (*last I heard: machine learning engineer at Comcast*)
 - Alexandre Amice,  bachelor student (*main supervisor: Alejandro Ribeiro*),
   U. Pennsylvania, 2018&ndash;2020  
-  (*PhD student at MIT*)
+  (*last I heard: PhD student at MIT*)
 
 &nbsp;
 
