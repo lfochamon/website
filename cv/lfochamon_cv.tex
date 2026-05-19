@@ -1,7 +1,7 @@
 % !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
 %!TeX program = txs:///lualatex | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///lualatex | txs:///lualatex | txs:///view-pdf
 %\documentclass[highlights,publist]{cvlfoc}
-%\documentclass[highlights,grants]{cvlfoc}
+%\documentclass[highlights,grants,publist]{cvlfoc}
 \documentclass{cvlfoc}
 
 \AtEveryBibitem{\clearfield{pages}\clearfield{isbn}\clearfield{doi}}
@@ -27,7 +27,7 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{2551}
+\citations{2558}
 \hindex{22}
 \publications{\directlua{
 	local f = io.open("lfochamon_cv1-blx.bbl", "r")
@@ -316,17 +316,18 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 		{}
 		{\emph{Principal Investigator}\\
 		\emph{Source:} U. Stuttgart / SimTech~(DFG EXC 2075)
-			\hfill \emph{Volume:} 348.000 \euro\\
-			\null\hfill (non-transferable)}
+			\hfill \emph{Volume:} 348.000 \euro
+%			\\\null\hfill (non-transferable)
+			}
 
-	\entry{02/2013--08/2013}
-		{\textbf{Wireless battery charging for an underwater sensing probe}\\
-		\emph{Principal Investigator} (Co-applicant: C\'{a}ssio G. Lopes)\\
-		\emph{Source:} IEEE \hfill \emph{Volume:} US\$ 800}
+%	\entry{02/2013--08/2013}
+%		{\textbf{Wireless battery charging for an underwater sensing probe}\\
+%		\emph{Principal Investigator} (Co-applicant: C\'{a}ssio G. Lopes)\\
+%		\emph{Source:} IEEE \hfill \emph{Volume:} US\$ 800}
 \end{entrydate}
 }{}
 
-
+%\ifthenelse{\boolean{grants}}{\newpage}{}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATION (HIGHLIGHTS)
@@ -632,8 +633,6 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 		{}
 		{\emph{Teaching assistant}: Undergraduate stochastic processes~($\sim$70 students, 4 terms)\\
 		\emph{Teaching assistant}: Undergraduate signal processing~($\sim$80 students, 3 terms)}
-
-	\clearpage
 
 	\entrydetail{2013--2014}{University of S\~{a}o Paulo}
 		{}

@@ -49,7 +49,11 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
-- **Mar 17th, 2026** &ndash; I will give a talk at HEC's "Law, Society & AI" seminar series
+- **Jun 29th--Jul 2nd, 2026** &ndash; Tutorial at Hi!PARIS summer school ([more info and registration](https://hi-paris.fr/research/summer-school/))
+
+- **Jun 26th, 2026** &ndash; Seminar for the INRIA Fairplay team
+
+------
 
 - **Nov 27th, 2025** &ndash; Check out our papers at NeurIPS 2025:
     - *"Learning (approximately) equivariant networks via constrained optimization"* (oral)
@@ -65,8 +69,6 @@ a recognition of talented young mathematicians at École polytechnique.
 - **Jul 21st, 2025** &ndash; I was interviewed about my research within my [Hi!PARIS](https://www.hi-paris.fr/) chair. Check out the full article and video pitch [here](https://www.hi-paris.fr/2025/07/18/from-theory-to-impact-rethinking-how-we-train-intelligent-systems/).
 
 - **Jul 17th, 2025** &ndash; Funded 4-year grant on *"Beyond (Robust) Learning: Striking Compromises in Machine Learning"* ([ANR JCJC](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2025/)). PhD and postdoc positions will be announced soon.
-
-------
 
 - **Jul 20th, 2025** &ndash; Invited keynote speaker at the NeurIPS 2025 workshop on *"Constrained Optimization for Machine Learning"*. Submit your contributions [here](https://constrained-opt-ml.github.io/).
 
