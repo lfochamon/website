@@ -1,8 +1,8 @@
 % !TeX document-id = {173d54cf-fc90-4687-aacb-d79087d68150}
 %!TeX program = txs:///lualatex | bibtex %.aux | bibtex %1-blx.aux | bibtex %2-blx.aux | txs:///lualatex | txs:///lualatex | txs:///view-pdf
-%\documentclass[highlights,publist]{cvlfoc}
+\documentclass[highlights,publist]{cvlfoc}
 %\documentclass[highlights,grants,publist]{cvlfoc}
-\documentclass{cvlfoc}
+%\documentclass{cvlfoc}
 
 \AtEveryBibitem{\clearfield{pages}\clearfield{isbn}\clearfield{doi}}
 
@@ -27,8 +27,8 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 \website{luizchamon.com}
 \gscholar{https://scholar.google.ca/citations?user=FIm-l-sAAAAJ&hl=en}
 \orcid{0000-0001-7731-6650}
-\citations{2558}
-\hindex{22}
+\citations{2704}
+\hindex{23}
 \publications{\directlua{
 	local f = io.open("lfochamon_cv1-blx.bbl", "r")
 	if f == nil then
@@ -496,58 +496,6 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 
 \ifthenelse{\boolean{grants}}{}{\smallskip}
 %----------------------------------------------------------------------------------------
-%	SERVICE
-%----------------------------------------------------------------------------------------
-\section*{Academic self-administration}
-
-\begin{entrydate}
-	\entrydetail{01/2024--12/2026}
-		{EURASIP}
-		{Technical committee member}
-		{\textit{Theoretical and Methodological Trends
-			in Signal Processing}}
-	\entrydetail{10/2023--12/2024}
-		{University of Stuttgart}
-		{Deputy member}
-		{\textit{General assembly of the Stuttgart Center for Simulation Science}}
-	\entrydetail{05/2020--12/2020}
-		{University of Pennsylvania}
-		{PhD representative}
-		{\textit{Penn Engineering COVID-19 Research and Academic Safety Committee}}
-	\entrydetail{01/2020--03/2020}
-		{University of Pennsylvania}
-		{Evaluator}
-		{\textit{PhD student hiring committee}}
-	\entrydetail{09/2017--07/2018}
-		{University of Pennsylvania}
-		{Organizer}
-		{\textit{ESE PhD colloquium}}
-\end{entrydate}
-
-
-\subsection*{Search committees}
-
-\begin{entrydate}
-	\entry{2026}{Assistant professor (tenure-track)\hfill T\'{e}l\'{e}com Paris}
-	\entry{2026}{Assistant professor (tenure-track)\hfill \'{E}cole polytechnique}
-	\entry{2026}{Assistant professor (tenure-track)\hfill \'{E}cole polytechnique}
-	\entry{2025}{Assistant professor\hfill \'{E}cole polytechnique}
-\end{entrydate}
-
-
-\subsection*{Doctoral defense committees}
-
-\begin{entrydate}
-	\entry{04/2026}{Ignacio Hounie\hfill U.\ of Pennsylvania~(USA)}
-	\entry{04/2026}{Eliabelle Mauduit\hfill ENSTA~(FR)}
-	\entry{05/2025}{Amin Charusaie\hfill Max Planck Institute~(DE)}
-	\entry{03/2025}{Sergio Rozada\hfill King Juan Carlos U.~(ES)}
-\end{entrydate}
-
-
-
-\ifthenelse{\boolean{grants}}{}{\bigskip\bigskip}
-%----------------------------------------------------------------------------------------
 %	TEACHING/SUPERVISION
 %----------------------------------------------------------------------------------------
 \section*{Teaching and supervision}
@@ -666,7 +614,7 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 \end{entrydate}
 
 
-
+\bigskip
 \subsection*{Mentoring}
 
 \begin{entrydate}
@@ -694,6 +642,59 @@ Manolache25l, Moro25s, Chamon23c, Robey22p, Chamon20p}
 		{}
 		{\href{https://meyerhoff.umbc.edu/}{\textbf{Meyerhoff Scholars}}
 			\emph{meeting (U. Maryland program supporting diversity in STEM)}}
+\end{entrydate}
+
+
+
+
+\ifthenelse{\boolean{grants}}{}{\bigskip\bigskip}
+%----------------------------------------------------------------------------------------
+%	SERVICE
+%----------------------------------------------------------------------------------------
+\section*{Academic self-administration}
+
+\begin{entrydate}
+	\entrydetail{01/2024--12/2026}
+		{EURASIP}
+		{Technical committee member}
+		{\textit{Theoretical and Methodological Trends
+			in Signal Processing}}
+	\entrydetail{10/2023--12/2024}
+		{University of Stuttgart}
+		{Deputy member}
+		{\textit{General assembly of the Stuttgart Center for Simulation Science}}
+	\entrydetail{05/2020--12/2020}
+		{University of Pennsylvania}
+		{PhD representative}
+		{\textit{Penn Engineering COVID-19 Research and Academic Safety Committee}}
+	\entrydetail{01/2020--03/2020}
+		{University of Pennsylvania}
+		{Evaluator}
+		{\textit{PhD student hiring committee}}
+	\entrydetail{09/2017--07/2018}
+		{University of Pennsylvania}
+		{Organizer}
+		{\textit{ESE PhD colloquium}}
+\end{entrydate}
+
+
+\subsection*{Search committees}
+
+\begin{entrydate}
+	\entry{2026}{Assistant professor (tenure-track)\hfill T\'{e}l\'{e}com Paris}
+	\entry{2026}{Assistant professor (tenure-track)\hfill \'{E}cole polytechnique}
+	\entry{2026}{Assistant professor (tenure-track)\hfill \'{E}cole polytechnique}
+	\entry{2025}{Assistant professor\hfill \'{E}cole polytechnique}
+\end{entrydate}
+
+
+\subsection*{Doctoral defense committees}
+
+\begin{entrydate}
+	\entry{04/2026}{Ignacio Hounie\hfill U.\ of Pennsylvania~(USA)}
+	\entry{04/2026}{Eliabelle Mauduit\hfill ENSTA~(FR)}
+	\entry{05/2025}{Amin Charusaie\hfill Max Planck Institute~(DE)}
+	\entry{03/2025}{Sergio Rozada\hfill King Juan Carlos U.~(ES)}
 \end{entrydate}
 
 
