@@ -49,6 +49,8 @@ Read more on how to join my group [here]({filename}/pages/prospective.md).**
 
 <div class="news" markdown=1>
 
+- **Jul 15th, 2026** &ndash; Paper accepted at IEEE CDC 2026: *"Computing Nash in locally constrained Markov games using a Lagrangian framework"* with S. Das, S. Paternain, and C. Eksin [[paper]({filename}/pages/publications.md#Das26c)].
+
 - **Jun 29th-Jul 2nd, 2026** &ndash; Tutorial at Hi!PARIS summer school ([more info and registration](https://hi-paris.fr/research/summer-school/))
 
 - **Jun 26th, 2026** &ndash; Seminar for the INRIA Fairplay team
