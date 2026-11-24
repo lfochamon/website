@@ -114,10 +114,10 @@ concludes the proof.
 <p>compared to</p>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>When~<span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="nb"> &lt; c_t </span><span class="nv">\tau</span><span class="s">$</span>, we obtain that
 <span class="c">%</span>
-<span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
-    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 <span class="c">%</span>
 which concludes the proof.
 </code></pre></div>
@@ -151,10 +151,10 @@ Latex environments from the text to improve your source readability.</p>
 </code></pre></div>
 <div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code>It therefore holds that
 <span class="c">%</span>
-<span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z - z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
-    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z </span><span class="o">-</span><span class="nb"> z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 <span class="c">%</span>
 which concludes the proof.
 </code></pre></div>
@@ -201,44 +201,44 @@ directly relevant.</p>
 line~<span class="s">$</span><span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="s">$</span>, just put it in the next one.
 </code></pre></div>
 <p>If the expression is too long, break it down in logical parts and use indentation as if you were coding Python!</p>
-<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span> <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 
-<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
-<span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\Big</span>( <span class="k">\E_</span><span class="nb">{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD_i</span><span class="nb">}</span>
-<span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span> <span class="k">\Big</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{equation}</span>
+<span class="nv">\sum</span><span class="nb">_{i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^m </span><span class="nv">\mu</span><span class="nb">_i </span><span class="nv">\Big</span><span class="o">(</span><span class="nb"> </span><span class="nv">\E</span><span class="nb">_{</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">,y</span><span class="o">)</span><span class="nb"> </span><span class="nv">\sim</span><span class="nb"> </span><span class="nv">\fkD</span><span class="nb">_i}</span>
+<span class="nv">\Big</span><span class="o">[</span><span class="nb"> </span><span class="nv">\ell</span><span class="nb">_i</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="o">)</span><span class="nb">,y </span><span class="nv">\big</span><span class="o">)</span><span class="nb"> </span><span class="nv">\Big</span><span class="o">]</span><span class="nb"> </span><span class="nv">\Big</span><span class="o">)</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{equation}</span>
 
-<span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
-<span class="k">\hat</span><span class="nb">{</span>L<span class="nb">}</span>(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>= <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span>
-<span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell_</span>0<span class="k">\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)<span class="k">\\</span>
-<span class="nb">{}&amp;</span>+ <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\left</span>[ <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
-<span class="k">\ell_i\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>) <span class="k">\right</span>] <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{align}</span>
+<span class="nv">\hat</span><span class="nb">{L}</span><span class="o">(</span><span class="nv">\btheta</span><span class="nb">, </span><span class="nv">\bmu</span><span class="o">)</span><span class="nb"> &amp;</span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{N_</span><span class="m">0</span><span class="nb">}</span>
+<span class="nv">\sum</span><span class="nb">_{n_</span><span class="m">0</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^{N_</span><span class="m">0</span><span class="nb">} </span><span class="nv">\ell</span><span class="nb">_</span><span class="m">0</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">_{n_</span><span class="m">0</span><span class="nb">}</span><span class="o">)</span><span class="nb">, y_{n_</span><span class="m">0</span><span class="nb">} </span><span class="nv">\big</span><span class="o">)</span><span class="nv">\\</span>
+<span class="nb">{}&amp;</span><span class="o">+</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^m </span><span class="nv">\mu</span><span class="nb">_i </span><span class="nv">\left</span><span class="o">[</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{N_i} </span><span class="nv">\sum</span><span class="nb">_{n_i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^{N_i}</span>
+<span class="nv">\ell</span><span class="nb">_i</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">_{n_i}</span><span class="o">)</span><span class="nb">, y_{n_i} </span><span class="nv">\big</span><span class="o">)</span><span class="nb"> </span><span class="nv">\right</span><span class="o">]</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{align}</span>
 </code></pre></div>
-<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
-    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>  <span class="c">% Separate and indent punctuation and text</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{,}  </span><span class="c">% Separate and indent punctuation and text</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 
-<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
-  <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\Big</span>(    <span class="c">% Break when opening brackets...</span>
-    <span class="k">\E_</span><span class="nb">{</span>(<span class="k">\bx</span>,y) <span class="k">\sim</span> <span class="k">\fkD_i</span><span class="nb">}</span> <span class="k">\Big</span><span class="na">[ \ell_i\big( f(\bx),y \big) \Big]</span>
-  <span class="k">\Big</span>)   <span class="c">% ...then close it on a separate line</span>
-    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{equation}</span>
+<span class="nb">  </span><span class="nv">\sum</span><span class="nb">_{i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^m </span><span class="nv">\mu</span><span class="nb">_i </span><span class="nv">\Big</span><span class="o">(</span><span class="nb">    </span><span class="c">% Break when opening brackets...</span>
+<span class="nb">    </span><span class="nv">\E</span><span class="nb">_{</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">,y</span><span class="o">)</span><span class="nb"> </span><span class="nv">\sim</span><span class="nb"> </span><span class="nv">\fkD</span><span class="nb">_i} </span><span class="nv">\Big</span><span class="o">[</span><span class="nb"> </span><span class="nv">\ell</span><span class="nb">_i</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="o">)</span><span class="nb">,y </span><span class="nv">\big</span><span class="o">)</span><span class="nb"> </span><span class="nv">\Big</span><span class="o">]</span>
+<span class="nb">  </span><span class="nv">\Big</span><span class="o">)</span><span class="nb">   </span><span class="c">% ...then close it on a separate line</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{equation}</span>
 
-<span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
-  L(<span class="k">\btheta</span>, <span class="k">\bmu</span>) <span class="nb">&amp;</span>=   <span class="c">% Break at binary operators</span>
-    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>0 = 1<span class="nb">}^{</span>N<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\ell_</span>0<span class="k">\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>0<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>0<span class="nb">}</span> <span class="k">\big</span>)
-  <span class="k">\\</span>  <span class="c">% Clearly separate equations groups</span>
-  <span class="nb">{}&amp;</span>+ <span class="k">\sum_</span><span class="nb">{</span>i = 1<span class="nb">}^</span>m <span class="k">\mu_i</span> <span class="k">\left</span>[
-    <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>N<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\sum_</span><span class="nb">{</span>n<span class="nb">_</span>i = 1<span class="nb">}^{</span>N<span class="nb">_</span>i<span class="nb">}</span>
-      <span class="k">\ell_i\big</span>( f(<span class="k">\bx_</span><span class="nb">{</span>n<span class="nb">_</span>i<span class="nb">}</span>), y<span class="nb">_{</span>n<span class="nb">_</span>i<span class="nb">}</span> <span class="k">\big</span>)   <span class="c">% Indent to show continuation</span>
-  <span class="k">\right</span>]
-    <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{align}</span>
+<span class="nb">  L</span><span class="o">(</span><span class="nv">\btheta</span><span class="nb">, </span><span class="nv">\bmu</span><span class="o">)</span><span class="nb"> &amp;</span><span class="o">=</span><span class="nb">   </span><span class="c">% Break at binary operators</span>
+<span class="nb">    </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{N_</span><span class="m">0</span><span class="nb">} </span><span class="nv">\sum</span><span class="nb">_{n_</span><span class="m">0</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^{N_</span><span class="m">0</span><span class="nb">} </span><span class="nv">\ell</span><span class="nb">_</span><span class="m">0</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">_{n_</span><span class="m">0</span><span class="nb">}</span><span class="o">)</span><span class="nb">, y_{n_</span><span class="m">0</span><span class="nb">} </span><span class="nv">\big</span><span class="o">)</span>
+<span class="nb">  </span><span class="nv">\\</span><span class="nb">  </span><span class="c">% Clearly separate equations groups</span>
+<span class="nb">  {}&amp;</span><span class="o">+</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^m </span><span class="nv">\mu</span><span class="nb">_i </span><span class="nv">\left</span><span class="o">[</span>
+<span class="nb">    </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{N_i} </span><span class="nv">\sum</span><span class="nb">_{n_i </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">}^{N_i}</span>
+<span class="nb">      </span><span class="nv">\ell</span><span class="nb">_i</span><span class="nv">\big</span><span class="o">(</span><span class="nb"> f</span><span class="o">(</span><span class="nv">\bx</span><span class="nb">_{n_i}</span><span class="o">)</span><span class="nb">, y_{n_i} </span><span class="nv">\big</span><span class="o">)</span><span class="nb">   </span><span class="c">% Indent to show continuation</span>
+<span class="nb">  </span><span class="nv">\right</span><span class="o">]</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="k">\end</span><span class="nb">{align}</span>
 </code></pre></div>
 <h4 id="9-indent">9. Indent!</h4>
 <p>Aside from math expressions, also indent text environments such as lists and tables for clarity.</p>
@@ -256,11 +256,11 @@ and~<span class="s">$</span><span class="nv">\calH</span><span class="s">$</span
 </code></pre></div>
 <h4 id="10-begin-and-end-on-separate-lines">10. <code>begin</code> and <code>end</code> on separate lines</h4>
 <p>Latex environments must always <code>begin</code> and <code>end</code> on separate lines.</p>
-<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span> z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span> <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*} z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb"> </span><span class="k">\end</span><span class="nb">{equation*}</span>
 </code></pre></div>
-<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 </code></pre></div>
 <h4 id="11-give-binary-operators-their-space">11. Give binary operators their space</h4>
 <p>Always place spaces before and after binary operators. You should be writing</p>
@@ -289,15 +289,15 @@ sub/superscripts that are not variables, i.e.,
 <code style="background:#B8E6C8;">$J_\text{max}$</code> and not <code style="background:#FFCECC;">$J_{max}$</code>
 (or worse, <code style="background:#FFCECC;">$J_{\max}$</code>!);
 and punctuation, i.e.,</p>
-<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>
-    <span class="k">\text</span><span class="nb">{</span>.<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span>
+<span class="nb">    </span><span class="nv">\text</span><span class="nb">{.}</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 </code></pre></div>
 <p>and not</p>
-<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  z(t) <span class="k">\leq</span> <span class="k">\Vert</span> z-z<span class="nb">^</span><span class="k">\star</span> <span class="k">\Vert_\infty</span>.
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#FFCECC;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  z</span><span class="o">(</span><span class="nb">t</span><span class="o">)</span><span class="nb"> </span><span class="nv">\leq</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb"> z</span><span class="o">-</span><span class="nb">z^</span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\Vert</span><span class="nb">_</span><span class="nv">\infty</span><span class="nb">.</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 </code></pre></div>
 <p>If you are writing in the context of a definition or theorem environment, which are sometimes typeset in italic, you should use the <code>\textup</code> tag.</p>
 <h4 id="14-know-your-math-environments">14. Know your math environments</h4>
@@ -320,16 +320,16 @@ Here are the main suspects you should know how to use, in order of importance:</
 </ul>
 <p>Two other "math environments" worth knowing (and using) involve matrices (<code>pmatrix</code> for parenthesis and <code>bmatrix</code> for brackets) and equation with
 cases as in</p>
-<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-  <span class="k">\phi_</span><span class="nb">{</span><span class="k">\epsilon</span><span class="nb">}</span>(<span class="k">\bx</span>) =
-    <span class="k">\begin</span><span class="nb">{</span>cases<span class="nb">}</span>
-      <span class="k">\phi</span>(<span class="k">\bx</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-        <span class="nb">&amp;</span><span class="k">\text</span><span class="nb">{</span>for <span class="nb">}</span> <span class="k">\bx</span> <span class="k">\in</span> <span class="k">\calT</span>
-      <span class="k">\\</span>
-      <span class="k">\phi</span><span class="nb">^</span><span class="k">\prime</span>(<span class="k">\bx</span>) <span class="k">\text</span><span class="nb">{</span>,<span class="nb">}</span>
-        <span class="nb">&amp;</span><span class="k">\text</span><span class="nb">{</span>for <span class="nb">}</span> <span class="k">\bx</span> <span class="k">\in</span> <span class="k">\calT</span><span class="nb">^</span>c
-    <span class="k">\end</span><span class="nb">{</span>cases<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
+<div class="code-highlight" style="background:#B8E6C8;"><pre><span></span><code><span class="k">\begin</span><span class="nb">{equation*}</span>
+<span class="nb">  </span><span class="nv">\phi</span><span class="nb">_{</span><span class="nv">\epsilon</span><span class="nb">}</span><span class="o">(</span><span class="nv">\bx</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span>
+<span class="nb">    </span><span class="nv">\begin</span><span class="nb">{cases}</span>
+<span class="nb">      </span><span class="nv">\phi</span><span class="o">(</span><span class="nv">\bx</span><span class="o">)</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="nb">        &amp;</span><span class="nv">\text</span><span class="nb">{for } </span><span class="nv">\bx</span><span class="nb"> </span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\calT</span>
+<span class="nb">      </span><span class="nv">\\</span>
+<span class="nb">      </span><span class="nv">\phi</span><span class="nb">^</span><span class="nv">\prime</span><span class="o">(</span><span class="nv">\bx</span><span class="o">)</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{,}</span>
+<span class="nb">        &amp;</span><span class="nv">\text</span><span class="nb">{for } </span><span class="nv">\bx</span><span class="nb"> </span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\calT</span><span class="nb">^c</span>
+<span class="nb">    </span><span class="nv">\end</span><span class="nb">{cases}</span>
+<span class="k">\end</span><span class="nb">{equation*}</span>
 </code></pre></div>
 <p>Never use some weird combination of <code>\left{</code> and <code>\right.</code> to do this.</p>
 <ul>
